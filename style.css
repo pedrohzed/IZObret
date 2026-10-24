@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     background-color: #faf8ff;
     background-image: radial-gradient(#dde2f7 1.5px, transparent 1.5px);
     background-size: 24px 24px;
@@ -123,6 +123,7 @@ body {
 }
 
 .hero-titulo {
+    font-family: 'Russo One', sans-serif;
     font-size: 52px;
     font-weight: 900;
     line-height: 1.15;
@@ -351,4 +352,30 @@ body {
 .link-cartao {
     font-size: 14px;
     font-weight: 800;
+}
+
+/*página de faíscas*/
+
+.faiscas-hero {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faiscas-titulo {
+    font-family: 'Russo One', sans-serif;
+    font-size: 44px;
+    color: #151b2a;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.faiscas-subtitulo {
+    font-size: 18px;
+    color: #434657;
+    line-height: 1.6;
 }

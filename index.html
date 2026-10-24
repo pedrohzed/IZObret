@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     
 </head>
@@ -20,7 +23,7 @@
                 </div>
                 <nav class="menu">
                     <a href="index.html" class="menu-link ativo"> Início</a>
-                    <a href="#" class="menu-link">Máquina de Faíscas</a>
+                    <a href="faiscas.html" class="menu-link">Máquina de Faíscas</a>
                     <a href="#" class="menu-link">Método Científico</a>
                     <a href="#" class="menu-link">Missões e Canvas</a>
                 </nav>
@@ -31,66 +34,70 @@
     <main class="container">
         <section class="hero">
             <span class="badge-amarela">INCUBADORA DE IDEIAS PARA CRIANÇAS DE 8 A 14 ANOS</span>
-            <h1 class="hero-title">Transforma a tua curiosidade na <span class="destaque-onda">próxima grande invenção</span> do mundo!</h1>
-            <p class="hero-subtitle">Você não sabe por onde começar? Nós te ajudamos a descobrir, planejar e amadurecer suas ideias como um verdadeiro cientista.
+            <h1 class="hero-titulo">Transforma a tua curiosidade na <span class="destaque-onda">próxima grande invenção</span> do mundo!</h1>
+            <p class="hero-subtitulo">Você não sabe por onde começar? Nós te ajudamos a descobrir, planejar e amadurecer suas ideias como um verdadeiro cientista.
             </p>
 
             <div class="hero-botoes">
-                <a href="#" class="btn-primario"> Ligar Máquina de Faíscas</a>
+                <a href="faiscas.html" class="btn-primario"> Ligar Máquina de Faíscas</a>
                 <a href="#" class="btn-secundario"> Conhecer o Método Científico</a>
             </div>
         </section>
-        <section id="etapas" class="etapas">
-            <div class="cabecalho">
+        <section id="etapas" class="secao-etapas">
+            <div class="cabecalho-secao">
                 <span class="badge-azul">COMO FUNCIONA?</span>
                 <h2>O Laborátorio de 3 Etapas</h2>
                 <p>Não precisa ter tudo pronto para começar. Siga as 3 estações interativas e desenvolva sua ideia passo a passo.</p>
             </div>
             <div class="grade-cartoes">
-                <a href="#" class="cartao-azul">
-                    <div class=""cartao-topo>
-                        <span class="num-etapa-bg-azul">1</span>
-                        <span class="icone-etapa-bg-amarelo">✨</span>
+                <a href="faiscas.html" class="cartao cartao-azul">
+                    <div class="cartao-topo">
+                        <span class="numero-etapa bg-azul">1</span>
                     </div>
+                    <span class="etiqueta-cartao texto-azul">Gerar Ideia</span>
+                    <h3>Máquina de Faíscas</h3>
+                    <p>Misture temas diferentes e gere ideias malucas e inovadoras para começar a sua invenção.</p>
                     <div class="mini-preview">
-                        <span class="tag-item">Videogames</span> + <span class="tag-item">Natureza</span>
+                        <span class="preview-titulo">Combinação do Dia:</span>
+                        <div class="tags-preview">
+                            <span class="tag-item">Videogames</span> + <span class="tag-item">Natureza</span>
+                        </div>
                     </div>
-                </div>
-                <span class="link-cartao-texto-azul">Sortear Ideia Agora</span>
-            </a>
-            <a href="#" class="cartao-laranja">
-                <div class="cartao-topo">
-                    <span class="num-etapa-bg-laranja">2</span>
-                    <span class="icone-etapa-bg-amarelo">🧪</span>
-                </div>
-                <span class="etiqueta-cartao-texto-laranja">Pesquisar Ideia</span>
-                <h3>Refinador Científico</h3>
-                <p>Transforme uma simples Faíscas em um projeto estruturado. Formule perguntas e crie hipóteses.</p>
-                <div class="mini-preview">
-                    <span class="preview-titulo">Método de Detetive</span>
-                    <div class="tags-preview">
-                        <span>Perguntas</span> • <span> Hipóteses</span> • <span> Teste</span>
-                    </div>
-                </div>
-                <span class="link-cartao-texto-laranja">Abrir caderno de hipóteses</span>
-            </a>
+                    <span class="link-cartao texto-azul">Sortear Ideia Agora &rarr;</span>
+                </a>
 
-            <a href="#" class="cartao-roxo">
-                <div class="cartao-topo">
-                    <span class="num-etapa-bg-cinza">3</span>
-                    <span class="icone-etapa-bg-azul">🚀</span>
-                </div>
-                <span class="etiqueta-cartao-texto-cinza">Testar Ideia</span>
-                <h3>Missões e Canvas</h3>
-                <p>Divide a tua invenção em pequenas tarefas fáceis de concluir. Organiza o que falta fazer, o que está na bancada e o que você já terminou</p>
-                <div class="mini-preview">
-                    <span class="preview-titulo">Progresso do Protótipo:</span>
-                    <div class="barra-de-progresso">
-                        <div class="progresso-preenchido"></div>
+                <a href="#" class="cartao cartao-laranja">
+                    <div class="cartao-topo">
+                        <span class="numero-etapa bg-laranja">2</span>
                     </div>
-                </div>
-                <span class="link-cartao-texto-azul">Abrir Minha Bancada</span>
-            </a>
+                    <span class="etiqueta-cartao texto-laranja">Pesquisar Ideia</span>
+                    <h3>Refinador Científico</h3>
+                    <p>Transforme uma simples faísca em um projeto estruturado. Formule perguntas e crie hipóteses.</p>
+                    <div class="mini-preview">
+                        <span class="preview-titulo">Método de Detetive</span>
+                        <div class="tags-preview">
+                            <span class="tag-item">Perguntas</span> • <span class="tag-item">Hipóteses</span> • <span class="tag-item">Testes</span>
+                        </div>
+                    </div>
+                    <span class="link-cartao texto-laranja">Abrir caderno de hipóteses &rarr;</span>
+                </a>
+
+                <a href="#" class="cartao cartao-roxo">
+                    <div class="cartao-topo">
+                        <span class="numero-etapa bg-cinza">3</span>
+                    </div>
+                    <span class="etiqueta-cartao texto-cinza">Testar Ideia</span>
+                    <h3>Missões e Canvas</h3>
+                    <p>Divida a sua invenção em pequenas tarefas fáceis de concluir. Organize o que falta fazer e acompanhe o progresso.</p>
+                    <div class="mini-preview">
+                        <span class="preview-titulo">Progresso do Protótipo:</span>
+                        <div class="barra-progresso">
+                            <div class="progresso-preenchido"></div>
+                        </div>
+                    </div>
+                    <span class="link-cartao texto-azul">Abrir Minha Bancada &rarr;</span>
+                </a>
+            </div>
         </section>
     </main>
 </body>
