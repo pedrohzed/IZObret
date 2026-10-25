@@ -1,0 +1,342 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-10-25 16:55-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: templates/faiscas.html:6
+msgid "Máquina de Faíscas IZObret"
+msgstr ""
+
+#: templates/faiscas.html:21 templates/index.html:25
+#: templates/refinador.html:21
+msgid "Início"
+msgstr ""
+
+#: templates/faiscas.html:22 templates/index.html:26 templates/index.html:65
+#: templates/refinador.html:22
+msgid "Máquina de Faíscas"
+msgstr ""
+
+#: templates/faiscas.html:23 templates/index.html:27
+#: templates/refinador.html:23
+msgid "Método Científico"
+msgstr ""
+
+#: templates/faiscas.html:24 templates/index.html:28 templates/index.html:97
+#: templates/refinador.html:24
+msgid "Missões e Canvas"
+msgstr ""
+
+#: templates/faiscas.html:33 templates/index.html:37
+#: templates/refinador.html:33
+msgid "Minha Oficina"
+msgstr ""
+
+#: templates/faiscas.html:40
+msgid "ETAPA 1: FAÍSCA DE IDEIA"
+msgstr ""
+
+#: templates/faiscas.html:41
+msgid "A máquina de Faíscas"
+msgstr ""
+
+#: templates/faiscas.html:42
+msgid ""
+"Gire a alavanca! Combine elementos improváveis para inventar algo "
+"inovador."
+msgstr ""
+
+#: templates/faiscas.html:47
+msgid "Qual o foco da invenção hoje?"
+msgstr ""
+
+#: templates/faiscas.html:49
+msgid "Problemas Sociais (ODS da ONU)"
+msgstr ""
+
+#: templates/faiscas.html:50
+msgid "Soluções Energéticas & Sustentabilidade"
+msgstr ""
+
+#: templates/faiscas.html:51
+msgid "Acessibilidade e Inclusão"
+msgstr ""
+
+#: templates/faiscas.html:52
+msgid "Jogos"
+msgstr ""
+
+#: templates/faiscas.html:55
+msgid "O que são as ODS?"
+msgstr ""
+
+#: templates/faiscas.html:56
+msgid ""
+"São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber "
+"mais!"
+msgstr ""
+
+#: templates/faiscas.html:62
+msgid "Objeto"
+msgstr ""
+
+#: templates/faiscas.html:68
+msgid "Ação"
+msgstr ""
+
+#: templates/faiscas.html:74
+msgid "Desafio"
+msgstr ""
+
+#: templates/faiscas.html:82
+msgid "Puxar alavanca"
+msgstr ""
+
+#: templates/faiscas.html:88
+msgid "Puxe a alavanca!"
+msgstr ""
+
+#: templates/faiscas.html:93
+msgid "Refinar esta ideia"
+msgstr ""
+
+#: templates/faiscas.html:101
+msgid "Erro na"
+msgstr ""
+
+#: templates/faiscas.html:102
+msgid "Conexão"
+msgstr ""
+
+#: templates/faiscas.html:103
+msgid "Tente"
+msgstr ""
+
+#: templates/faiscas.html:104
+msgid "Novamente"
+msgstr ""
+
+#: templates/index.html:43
+msgid "INCUBADORA DE IDEIAS PARA CRIANÇAS DE 8 A 14 ANOS"
+msgstr ""
+
+#: templates/index.html:44
+msgid "Transforma a tua curiosidade na"
+msgstr ""
+
+#: templates/index.html:44
+msgid "próxima grande invenção"
+msgstr ""
+
+#: templates/index.html:44
+msgid "do mundo!"
+msgstr ""
+
+#: templates/index.html:45
+msgid ""
+"Você não sabe por onde começar? Nós te ajudamos a descobrir, planejar e "
+"amadurecer suas ideias como um verdadeiro cientista."
+msgstr ""
+
+#: templates/index.html:49
+msgid "Ligar Máquina de Faíscas"
+msgstr ""
+
+#: templates/index.html:50
+msgid "Conhecer o Método Científico"
+msgstr ""
+
+#: templates/index.html:55
+msgid "COMO FUNCIONA?"
+msgstr ""
+
+#: templates/index.html:56
+msgid "O Laboratório de 3 Etapas"
+msgstr ""
+
+#: templates/index.html:57
+msgid ""
+"Não precisa ter tudo pronto para começar. Siga as 3 estações interativas "
+"e desenvolva sua ideia passo a passo."
+msgstr ""
+
+#: templates/index.html:64
+msgid "Gerar Ideia"
+msgstr ""
+
+#: templates/index.html:66
+msgid ""
+"Misture temas diferentes e gere ideias malucas e inovadoras para começar "
+"a sua invenção."
+msgstr ""
+
+#: templates/index.html:68
+msgid "Combinação do Dia:"
+msgstr ""
+
+#: templates/index.html:70
+msgid "Videogames"
+msgstr ""
+
+#: templates/index.html:70
+msgid "Natureza"
+msgstr ""
+
+#: templates/index.html:73
+msgid "Sortear Ideia Agora"
+msgstr ""
+
+#: templates/index.html:80
+msgid "Pesquisar Ideia"
+msgstr ""
+
+#: templates/index.html:81
+msgid "Refinador Científico"
+msgstr ""
+
+#: templates/index.html:82
+msgid ""
+"Transforme uma simples faísca em um projeto estruturado. Formule "
+"perguntas e crie hipóteses."
+msgstr ""
+
+#: templates/index.html:84
+msgid "Método de Detetive"
+msgstr ""
+
+#: templates/index.html:86
+msgid "Perguntas"
+msgstr ""
+
+#: templates/index.html:86
+msgid "Hipóteses"
+msgstr ""
+
+#: templates/index.html:86
+msgid "Testes"
+msgstr ""
+
+#: templates/index.html:89
+msgid "Abrir caderno de hipóteses"
+msgstr ""
+
+#: templates/index.html:96
+msgid "Testar Ideia"
+msgstr ""
+
+#: templates/index.html:98
+msgid ""
+"Divida a sua invenção em pequenas tarefas fáceis de concluir. Organize o "
+"que falta fazer e acompanhe o progresso."
+msgstr ""
+
+#: templates/index.html:100
+msgid "Progresso do Protótipo:"
+msgstr ""
+
+#: templates/index.html:105
+msgid "Abrir Minha Bancada"
+msgstr ""
+
+#: templates/refinador.html:6
+msgid "Refinador Científico - IZObret"
+msgstr ""
+
+#: templates/refinador.html:40
+msgid "ETAPA 2: REFINADOR CIENTÍFICO"
+msgstr ""
+
+#: templates/refinador.html:41
+msgid "Caderno de Hipóteses"
+msgstr ""
+
+#: templates/refinador.html:42
+msgid ""
+"Transforme a sua faísca em um projeto de verdade com a ajuda do Método "
+"Científico."
+msgstr ""
+
+#: templates/refinador.html:47
+msgid "SUA IDEIA SORTEADA"
+msgstr ""
+
+#: templates/refinador.html:49
+msgid "Foco:"
+msgstr ""
+
+#: templates/refinador.html:49
+msgid "Livre"
+msgstr ""
+
+#: templates/refinador.html:50
+msgid "Objeto:"
+msgstr ""
+
+#: templates/refinador.html:51
+msgid "Ação:"
+msgstr ""
+
+#: templates/refinador.html:52
+msgid "Desafio:"
+msgstr ""
+
+#: templates/refinador.html:59
+msgid "Qual é a sua hipótese?"
+msgstr ""
+
+#: templates/refinador.html:61
+msgid "O que você acha que vai acontecer se construirmos essa invenção?"
+msgstr ""
+
+#: templates/refinador.html:62
+msgid ""
+"Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para "
+"os peixes em poucas semanas..."
+msgstr ""
+
+#: templates/refinador.html:67
+msgid "Como podemos testar isso?"
+msgstr ""
+
+#: templates/refinador.html:69
+msgid "Qual teste prático ou experimento simples podemos fazer?"
+msgstr ""
+
+#: templates/refinador.html:70
+msgid ""
+"Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do "
+"robô..."
+msgstr ""
+
+#: templates/refinador.html:74 templates/refinador.html:92
+msgid "Pedir ajuda ao Professor IA"
+msgstr ""
+
+#: templates/refinador.html:81
+msgid "PROFESSOR IA"
+msgstr ""
+
+#: templates/refinador.html:91
+msgid "Professor pensando..."
+msgstr ""
+
+#: templates/refinador.html:93
+msgid ""
+"Ops! O professor não conseguiu responder agora. Tente de novo em "
+"instantes!"
+msgstr ""
+

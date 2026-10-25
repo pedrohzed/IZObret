@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="{{ 'pt-BR' if idioma == 'pt' else 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Refinador Científico - IZObret') }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/logo-reduzida.png') }}" alt="IZObret">
+                </div>
+                <nav class="menu">
+                    <a href="/" class="menu-link">{{ _('Início') }}</a>
+                    <a href="/faiscas" class="menu-link">{{ _('Máquina de Faíscas') }}</a>
+                    <a href="/refinador" class="menu-link ativo">{{ _('Método Científico') }}</a>
+                    <a href="#" class="menu-link">{{ _('Missões e Canvas') }}</a>
+                </nav>
+            </div>
+
+            <div class="navbar-direita">
+                <div class="seletor-idioma">
+                    <a href="/idioma/pt" class="idioma-link {% if idioma == 'pt' %}ativo{% endif %}">PT</a>
+                    <a href="/idioma/en" class="idioma-link {% if idioma == 'en' %}ativo{% endif %}">EN</a>
+                </div>
+                <a href="#" class="btn-oficina">{{ _('Minha Oficina') }}</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="faiscas-hero">
+            <span class="badge-amarela">{{ _('ETAPA 2: REFINADOR CIENTÍFICO') }}</span>
+            <h1 class="faiscas-titulo">{{ _('Caderno de Hipóteses') }}</h1>
+            <p class="faiscas-subtitulo">{{ _('Transforme a sua faísca em um projeto de verdade com a ajuda do Método Científico.') }}</p>
+        </section>
+
+        <section class="refinador-container">
+            <div class="ideia-sorteada-box">
+                <span class="badge-azul">{{ _('SUA IDEIA SORTEADA') }}</span>
+                <div class="ideia-tags">
+                    <span class="tag-item"><strong>{{ _('Foco:') }}</strong> {{ foco or _('Livre') }}</span>
+                    <span class="tag-item"><strong>{{ _('Objeto:') }}</strong> {{ objeto or '—' }}</span>
+                    <span class="tag-item"><strong>{{ _('Ação:') }}</strong> {{ acao or '—' }}</span>
+                    <span class="tag-item"><strong>{{ _('Desafio:') }}</strong> {{ desafio or '—' }}</span>
+                </div>
+            </div>
+
+            <div class="formulario-cientifico">
+                <div class="campo-grupo">
+                    <label for="hipotese" class="texto-azul">
+                        <strong>{{ _('Qual é a sua hipótese?') }}</strong>
+                    </label>
+                    <p class="campo-dica">{{ _('O que você acha que vai acontecer se construirmos essa invenção?') }}</p>
+                    <textarea id="hipotese" rows="3" placeholder="{{ _('Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para os peixes em poucas semanas...') }}"></textarea>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="teste" class="texto-laranja">
+                        <strong>{{ _('Como podemos testar isso?') }}</strong>
+                    </label>
+                    <p class="campo-dica">{{ _('Qual teste prático ou experimento simples podemos fazer?') }}</p>
+                    <textarea id="teste" rows="3" placeholder="{{ _('Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do robô...') }}"></textarea>
+                </div>
+
+                <button id="btn-pedir" class="btn-primario btn-pedir" type="button">
+                    {{ _('Pedir ajuda ao Professor IA') }}
+                </button>
+            </div>
+
+            <div id="professor" class="professor-resposta oculto">
+                <div class="professor-topo">
+                    <span class="professor-icone">🧑‍🔬</span>
+                    <span class="badge-azul">{{ _('PROFESSOR IA') }}</span>
+                </div>
+                <p id="p-elogio" class="professor-elogio"></p>
+                <ul id="p-perguntas" class="professor-perguntas"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script id="dados-textos" type="application/json">
+        {
+            "pensando": {{ _('Professor pensando...')|tojson }},
+            "botao": {{ _('Pedir ajuda ao Professor IA')|tojson }},
+            "erro": {{ _('Ops! O professor não conseguiu responder agora. Tente de novo em instantes!')|tojson }}
+        }
+    </script>
+    <script>
+        const dados = {
+            foco: {{ foco|tojson }},
+            objeto: {{ objeto|tojson }},
+            acao: {{ acao|tojson }},
+            desafio: {{ desafio|tojson }}
+        };
+        const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
+    </script>
+    <script src="{{ url_for('static', filename='refinador.js') }}"></script>
+</body>
+</html>
+

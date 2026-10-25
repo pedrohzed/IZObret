@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="{{ 'pt-BR' if idioma == 'pt' else 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Máquina de Faíscas IZObret') }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='images/logo-reduzida.png') }}" alt="IZObret">
+                </div>
+                <nav class="menu">
+                    <a href="/" class="menu-link">{{ _('Início') }}</a>
+                    <a href="/faiscas" class="menu-link ativo">{{ _('Máquina de Faíscas') }}</a>
+                    <a href="/refinador" class="menu-link">{{ _('Método Científico') }}</a>
+                    <a href="#" class="menu-link">{{ _('Missões e Canvas') }}</a>
+                </nav>
+            </div>
+
+            <div class="navbar-direita">
+                <div class="seletor-idioma">
+                    <a href="/idioma/pt" class="idioma-link {% if idioma == 'pt' %}ativo{% endif %}">PT</a>
+                    <a href="/idioma/en" class="idioma-link {% if idioma == 'en' %}ativo{% endif %}">EN</a>
+                </div>
+                <a href="#" class="btn-oficina">{{ _('Minha Oficina') }}</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="faiscas-hero">
+            <span class="badge-amarela">{{ _('ETAPA 1: FAÍSCA DE IDEIA') }}</span>
+            <h1 class="faiscas-titulo">{{ _('A máquina de Faíscas') }}</h1>
+            <p class="faiscas-subtitulo">{{ _('Gire a alavanca! Combine elementos improváveis para inventar algo inovador.') }}</p>
+        </section>
+
+        <section class="maquina-container">
+            <div class="maquina-filtros">
+                <label for="foco" class="texto-azul"><strong>{{ _('Qual o foco da invenção hoje?') }}</strong></label>
+                <select id="foco" class="select-foco">
+                    <option value="ods">{{ _('Problemas Sociais (ODS da ONU)') }}</option>
+                    <option value="energia">{{ _('Soluções Energéticas & Sustentabilidade') }}</option>
+                    <option value="acessibilidade">{{ _('Acessibilidade e Inclusão') }}</option>
+                    <option value="jogos">{{ _('Jogos') }}</option>
+                </select>
+                <div class="caixa-tooltip">
+                    <a href="/ods" class="link-ods">{{ _('O que são as ODS?') }}</a>
+                    <span class="texto-popup">{{ _('São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber mais!') }}</span>
+                </div>
+            </div>
+
+            <div class="maquina-slots">
+                <div class="slot">
+                    <h3 class="slot-titulo texto-azul">{{ _('Objeto') }}</h3>
+                    <div class="slot-visor">
+                        <p class="slot-resultado">?</p>
+                    </div>
+                </div>
+                <div class="slot">
+                    <h3 class="slot-titulo texto-laranja">{{ _('Ação') }}</h3>
+                    <div class="slot-visor">
+                        <p class="slot-resultado">?</p>
+                    </div>
+                </div>
+                <div class="slot">
+                    <h3 class="slot-titulo texto-cinza">{{ _('Desafio') }}</h3>
+                    <div class="slot-visor">
+                        <p class="slot-resultado">?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="maquina-controles">
+                <button class="alavanca" id="alavanca" aria-label="{{ _('Puxar alavanca') }}">
+                    <span class="alavanca-haste">
+                        <span class="alavanca-bola"></span>
+                    </span>
+                    <span class="alavanca-base"></span>
+                </button>
+                <p class="alavanca-legenda">{{ _('Puxe a alavanca!') }}</p>
+            </div>
+
+            <div class="maquina-acoes-refinar">
+                <button id="btn-ir-refinar" class="btn-primario oculto" type="button">
+                    {{ _('Refinar esta ideia') }} &rarr;
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-marca">
+            <strong>IZObret</strong>
+            <p>{{ _('Uma incubadora de ideias para jovens inventores.') }}</p>
+        </div>
+
+        <nav class="rodape-links" aria-label="{{ _('Redes sociais') }}">
+            <a href="https://instagram.com/pedrohazevdo" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/pedrohzed" target="_blank" rel="noopener noreferrer">Github</a>
+        </nav>
+    </footer>
+    <script id="dados-textos" type="application/json">
+        {
+            "erro1": {{ _('Erro na')|tojson }},
+            "erro2": {{ _('Conexão')|tojson }},
+            "tente1": {{ _('Tente')|tojson }},
+            "tente2": {{ _('Novamente')|tojson }}
+        }
+    </script>
+    <script src="{{ url_for('static', filename='faiscas.js') }}"></script>
+</body>
+</html>

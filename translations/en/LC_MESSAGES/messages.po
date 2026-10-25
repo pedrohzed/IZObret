@@ -1,0 +1,606 @@
+# English translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-10-25 16:55-0300\n"
+"PO-Revision-Date: 2026-10-25 14:26-0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: templates/faiscas.html:6
+msgid "Máquina de Faíscas IZObret"
+msgstr "IZObret Spark Machine"
+
+#: templates/faiscas.html:21 templates/index.html:25
+#: templates/refinador.html:21
+msgid "Início"
+msgstr "Home"
+
+#: templates/faiscas.html:22 templates/index.html:26 templates/index.html:65
+#: templates/refinador.html:22
+msgid "Máquina de Faíscas"
+msgstr "Spark Machine"
+
+#: templates/faiscas.html:23 templates/index.html:27
+#: templates/refinador.html:23
+msgid "Método Científico"
+msgstr "Scientific Method"
+
+#: templates/faiscas.html:24 templates/index.html:28 templates/index.html:97
+#: templates/refinador.html:24
+msgid "Missões e Canvas"
+msgstr "Missions & Canvas"
+
+#: templates/faiscas.html:33 templates/index.html:37
+#: templates/refinador.html:33
+msgid "Minha Oficina"
+msgstr "My Workshop"
+
+#: templates/faiscas.html:40
+msgid "ETAPA 1: FAÍSCA DE IDEIA"
+msgstr "STEP 1: SPARK OF AN IDEA"
+
+#: templates/faiscas.html:41
+msgid "A máquina de Faíscas"
+msgstr "The Spark Machine"
+
+#: templates/faiscas.html:42
+msgid ""
+"Gire a alavanca! Combine elementos improváveis para inventar algo "
+"inovador."
+msgstr "Pull the lever! Combine unlikely elements to invent something innovative."
+
+#: templates/faiscas.html:47
+msgid "Qual o foco da invenção hoje?"
+msgstr "What is your invention focus today?"
+
+#: templates/faiscas.html:49
+msgid "Problemas Sociais (ODS da ONU)"
+msgstr "Social Problems (UN SDGs)"
+
+#: templates/faiscas.html:50
+msgid "Soluções Energéticas & Sustentabilidade"
+msgstr "Energy Solutions & Sustainability"
+
+#: templates/faiscas.html:51
+msgid "Acessibilidade e Inclusão"
+msgstr "Accessibility & Inclusion"
+
+#: templates/faiscas.html:52
+msgid "Jogos"
+msgstr "Games"
+
+#: templates/faiscas.html:55
+msgid "O que são as ODS?"
+msgstr "What are the SDGs?"
+
+#: templates/faiscas.html:56
+msgid ""
+"São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber "
+"mais!"
+msgstr "There are 17 Sustainable Development Goals. Click here to learn more!"
+
+#: templates/faiscas.html:62
+msgid "Objeto"
+msgstr "Object"
+
+#: templates/faiscas.html:68
+msgid "Ação"
+msgstr "Action"
+
+#: templates/faiscas.html:74
+msgid "Desafio"
+msgstr "Challenge"
+
+#: templates/faiscas.html:82
+msgid "Puxar alavanca"
+msgstr "Pull the lever"
+
+#: templates/faiscas.html:88
+msgid "Puxe a alavanca!"
+msgstr "Pull the lever!"
+
+#: templates/faiscas.html:93
+msgid "Refinar esta ideia"
+msgstr "Refine this idea"
+
+#: templates/faiscas.html:101
+msgid "Erro na"
+msgstr "Connection"
+
+#: templates/faiscas.html:102
+msgid "Conexão"
+msgstr "error"
+
+#: templates/faiscas.html:103
+msgid "Tente"
+msgstr "Try"
+
+#: templates/faiscas.html:104
+msgid "Novamente"
+msgstr "Again"
+
+#: templates/index.html:43
+msgid "INCUBADORA DE IDEIAS PARA CRIANÇAS DE 8 A 14 ANOS"
+msgstr "IDEA INCUBATOR FOR KIDS AGES 8 TO 14"
+
+#: templates/index.html:44
+msgid "Transforma a tua curiosidade na"
+msgstr "Turn your curiosity into"
+
+#: templates/index.html:44
+msgid "próxima grande invenção"
+msgstr "the world's next big invention"
+
+#: templates/index.html:44
+msgid "do mundo!"
+msgstr "!"
+
+#: templates/index.html:45
+msgid ""
+"Você não sabe por onde começar? Nós te ajudamos a descobrir, planejar e "
+"amadurecer suas ideias como um verdadeiro cientista."
+msgstr ""
+"Don't know where to start? We help you discover, plan, and mature your "
+"ideas like a true scientist."
+
+#: templates/index.html:49
+msgid "Ligar Máquina de Faíscas"
+msgstr "Start the Spark Machine"
+
+#: templates/index.html:50
+msgid "Conhecer o Método Científico"
+msgstr "Learn the Scientific Method"
+
+#: templates/index.html:55
+msgid "COMO FUNCIONA?"
+msgstr "HOW IT WORKS"
+
+#: templates/index.html:56
+msgid "O Laboratório de 3 Etapas"
+msgstr "The 3-Step Lab"
+
+#: templates/index.html:57
+msgid ""
+"Não precisa ter tudo pronto para começar. Siga as 3 estações interativas "
+"e desenvolva sua ideia passo a passo."
+msgstr ""
+"You don't need everything ready to start. Follow the 3 interactive "
+"stations and develop your idea step by step."
+
+#: templates/index.html:64
+msgid "Gerar Ideia"
+msgstr "Generate Idea"
+
+#: templates/index.html:66
+msgid ""
+"Misture temas diferentes e gere ideias malucas e inovadoras para começar "
+"a sua invenção."
+msgstr ""
+"Mix different themes and generate wild, innovative ideas to start your "
+"invention."
+
+#: templates/index.html:68
+msgid "Combinação do Dia:"
+msgstr "Combo of the Day:"
+
+#: templates/index.html:70
+msgid "Videogames"
+msgstr "Video Games"
+
+#: templates/index.html:70
+msgid "Natureza"
+msgstr "Nature"
+
+#: templates/index.html:73
+msgid "Sortear Ideia Agora"
+msgstr "Roll an Idea Now"
+
+#: templates/index.html:80
+msgid "Pesquisar Ideia"
+msgstr "Research Idea"
+
+#: templates/index.html:81
+msgid "Refinador Científico"
+msgstr "Scientific Refiner"
+
+#: templates/index.html:82
+msgid ""
+"Transforme uma simples faísca em um projeto estruturado. Formule "
+"perguntas e crie hipóteses."
+msgstr ""
+"Turn a simple spark into a structured project. Formulate questions and "
+"create hypotheses."
+
+#: templates/index.html:84
+msgid "Método de Detetive"
+msgstr "Detective Method"
+
+#: templates/index.html:86
+msgid "Perguntas"
+msgstr "Questions"
+
+#: templates/index.html:86
+msgid "Hipóteses"
+msgstr "Hypotheses"
+
+#: templates/index.html:86
+msgid "Testes"
+msgstr "Tests"
+
+#: templates/index.html:89
+msgid "Abrir caderno de hipóteses"
+msgstr "Open hypothesis notebook"
+
+#: templates/index.html:96
+msgid "Testar Ideia"
+msgstr "Test Idea"
+
+#: templates/index.html:98
+msgid ""
+"Divida a sua invenção em pequenas tarefas fáceis de concluir. Organize o "
+"que falta fazer e acompanhe o progresso."
+msgstr ""
+"Break down your invention into bite-sized tasks. Organize what's left to "
+"do and track your progress."
+
+#: templates/index.html:100
+msgid "Progresso do Protótipo:"
+msgstr "Prototype Progress:"
+
+#: templates/index.html:105
+msgid "Abrir Minha Bancada"
+msgstr "Open My Workbench"
+
+#: templates/refinador.html:6
+msgid "Refinador Científico - IZObret"
+msgstr "Scientific Refiner - IZObret"
+
+#: templates/refinador.html:40
+msgid "ETAPA 2: REFINADOR CIENTÍFICO"
+msgstr "STEP 2: SCIENTIFIC REFINER"
+
+#: templates/refinador.html:41
+msgid "Caderno de Hipóteses"
+msgstr "Hypothesis Notebook"
+
+#: templates/refinador.html:42
+msgid ""
+"Transforme a sua faísca em um projeto de verdade com a ajuda do Método "
+"Científico."
+msgstr ""
+"Turn your spark into a real project with the help of the Scientific "
+"Method."
+
+#: templates/refinador.html:47
+msgid "SUA IDEIA SORTEADA"
+msgstr "YOUR DRAWN IDEA"
+
+#: templates/refinador.html:49
+msgid "Foco:"
+msgstr "Focus:"
+
+#: templates/refinador.html:49
+msgid "Livre"
+msgstr "Free"
+
+#: templates/refinador.html:50
+msgid "Objeto:"
+msgstr "Object:"
+
+#: templates/refinador.html:51
+msgid "Ação:"
+msgstr "Action:"
+
+#: templates/refinador.html:52
+msgid "Desafio:"
+msgstr "Challenge:"
+
+#: templates/refinador.html:59
+msgid "Qual é a sua hipótese?"
+msgstr "What is your hypothesis?"
+
+#: templates/refinador.html:61
+msgid "O que você acha que vai acontecer se construirmos essa invenção?"
+msgstr "What do you think will happen if we build this invention?"
+
+#: templates/refinador.html:62
+msgid ""
+"Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para "
+"os peixes em poucas semanas..."
+msgstr ""
+"Ex: If we use a robot to clean the river, the water will become safe "
+"for fish in a few weeks..."
+
+#: templates/refinador.html:67
+msgid "Como podemos testar isso?"
+msgstr "How can we test this?"
+
+#: templates/refinador.html:69
+msgid "Qual teste prático ou experimento simples podemos fazer?"
+msgstr "What practical test or simple experiment can we do?"
+
+#: templates/refinador.html:70
+msgid ""
+"Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do "
+"robô..."
+msgstr ""
+"Ex: Collect a water sample before and after passing through the robot's "
+"filter..."
+
+#: templates/refinador.html:74 templates/refinador.html:92
+msgid "Pedir ajuda ao Professor IA"
+msgstr "Ask the AI Professor"
+
+#: templates/refinador.html:81
+msgid "PROFESSOR IA"
+msgstr "AI PROFESSOR"
+
+#: templates/refinador.html:91
+msgid "Professor pensando..."
+msgstr "Professor thinking..."
+
+#: templates/refinador.html:93
+msgid ""
+"Ops! O professor não conseguiu responder agora. Tente de novo em "
+"instantes!"
+msgstr ""
+"Oops! The professor couldn't answer right now. Try again in a few moments!"
+
+#~ msgid "d"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
+
+#~ msgid "Windows error: {error}"
+#~ msgstr ""
+
+#~ msgid "deprecated"
+#~ msgstr ""
+
+#~ msgid "Options"
+#~ msgstr ""
+
+#~ msgid "Positional arguments"
+#~ msgstr ""
+
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated.{extra_message}"
+#~ msgstr ""
+
+#~ msgid "Aborted!"
+#~ msgstr ""
+
+#~ msgid "Commands"
+#~ msgstr ""
+
+#~ msgid "Missing command."
+#~ msgstr ""
+
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
+
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid ""
+#~ "DeprecationWarning: The {param_type} {name!r} "
+#~ "is deprecated.{extra_message}"
+#~ msgstr ""
+
+#~ msgid "Name '{name}' defined twice"
+#~ msgstr ""
+
+#~ msgid "Boolean option {decl!r} cannot use the same flag for true/false."
+#~ msgstr ""
+
+#~ msgid "Could not determine name for option with declarations {decls!r}"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "No options defined but a name was"
+#~ " passed ({name}). Did you mean to "
+#~ "declare an argument instead? Did you "
+#~ "mean to pass '--{name}'?"
+#~ msgstr ""
+
+#~ msgid "env var: {var}"
+#~ msgstr ""
+
+#~ msgid "default: {default}"
+#~ msgstr ""
+
+#~ msgid "required"
+#~ msgstr ""
+
+#~ msgid "(dynamic)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Arguments take exactly one parameter "
+#~ "declaration, got {length}: {decls}."
+#~ msgstr ""
+
+#~ msgid "Do you want to continue?"
+#~ msgstr ""
+
+#~ msgid "Confirm the action without prompting."
+#~ msgstr ""
+
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
+
+#~ msgid "Show the version and exit."
+#~ msgstr ""
+
+#~ msgid "Show this message and exit."
+#~ msgstr ""
+
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Did you mean one of: {possibilities}?)"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Error: {message}"
+#~ msgstr ""
+
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
+
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
+
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
+
+#~ msgid "Missing argument"
+#~ msgstr ""
+
+#~ msgid "Missing option"
+#~ msgstr ""
+
+#~ msgid "Missing parameter"
+#~ msgstr ""
+
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
+
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
+
+#~ msgid "No such option {name!r}."
+#~ msgstr ""
+
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
+
+#~ msgid "unknown error"
+#~ msgstr ""
+
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
+
+#~ msgid "Usage:"
+#~ msgstr ""
+
+#~ msgid "Invalid start character for option ({option})"
+#~ msgstr ""
+
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
+
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
+
+#~ msgid "Repeat for confirmation"
+#~ msgstr ""
+
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
+
+#~ msgid "Error: invalid input"
+#~ msgstr ""
+
+#~ msgid "Unknown color {colour!r}"
+#~ msgstr ""
+
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Choice({choices})"
+#~ msgstr ""
+
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
+
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid boolean. Recognized values: {states}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
+
+#~ msgid "file"
+#~ msgstr ""
+
+#~ msgid "directory"
+#~ msgstr ""
+
+#~ msgid "path"
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a directory."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not executable."
+#~ msgstr ""
+
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Unknown standard stream '{name}'"
+#~ msgstr ""
+
