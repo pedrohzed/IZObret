@@ -18,6 +18,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
+msgid "ODS da ONU - IZObret"
+msgstr "UN SDGs - IZObret"
+
+msgid "OBJETIVOS GLOBAIS"
+msgstr "GLOBAL GOALS"
+
+msgid "O que são as ODS?"
+msgstr "What are the SDGs?"
+
+msgid ""
+"Em 2015, a ONU reuniu 17 metas para tornar o mundo melhor até 2030. São os "
+"Objetivos de Desenvolvimento Sustentável, e a sua invenção pode ajudar a "
+"cumprir uma delas!"
+msgstr ""
+"In 2015, the UN set 17 goals to make the world better by 2030. They are the "
+"Sustainable Development Goals, and your invention can help achieve one of them!"
+
+msgid "Escolha uma ODS que importa para você  e transforma-a em uma invenção."
+msgstr "Pick an SDG that matter to you and turn it into an invention."
+
+msgid "Erradicação da Pobreza"
+msgstr "No Poverty"
+
+msgid "Fome Zero e Agricultura Sustentável"
+msgstr "Zero Hunger and sustainable agriculture"
+
+msgid "Saúde e Bem-Estar"
+msgstr "Good Health and Well-Being"
+
+msgid "Educação de Qualidade"
+msgstr "Quality Education"
+
+msgid "Igualdade de Gênero"
+msgstr "Gender equity"
+
+msgid "Água Potável"
+msgstr "Clean Water and Saniitation"
+
+msgid "Energia Limpa e Acessível"
+msgstr "Affordable and Clean Energy"
+
+msgid "Trabalho Decente e Crescimento Econômico"
+msgstr "Decent Work and Economic Growth"
+
+msgid "Indústria, Inovação e Infraestrutura"
+msgstr "Industry, Innovation and Infraestructure"
+
+msgid "Redução das Desigualdades"
+msgstr "Reduced Inequalities"
+
+msgid "Cidades e Comunidades Sustentáveis"
+msgstr "Sustainable Cities and Communities"
+
+msgid "Consumo e Produção Responsáveis"
+msgstr "Responsible Consumption and Production"
+
+msgid "Ação Contra a Mudança do Clima"
+msgstr "Climate Action"
+
+msgid "Vida na Água"
+msgstr "Life Below Water"
+
+msgid "Vida Terrestre"
+msgstr "Life on Land"
+
+msgid "Paz, Justiça e Instituições Eficazes"
+msgstr "Peace, Justice and Strong Institutions"
+
+msgid "Parcerias e Meios de Implamentação"
+msgstr "Partnerships for the Goals"
+
 #: templates/faiscas.html:6
 msgid "Máquina de Faíscas IZObret"
 msgstr "IZObret Spark Machine"
@@ -464,78 +535,3 @@ msgid ""
 "Ops! O professor não conseguiu responder agora. Tente de novo em "
 "instantes!"
 msgstr "Oops! The professor couldn't answer right now. Try again in a few moments!"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

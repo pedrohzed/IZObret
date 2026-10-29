@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ 'pt-BR' if idioma == 'pt' else 'en' }}">
+<html lang="{{ 'pt-BR' if idoma == 'pt' else 'en'}}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ _('O que são as ODS? - IZObret') }}</title>
+    <title>{{ _('ODS da ONU - IZObret') }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
@@ -16,92 +16,64 @@
         <div class="navbar-container">
             <div class="navbar-left">
                 <div class="logo">
-                    <img src="{{ url_for('static', filename='images/logo-reduzida.png') }}" alt="IZObret">
+                    <img src="{{ url_for('static', filename='images/logo-reduzida.png')}}" alt="IZObret">
                 </div>
                 <nav class="menu">
                     <a href="/" class="menu-link">{{ _('Início') }}</a>
                     <a href="/faiscas" class="menu-link">{{ _('Máquina de Faíscas') }}</a>
                     <a href="/refinador" class="menu-link">{{ _('Método Científico') }}</a>
-                    <a href="#" class="menu-link">{{ _('Missões e Canvas') }}</a>
+                    <a href="#" class="menu-link" title="{{ _('Em breve') }}" aria-disabled="true">{{ _('Missões e Canvas') }}</a>
                 </nav>
             </div>
-
+            
             <div class="navbar-direita">
                 <div class="seletor-idioma">
                     <a href="/idioma/pt" class="idioma-link {% if idioma == 'pt' %}ativo{% endif %}">PT</a>
                     <a href="/idioma/en" class="idioma-link {% if idioma == 'en' %}ativo{% endif %}">EN</a>
                 </div>
-                <a href="#" class="btn-oficina">{{ _('Minha Oficina') }}</a>
+                <a href="#" class="btn-oficina" title="{{ _('Em breve') }}" aria-disabled="true">{{ _('Minha Oficina') }}</a>
             </div>
         </div>
     </header>
 
+    {% set ods = [
+        (1, _('Erradicação da Pobreza'),            '#e5243b'),
+        (2, _('Fome Zero e Agricultura Sustentável'), '#a07a10'),
+        (3, _('Saúde e Bem-Estar'),                  '#4c9f38'),
+        (4, _('Educação de Qualidade'),              '#c5192d'),
+        (5, _('Igualdade de Gênero'),                '#ff3a21'),
+        (6, _('Água Potável e Saneamento'),          '#0a8fb8'),
+        (7, _('Energia Limpa e Acessível'),          '#b8860b'),
+        (8, _('Trabalho Decente e Crescimento Econômico'), '#a21942'),
+        (9, _('Indústria, Inovação e Infraestrutura'), '#e0541e'),
+        (10, _('Redução das Desigualdades'),          '#dd1367'),
+        (11, _('Cidades e Comunidades Sustentáveis'), '#d9822b'),
+        (12, _('Consumo e Produção Reponsáveis'),     '#8a6a1f'),
+        (13, _('Ação Contra a mudança do Clima'),     '#3f7e44'),
+        (14, _('Vida na Água'),                       '#0a97d9'),
+        (15, _('Vida Terrestre'),                     '#3a8a2a'),
+        (16, _('Paz, Justiça e Instituições Eficazes'), '#00689d'),
+        (17, _('Parcerias e Meios de Implementação'), '#19486a')
+    ] %}
     <main class="container">
         <section class="faiscas-hero">
-            <span class="badge-amarela">{{ _('GUIA DO INVENTOR') }}</span>
-            <h1 class="faiscas-titulo">{{ _('O que são as ODS da ONU?') }}</h1>
-            <p class="faiscas-subtitulo">
-                {{ _('Os 17 Objetivos de Desenvolvimento Sustentável (ODS) são metas globais criadas pelas Nações Unidas para construir um planeta mais justo, saudável e sustentável até 2030.') }}
-            </p>
+            <span class="badge-amarela">{{ _('OBJETIVOS GLOBAIS') }}</span>
+            <h1 class="faiscas-titulo">{{ _('O que são as ODS?')}}</h1>
+            <p class="faiscas-subtitulo">{{ _('Em 2015, a ONU reuniu 17 metas para tornar o mundo melhor até 2030. Estes são os Objetivos de Desenvolvimento Sustentável, e a sua invenção pode ajudar a cumprir uma ou mais delas!') }}</p>
+        </section>
+        
+        <section class="ods-grade">
+            {% for numero, nome, cor in ods %}
+            <article class="ods-cartao">
+                <span class="ods-numero" style="background-color: {{ cor }};">{{ numero }}</span>
+                <h2 class="ods-nome">{{ nome }}</h2>
+            </article>
+            {% endfor %}
         </section>
 
-        <section class="secao-etapas">
-            <div class="cabecalho-secao">
-                <span class="badge-azul">{{ _('INSPIRAÇÃO PARA INVENTORES') }}</span>
-                <h2>{{ _('Grandes Desafios Mundiais') }}</h2>
-                <p>{{ _('Toda grande invenção começa com um problema real. Veja como as ODS podem guiar suas ideias:') }}</p>
-            </div>
-
-            <div class="grade-cartoes">
-                <div class="cartao cartao-azul">
-                    <div class="cartao-topo">
-                        <span class="numero-etapa bg-azul">6</span>
-                    </div>
-                    <span class="etiqueta-cartao texto-azul">{{ _('ODS 6') }}</span>
-                    <h3>{{ _('Água Potável e Saneamento') }}</h3>
-                    <p>{{ _('Como garantir que rios e oceanos fiquem limpos e todas as pessoas tenham água potável?') }}</p>
-                    <div class="mini-preview">
-                        <span class="preview-titulo">{{ _('Exemplo de Invenção:') }}</span>
-                        <div class="tags-preview">
-                            <span class="tag-item">{{ _('Robôs coletores de lixo nos rios') }}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cartao cartao-laranja">
-                    <div class="cartao-topo">
-                        <span class="numero-etapa bg-laranja">7</span>
-                    </div>
-                    <span class="etiqueta-cartao texto-laranja">{{ _('ODS 7') }}</span>
-                    <h3>{{ _('Energia Limpa e Acessível') }}</h3>
-                    <p>{{ _('Como criar novas maneiras de gerar e armazenar energia sem poluir a atmosfera?') }}</p>
-                    <div class="mini-preview">
-                        <span class="preview-titulo">{{ _('Exemplo de Invenção:') }}</span>
-                        <div class="tags-preview">
-                            <span class="tag-item">{{ _('Mochilas que geram energia solar') }}</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cartao cartao-roxo">
-                    <div class="cartao-topo">
-                        <span class="numero-etapa bg-cinza">11</span>
-                    </div>
-                    <span class="etiqueta-cartao texto-cinza">{{ _('ODS 11') }}</span>
-                    <h3>{{ _('Cidades Sustentáveis') }}</h3>
-                    <p>{{ _('Como tornar bairros e cidades mais verdes, seguros e acessíveis para todas as pessoas?') }}</p>
-                    <div class="mini-preview">
-                        <span class="preview-titulo">{{ _('Exemplo de Invenção:') }}</span>
-                        <div class="tags-preview">
-                            <span class="tag-item">{{ _('Sensores de reciclagem comunitária') }}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-botoes" style="margin-top: 48px;">
-                <a href="/faiscas" class="btn-primario">{{ _('Voltar para a Máquina de Faíscas') }} &rarr;</a>
-            </div>
+        <section class="ods-chamada">
+            <p>{{ _('Escolha uma ODS que importa para você e tranforme-a em uma invenção.') }}</p>
+            <a href="/faiscas" class="btn-primario">{{ _('Ligar Máquina de Faíscas') }} &rarr;</a>
         </section>
     </main>
 
@@ -112,7 +84,7 @@
                 <p>{{ _('Uma incubadora de ideias para jovens inventores.') }}</p>
             </div>
 
-            <nav class="rodape-links" aria-label="{{ _('Redes sociais') }}">
+            <nav class="rodape-links" aria-label="{{ _('Redes Sociais') }}">
                 <a href="https://instagram.com/pedrohazevdo" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a href="https://github.com/pedrohzed" target="_blank" rel="noopener noreferrer">Github</a>
             </nav>
