@@ -98,7 +98,7 @@ Exemplo: {{"objeto": "Robô submarino", "acao": "Purificar", "desafio": "Água p
 
     try:
         resposta = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model="gemini-3.5-flash-lite",
             contents=instrucao,
             config=types.GenerateContentConfig(response_mime_type="application/json"),
         )
