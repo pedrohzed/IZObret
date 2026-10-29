@@ -103,7 +103,7 @@ main { flex: 1; }
     background-color: #f2f3ff;
     padding: 4px;
     border-radius: 12px;
-    gap: 2px;
+    gap: 4px;
 }
 
 .idioma-link {
@@ -264,8 +264,8 @@ main { flex: 1; }
     border-radius: 16px;
     text-decoration: none;
     transition: 0.1s;
-    border-bottom: 5px solid #c4c5da;
     border: 2px solid #dde2f7;
+    border-bottom: 5px solid #c4c5da;
 }
 
 .btn-secundario:active {
@@ -469,14 +469,6 @@ main { flex: 1; }
     margin-bottom: 30px;
 }
 
-.agrupa-filtro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
 .select-foco {
     padding: 10px 15px;
     font-family: 'Nunito Sans', sans-serif;
@@ -602,33 +594,6 @@ main { flex: 1; }
     margin-top: 20px;
 }
 
-.maquina-controles .btn-principal {
-    background-color: #e74c3c;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-top: 30px;
-    box-shadow: 0 10px 0 #c0392b, 0 15px 20px rgba(0,0,0,0.4);
-    transition: all 0.1s ease;
-}
-
-.btn-principal:active {
-    transform: translateY(10px);
-    box-shadow: 0 0px 0 #c0392b, 0 5px 10px rgba(0,0,0,0.4);
-}
-
-.btn-principal:disabled {
-    background-color: #95a5a6;
-    box-shadow: 0 10px 0 #7f8c8d;
-    transform: translateY(0);
-    cursor: not-allowed;
-}
-
 @keyframes pulsar {
     0% {
         transform: scale(1);
@@ -712,29 +677,6 @@ main { flex: 1; }
     font-family: 'Russo One', sans-serif;
     font-size: 1.1rem;
     color: #434657;
-}
-
-.seletor-idioma {
-    display: flex;
-    background-color: #f2f3ff;
-    padding: 4px;
-    border-radius: 12px;
-    gap: 4px;
-}
-
-.idioma-link {
-    text-decoration: none;
-    color: #434657;
-    font-weight: 800;
-    font-size: 13px;
-    padding: 6px 12px;
-    border-radius: 8px;
-}
-
-.idioma-link.ativo {
-    background-color: #0047ff;
-    color: #ffffff;
-    box-shadow: 0 2px 0 #001257;
 }
 
 .maquina-acoes-refinar {
@@ -860,3 +802,7 @@ main { flex: 1; }
     gap: 10px;
     line-height: 1.5;
 }
+
+.texto-azul { color: #0047ff; }
+.texto-laranja { color: #af3600;}
+.texto-cinza { color: #6b7089; }

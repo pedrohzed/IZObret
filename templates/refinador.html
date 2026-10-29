@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
 </head>
 <body>
@@ -85,7 +86,19 @@
             </div>
         </section>
     </main>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-marca">
+                <strong>IZObret</strong>
+                <p>{{ _('Uma incubadora de ideias para jovens inventores.') }}</p>
+            </div>
 
+            <nav class="rodape-links" aria-label="{{ _('Redes sociais') }}">
+                <a href="https://instagram.com/pedrohazevdo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/pedrohzed" target="_blank" rel="noopener noreferrer">Github</a>
+            </nav>
+        </div>
+    </footer>
     <script id="dados-textos" type="application/json">
         {
             "pensando": {{ _('Professor pensando...')|tojson }},
@@ -93,14 +106,13 @@
             "erro": {{ _('Ops! O professor não conseguiu responder agora. Tente de novo em instantes!')|tojson }}
         }
     </script>
-    <script>
-        const dados = {
-            foco: {{ foco|tojson }},
-            objeto: {{ objeto|tojson }},
-            acao: {{ acao|tojson }},
-            desafio: {{ desafio|tojson }}
-        };
-        const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
+    <script id="dados-ideia" type="application/json">
+        {
+            "foco": {{ foco|tojson }},
+            "objeto": {{ objeto|tojson }},
+            "acao": {{ acao|tojson }},
+            "desafio": {{ desafio|tojson }}
+        }
     </script>
     <script src="{{ url_for('static', filename='refinador.js') }}"></script>
 </body>

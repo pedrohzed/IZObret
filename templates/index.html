@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     
@@ -41,13 +40,14 @@
     <main class="container">
         <section class="hero">
             <span class="badge-amarela">{{ _('INCUBADORA DE IDEIAS PARA CRIANÇAS DE 8 A 14 ANOS') }}</span>
-            <h1 class="hero-titulo">{{ _('Transforma a tua curiosidade na') }} <span class="destaque-onda">{{ _('próxima grande invenção') }}</span> {{ _('do mundo!') }}</h1>
+            {% set destaque %}<span class="destaque-onda">{{ _('próxima grande invenção') }}</span>{% endset %}
+            <h1 class="hero-titulo">{{ _('Transforma a tua curiosidade na %(destaque)s do mundo!', destaque=destaque|safe) }}</h1>
             <p class="hero-subtitulo">{{ _('Você não sabe por onde começar? Nós te ajudamos a descobrir, planejar e amadurecer suas ideias como um verdadeiro cientista.') }}
             </p>
 
             <div class="hero-botoes">
                 <a href="/faiscas" class="btn-primario">{{ _('Ligar Máquina de Faíscas') }}</a>
-                <a href="#" class="btn-secundario">{{ _('Conhecer o Método Científico') }}</a>
+                <a href="/refinador" class="btn-secundario">{{ _('Conhecer o Método Científico') }}</a>
             </div>
         </section>
         <section id="etapas" class="secao-etapas">
@@ -102,11 +102,23 @@
                             <div class="progresso-preenchido"></div>
                         </div>
                     </div>
-                    <span class="link-cartao texto-azul">{{ _('Abrir Minha Bancada') }} &rarr;</span>
+                    <span class="link-cartao texto-cinza">{{ _('Abrir Minha Bancada') }} &rarr;</span>
                 </a>
             </div>
         </section>
     </main>
-    <script src="{{ url_for('static', filename='faiscas.js')}}"></script>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-marca">
+                <strong>IZObret</strong>
+                <p>{{ _('Uma incubadora de ideias para jovens inventores.') }}</p>
+            </div>
+
+            <nav class="rodape-links" aria-label="{{ _('Redes sociais') }}">
+                <a href="https://instagram.com/pedrohazevdo" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://github.com/pedrohzed" target="_blank" rel="noopener noreferrer">Github</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

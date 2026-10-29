@@ -8,7 +8,7 @@ from google.genai import types
 
 load_dotenv()
 app = Flask(__name__)
-app.secret_key = os.getenv("SECRET_KEY")
+app.secret_key = os.getenv("SECRET_KEY", "dev-secret-key-izobret-2026")
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 IDIOMAS = ["pt", "en"]
@@ -44,6 +44,10 @@ def refinador():
     desafio = request.args.get('desafio', '')
     return render_template('refinador.html', foco=foco, objeto=objeto, acao=acao, desafio=desafio)
 
+@app.route('/ods')
+def ods():
+    return render_template('ods.html')
+
 @app.route('/refinar', methods=['POST'])
 def refinar():
     dados = request.get_json() or {}
@@ -75,7 +79,7 @@ Devolva APENAS um JSON neste formato:
         resposta = client.models.generate_content(
             model="gemini-3.5-flash-lite",
             contents=prompt,
-            config=types.GenerateContentConfig(response_mime_type ="application/json"),
+            config=types.GenerateContentConfig(response_mime_type="application/json"),
         )
         return json.loads(resposta.text)
     except Exception as erro:
@@ -85,17 +89,23 @@ Devolva APENAS um JSON neste formato:
 @app.route('/sortear', methods=['POST'])
 def sortear_ideias():
     idioma = "English (US)" if str(get_locale()) == "en" else "português do Brasil"
-    dados = request.json
-    foco = dados.get('foco')
+    dados = request.get_json() or {}
+    foco = dados.get('foco', '')
 
-    instrucao = f"Você é uma máquina de ideias para crianças inventoras.O tema escolhido foi: {foco}.Responda inteiramente em {idioma}.Pense em um problema real sobre esse tema.Responda APENAS com três itens separados por vírgula, nesta ordem: um Objeto Físico, um verbo de Ação, e um desafio a resolver.Exemplo: Robô, Purificar, Água Poluída do Rio."
+    instrucao = f"""Você é uma máquina de ideias para crianças inventoras. O tema escolhido foi: {foco}. Responda INTEIRAMENTE em {idioma}. Devolva APENAS um JSON válido neste formato:
+{{"objeto": "um objeto físico", "acao": "um verbo de ação", "desafio": "um desafio a resolver"}}
+Exemplo: {{"objeto": "Robô submarino", "acao": "Purificar", "desafio": "Água poluída do rio"}}"""
 
-    resposta = client.models.generate_content(
-        model = 'gemini-3.5-flash-lite',
-        contents = instrucao
-    )
-
-    return jsonify({"resultado": resposta.text})
+    try:
+        resposta = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=instrucao,
+            config=types.GenerateContentConfig(response_mime_type="application/json"),
+        )
+        return jsonify(json.loads(resposta.text))
+    except Exception as erro:
+        print("Erro no sorteio:", erro)
+        return jsonify({"erro": True}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 

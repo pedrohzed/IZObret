@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-25 16:55-0300\n"
+"POT-Creation-Date: 2026-10-28 16:07-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,129 +21,136 @@ msgstr ""
 msgid "Máquina de Faíscas IZObret"
 msgstr ""
 
-#: templates/faiscas.html:21 templates/index.html:25
-#: templates/refinador.html:21
+#: templates/faiscas.html:22 templates/index.html:24 templates/ods.html:22
+#: templates/refinador.html:22
 msgid "Início"
 msgstr ""
 
-#: templates/faiscas.html:22 templates/index.html:26 templates/index.html:65
-#: templates/refinador.html:22
+#: templates/faiscas.html:23 templates/index.html:25 templates/index.html:65
+#: templates/ods.html:23 templates/refinador.html:23
 msgid "Máquina de Faíscas"
 msgstr ""
 
-#: templates/faiscas.html:23 templates/index.html:27
-#: templates/refinador.html:23
+#: templates/faiscas.html:24 templates/index.html:26 templates/ods.html:24
+#: templates/refinador.html:24
 msgid "Método Científico"
 msgstr ""
 
-#: templates/faiscas.html:24 templates/index.html:28 templates/index.html:97
-#: templates/refinador.html:24
+#: templates/faiscas.html:25 templates/index.html:27 templates/index.html:97
+#: templates/ods.html:25 templates/refinador.html:25
 msgid "Missões e Canvas"
 msgstr ""
 
-#: templates/faiscas.html:33 templates/index.html:37
-#: templates/refinador.html:33
+#: templates/faiscas.html:34 templates/index.html:36 templates/ods.html:34
+#: templates/refinador.html:34
 msgid "Minha Oficina"
 msgstr ""
 
-#: templates/faiscas.html:40
+#: templates/faiscas.html:41
 msgid "ETAPA 1: FAÍSCA DE IDEIA"
 msgstr ""
 
-#: templates/faiscas.html:41
+#: templates/faiscas.html:42
 msgid "A máquina de Faíscas"
 msgstr ""
 
-#: templates/faiscas.html:42
+#: templates/faiscas.html:43
 msgid ""
 "Gire a alavanca! Combine elementos improváveis para inventar algo "
 "inovador."
 msgstr ""
 
-#: templates/faiscas.html:47
+#: templates/faiscas.html:48
 msgid "Qual o foco da invenção hoje?"
 msgstr ""
 
-#: templates/faiscas.html:49
+#: templates/faiscas.html:50
 msgid "Problemas Sociais (ODS da ONU)"
 msgstr ""
 
-#: templates/faiscas.html:50
+#: templates/faiscas.html:51
 msgid "Soluções Energéticas & Sustentabilidade"
 msgstr ""
 
-#: templates/faiscas.html:51
+#: templates/faiscas.html:52
 msgid "Acessibilidade e Inclusão"
 msgstr ""
 
-#: templates/faiscas.html:52
+#: templates/faiscas.html:53
 msgid "Jogos"
 msgstr ""
 
-#: templates/faiscas.html:55
+#: templates/faiscas.html:56
 msgid "O que são as ODS?"
 msgstr ""
 
-#: templates/faiscas.html:56
+#: templates/faiscas.html:57
 msgid ""
 "São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber "
 "mais!"
 msgstr ""
 
-#: templates/faiscas.html:62
+#: templates/faiscas.html:63
 msgid "Objeto"
 msgstr ""
 
-#: templates/faiscas.html:68
+#: templates/faiscas.html:69
 msgid "Ação"
 msgstr ""
 
-#: templates/faiscas.html:74
+#: templates/faiscas.html:75
 msgid "Desafio"
 msgstr ""
 
-#: templates/faiscas.html:82
+#: templates/faiscas.html:83
 msgid "Puxar alavanca"
 msgstr ""
 
-#: templates/faiscas.html:88
+#: templates/faiscas.html:89
 msgid "Puxe a alavanca!"
 msgstr ""
 
-#: templates/faiscas.html:93
+#: templates/faiscas.html:94
 msgid "Refinar esta ideia"
 msgstr ""
 
-#: templates/faiscas.html:101
+#: templates/faiscas.html:103 templates/index.html:114 templates/ods.html:112
+#: templates/refinador.html:93
+msgid "Uma incubadora de ideias para jovens inventores."
+msgstr ""
+
+#: templates/faiscas.html:106 templates/index.html:117 templates/ods.html:115
+#: templates/refinador.html:96
+msgid "Redes sociais"
+msgstr ""
+
+#: templates/faiscas.html:114
 msgid "Erro na"
 msgstr ""
 
-#: templates/faiscas.html:102
+#: templates/faiscas.html:115
 msgid "Conexão"
 msgstr ""
 
-#: templates/faiscas.html:103
+#: templates/faiscas.html:116
 msgid "Tente"
 msgstr ""
 
-#: templates/faiscas.html:104
+#: templates/faiscas.html:117
 msgid "Novamente"
 msgstr ""
 
-#: templates/index.html:43
+#: templates/index.html:42
 msgid "INCUBADORA DE IDEIAS PARA CRIANÇAS DE 8 A 14 ANOS"
 msgstr ""
 
-#: templates/index.html:44
-msgid "Transforma a tua curiosidade na"
-msgstr ""
-
-#: templates/index.html:44
+#: templates/index.html:43
 msgid "próxima grande invenção"
 msgstr ""
 
 #: templates/index.html:44
-msgid "do mundo!"
+#, python-format
+msgid "Transforma a tua curiosidade na %(destaque)s do mundo!"
 msgstr ""
 
 #: templates/index.html:45
@@ -252,89 +259,184 @@ msgstr ""
 msgid "Abrir Minha Bancada"
 msgstr ""
 
+#: templates/ods.html:6
+msgid "O que são as ODS? - IZObret"
+msgstr ""
+
+#: templates/ods.html:41
+msgid "GUIA DO INVENTOR"
+msgstr ""
+
+#: templates/ods.html:42
+msgid "O que são as ODS da ONU?"
+msgstr ""
+
+#: templates/ods.html:44
+msgid ""
+"Os 17 Objetivos de Desenvolvimento Sustentável (ODS) são metas globais "
+"criadas pelas Nações Unidas para construir um planeta mais justo, "
+"saudável e sustentável até 2030."
+msgstr ""
+
+#: templates/ods.html:50
+msgid "INSPIRAÇÃO PARA INVENTORES"
+msgstr ""
+
+#: templates/ods.html:51
+msgid "Grandes Desafios Mundiais"
+msgstr ""
+
+#: templates/ods.html:52
+msgid ""
+"Toda grande invenção começa com um problema real. Veja como as ODS podem "
+"guiar suas ideias:"
+msgstr ""
+
+#: templates/ods.html:60
+msgid "ODS 6"
+msgstr ""
+
+#: templates/ods.html:61
+msgid "Água Potável e Saneamento"
+msgstr ""
+
+#: templates/ods.html:62
+msgid ""
+"Como garantir que rios e oceanos fiquem limpos e todas as pessoas tenham "
+"água potável?"
+msgstr ""
+
+#: templates/ods.html:64 templates/ods.html:79 templates/ods.html:94
+msgid "Exemplo de Invenção:"
+msgstr ""
+
+#: templates/ods.html:66
+msgid "Robôs coletores de lixo nos rios"
+msgstr ""
+
+#: templates/ods.html:75
+msgid "ODS 7"
+msgstr ""
+
+#: templates/ods.html:76
+msgid "Energia Limpa e Acessível"
+msgstr ""
+
+#: templates/ods.html:77
+msgid ""
+"Como criar novas maneiras de gerar e armazenar energia sem poluir a "
+"atmosfera?"
+msgstr ""
+
+#: templates/ods.html:81
+msgid "Mochilas que geram energia solar"
+msgstr ""
+
+#: templates/ods.html:90
+msgid "ODS 11"
+msgstr ""
+
+#: templates/ods.html:91
+msgid "Cidades Sustentáveis"
+msgstr ""
+
+#: templates/ods.html:92
+msgid ""
+"Como tornar bairros e cidades mais verdes, seguros e acessíveis para "
+"todas as pessoas?"
+msgstr ""
+
+#: templates/ods.html:96
+msgid "Sensores de reciclagem comunitária"
+msgstr ""
+
+#: templates/ods.html:103
+msgid "Voltar para a Máquina de Faíscas"
+msgstr ""
+
 #: templates/refinador.html:6
 msgid "Refinador Científico - IZObret"
 msgstr ""
 
-#: templates/refinador.html:40
+#: templates/refinador.html:41
 msgid "ETAPA 2: REFINADOR CIENTÍFICO"
 msgstr ""
 
-#: templates/refinador.html:41
+#: templates/refinador.html:42
 msgid "Caderno de Hipóteses"
 msgstr ""
 
-#: templates/refinador.html:42
+#: templates/refinador.html:43
 msgid ""
 "Transforme a sua faísca em um projeto de verdade com a ajuda do Método "
 "Científico."
 msgstr ""
 
-#: templates/refinador.html:47
+#: templates/refinador.html:48
 msgid "SUA IDEIA SORTEADA"
 msgstr ""
 
-#: templates/refinador.html:49
+#: templates/refinador.html:50
 msgid "Foco:"
 msgstr ""
 
-#: templates/refinador.html:49
+#: templates/refinador.html:50
 msgid "Livre"
 msgstr ""
 
-#: templates/refinador.html:50
+#: templates/refinador.html:51
 msgid "Objeto:"
 msgstr ""
 
-#: templates/refinador.html:51
+#: templates/refinador.html:52
 msgid "Ação:"
 msgstr ""
 
-#: templates/refinador.html:52
+#: templates/refinador.html:53
 msgid "Desafio:"
 msgstr ""
 
-#: templates/refinador.html:59
+#: templates/refinador.html:60
 msgid "Qual é a sua hipótese?"
 msgstr ""
 
-#: templates/refinador.html:61
+#: templates/refinador.html:62
 msgid "O que você acha que vai acontecer se construirmos essa invenção?"
 msgstr ""
 
-#: templates/refinador.html:62
+#: templates/refinador.html:63
 msgid ""
 "Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para "
 "os peixes em poucas semanas..."
 msgstr ""
 
-#: templates/refinador.html:67
+#: templates/refinador.html:68
 msgid "Como podemos testar isso?"
 msgstr ""
 
-#: templates/refinador.html:69
+#: templates/refinador.html:70
 msgid "Qual teste prático ou experimento simples podemos fazer?"
 msgstr ""
 
-#: templates/refinador.html:70
+#: templates/refinador.html:71
 msgid ""
 "Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do "
 "robô..."
 msgstr ""
 
-#: templates/refinador.html:74 templates/refinador.html:92
+#: templates/refinador.html:75 templates/refinador.html:105
 msgid "Pedir ajuda ao Professor IA"
 msgstr ""
 
-#: templates/refinador.html:81
+#: templates/refinador.html:82
 msgid "PROFESSOR IA"
 msgstr ""
 
-#: templates/refinador.html:91
+#: templates/refinador.html:104
 msgid "Professor pensando..."
 msgstr ""
 
-#: templates/refinador.html:93
+#: templates/refinador.html:106
 msgid ""
 "Ops! O professor não conseguiu responder agora. Tente de novo em "
 "instantes!"
