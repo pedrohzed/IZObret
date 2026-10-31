@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='maquina.css')}}">
 </head>
 <body>
     <header class="navbar">
@@ -42,59 +43,65 @@
             <h1 class="faiscas-titulo">{{ _('A máquina de Faíscas') }}</h1>
             <p class="faiscas-subtitulo">{{ _('Gire a alavanca! Combine elementos improváveis para inventar algo inovador.') }}</p>
         </section>
-
-        <section class="maquina-container">
-            <div class="maquina-filtros">
-                <label for="foco" class="texto-azul"><strong>{{ _('Qual o foco da invenção hoje?') }}</strong></label>
-                <select id="foco" class="select-foco">
-                    <option value="ods">{{ _('Problemas Sociais (ODS da ONU)') }}</option>
-                    <option value="energia">{{ _('Soluções Energéticas & Sustentabilidade') }}</option>
-                    <option value="acessibilidade">{{ _('Acessibilidade e Inclusão') }}</option>
-                    <option value="jogos">{{ _('Jogos') }}</option>
-                </select>
-                <div class="caixa-tooltip">
-                    <a href="/ods" class="link-ods">{{ _('O que são as ODS?') }}</a>
-                    <span class="texto-popup">{{ _('São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber mais!') }}</span>
-                </div>
+    
+        <section class="mq" id="maquina">
+            <div class="mq-letreiro">
+                <div class="mq-luzes" aria-hidden="true"></div>
+                <h2 class="mq-nome">{{ _('Máquina de Faíscas') }}</h2>
+                <div class="mq-luzes" aria-hidden="true"></div>
             </div>
 
-            <div class="maquina-slots">
-                <div class="slot">
-                    <h3 class="slot-titulo texto-azul">{{ _('Objeto') }}</h3>
-                    <div class="slot-visor">
-                        <p class="slot-resultado">?</p>
+            <div class="mq-corpo">
+                <div class="mq-centro">
+                    <div class="mq-painel">
+                        <label for="foco">{{ _('Qual o foco da invenção hoje?') }}</label>
+                        <select id="foco" class="mq-select">
+                            <option value="ods">{{ _('Problemas Sociais (ODS da ONU)') }}</option>
+                            <option value="energia">{{ _('Soluções Energéticas & Sustentabilidade') }}</option>
+                            <option value="acessibilidade">{{ _('Acessibilidade e Inclusão') }}</option>
+                            <option value="jogos">{{ _('Jogos') }}</option>
+                        </select>
+                        <div class="caixa-tooltip">
+                            <a href="/ods" class="link-ods">{{ _('O que são as ODS?') }}</a>
+                            <span class="texto-popup">{{ _('São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber mais!') }}</span>
+                        </div>
                     </div>
-                </div>
-                <div class="slot">
-                    <h3 class="slot-titulo texto-laranja">{{ _('Ação') }}</h3>
-                    <div class="slot-visor">
-                        <p class="slot-resultado">?</p>
-                    </div>
-                </div>
-                <div class="slot">
-                    <h3 class="slot-titulo texto-cinza">{{ _('Desafio') }}</h3>
-                    <div class="slot-visor">
-                        <p class="slot-resultado">?</p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="maquina-controles">
-                <button class="alavanca" id="alavanca" aria-label="{{ _('Puxar alavanca') }}">
-                    <span class="alavanca-haste">
-                        <span class="alavanca-bola"></span>
-                    </span>
-                    <span class="alavanca-base"></span>
-                </button>
-                <p class="alavanca-legenda">{{ _('Puxe a alavanca!') }}</p>
-            </div>
+                    <div class="mq-rolos" aria-live="polite">
+                        <div class="mq-rolo">
+                            <span class="mq-etiqueta">{{ _('Objeto') }}</span>
+                            <div class="mq-janela">
+                                <div class="mq-fita" aria-hidden="true"></div>
+                                <p class="mq-resultado">?</p>
+                            </div>
+                        </div>
+                        <div class="mq-rolo">
+                            <span class="mq-etiqueta">{{ _('Ação') }}</span>
+                            <div class="mq-janela">
+                                <div class="mq-fita" aria-hidden="true"></div>
+                                <p class="mq-resultado">?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mq-bandeja">
+                        <button id="btn-ir-refinar" class="btn-primario oculto" type="button">
+                            {{ _('Refinar esta ideia') }} &rarr;
+                        </button>
+                    </div>
+                </div>
 
-            <div class="maquina-acoes-refinar">
-                <button id="btn-ir-refinar" class="btn-primario oculto" type="button">
-                    {{ _('Refinar esta ideia') }} &rarr;
-                </button>
+                <div class="mq-lado">
+                    <button class="mq-alavanca" id="alavanca" type="button" aria-label="{{ _('Puxar alavanca') }}">
+                        <span class="mq-haste">
+                            <span class="mq-bola"></span>
+                        </span>
+                        <span class="mq-pivo"></span>
+                    </button>
+                    <p class="mq-legenda">{{ _('Puxe a alavanca') }}</p>
+                </div>
             </div>
         </section>
+        <canvas id="mq-canvas" class="mq-faiscas" aria-hidden="true"></canvas>
     </main>
     <footer class="rodape">
         <div class="rodape-container">
