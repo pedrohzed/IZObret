@@ -416,7 +416,34 @@
     }
 
     .mq-corpo {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 88px;
+        gap: 14px 10px;
+    }
+
+    .mq-centro {
+        display: contents;
+    }
+
+    .mq-painel {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        margin-bottom: 0;
+    }
+
+    .mq-rolos {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .mq-lado {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .mq-bandeja {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        margin-top: 0;
     }
 
     .mq-rolos {
@@ -427,9 +454,22 @@
     .mq-janela {
         height: 120px;
     }
+
+    .mq-alavanca {
+        width: 80px;
+    }
+
+    .mq-legenda {
+        font-size: 0.75rem;
+    }
     
     .mq-painel .texto-popup {
         width: 200px;
+    }
+
+    .mq-select {
+        width: 100%;
+        font-size: 0.9rem;
     }
 }
 

@@ -864,3 +864,179 @@ main { flex: 1; }
     font-size: 18px;
 }
 
+img {
+    max-width: 100%;
+}
+
+.grade-cartoes {
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+@media (max-width: 860px) {
+    .navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navbar-container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "logo direita"
+            "menu menu";
+        gap: 10px 12px;
+        padding: 0 16px;
+    }
+
+    .navbar-left {
+        display: contents;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .menu {
+        grid-area: menu;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu-link {
+        flex: 1 1 auto;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .navbar-direita {
+        grid-area: direita;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 720px)  {
+    .container {
+        padding: 36px 16px;
+    }
+
+    .hero {
+        gap: 20px;
+    }
+
+    .badge-amarela {
+        padding: 6px 14px;
+        font-size: 11px;
+        line-height: 1.3;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    .hero-titulo {
+        font-size: clamp(30px, 9vw, 40px);
+    }
+
+    .hero-subtitulo {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .hero-botoes {
+        flex-direction: column;
+        align-self: stretch;
+    }
+
+    .hero-botoes a {
+        text-align: center;
+    }
+
+    .secao-etapas {
+        margin-top: 56px;
+    }
+
+    .cabecalho-secao {
+        margin-bottom: 32px;
+    }
+
+    .cabecalho-secao h2 {
+        font-size: 28px;
+    }
+
+    .cartao {
+        padding: 22px;
+        border-radius: 24px;
+    }
+
+    .cartao h3 {
+        font-size: 22px;
+    }
+
+    .tags-preview {
+        flex-wrap: wrap;
+    }
+
+    .faiscas-hero {
+        margin-bottom: 32px;
+    }
+
+    .faiscas-titulo {
+        font-size: 32px;
+    }
+
+    .faiscas-subtitulo {
+        font-size: 16px;
+    }
+
+    .ideia-sorteada-box {
+        padding: 16px 18px;
+    }
+
+    .formulario-cientifico {
+        padding: 20px;
+    }
+
+    .btn-pedir {
+        align-self: stretch;
+    }
+
+    .professor-resposta {
+        padding: 18px;
+    }
+
+    .rodape {
+        margin-top: 40px;
+        padding: 24px 16px;
+    }
+
+    .rodape-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar-container {
+        padding: 0 12px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .navbar-direita {
+        gap: 8px;
+    }
+
+    .btn-oficina {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .idioma-link {
+        padding: 6px 8px;
+    }
+
+    .menu-link {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
