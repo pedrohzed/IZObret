@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: pedro.phma.1801@gmail.com\n"
-"POT-Creation-Date: 2026-10-28 16:07-0300\n"
+"POT-Creation-Date: 2026-11-01 17:29-0300\n"
 "PO-Revision-Date: 2026-10-25 14:26-0300\n"
 "Last-Translator: Pedro Henrique Melo Azevedo <pedro.phma.1801@gmail.com>\n"
 "Language: en\n"
@@ -18,193 +18,134 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.18.0\n"
 
-msgid "ODS da ONU - IZObret"
-msgstr "UN SDGs - IZObret"
-
-msgid "OBJETIVOS GLOBAIS"
-msgstr "GLOBAL GOALS"
-
-msgid "O que são as ODS?"
-msgstr "What are the SDGs?"
-
-msgid ""
-"Em 2015, a ONU reuniu 17 metas para tornar o mundo melhor até 2030. São os "
-"Objetivos de Desenvolvimento Sustentável, e a sua invenção pode ajudar a "
-"cumprir uma delas!"
-msgstr ""
-"In 2015, the UN set 17 goals to make the world better by 2030. They are the "
-"Sustainable Development Goals, and your invention can help achieve one of them!"
-
-msgid "Escolha uma ODS que importa para você e transforme-a em uma invenção."
-msgstr "Pick an SDG that matters to you and turn it into an invention."
-
-msgid "Erradicação da Pobreza"
-msgstr "No Poverty"
-
-msgid "Fome Zero e Agricultura Sustentável"
-msgstr "Zero Hunger and sustainable agriculture"
-
-msgid "Saúde e Bem-Estar"
-msgstr "Good Health and Well-Being"
-
-msgid "Educação de Qualidade"
-msgstr "Quality Education"
-
-msgid "Igualdade de Gênero"
-msgstr "Gender equity"
-
-msgid "Água Potável"
-msgstr "Clean Water and Sanitation"
-
-msgid "Energia Limpa e Acessível"
-msgstr "Affordable and Clean Energy"
-
-msgid "Trabalho Decente e Crescimento Econômico"
-msgstr "Decent Work and Economic Growth"
-
-msgid "Indústria, Inovação e Infraestrutura"
-msgstr "Industry, Innovation and Infrastructure"
-
-msgid "Redução das Desigualdades"
-msgstr "Reduced Inequalities"
-
-msgid "Cidades e Comunidades Sustentáveis"
-msgstr "Sustainable Cities and Communities"
-
-msgid "Consumo e Produção Responsáveis"
-msgstr "Responsible Consumption and Production"
-
-msgid "Ação Contra a Mudança do Clima"
-msgstr "Climate Action"
-
-msgid "Vida na Água"
-msgstr "Life Below Water"
-
-msgid "Vida Terrestre"
-msgstr "Life on Land"
-
-msgid "Paz, Justiça e Instituições Eficazes"
-msgstr "Peace, Justice and Strong Institutions"
-
-msgid "Parcerias e Meios de Implementação"
-msgstr "Partnerships for the Goals"
-
 #: templates/faiscas.html:6
 msgid "Máquina de Faíscas IZObret"
 msgstr "IZObret Spark Machine"
 
-#: templates/faiscas.html:22 templates/index.html:24 templates/ods.html:22
-#: templates/refinador.html:22
+#: templates/faiscas.html:23 templates/index.html:24 templates/ods.html:22
+#: templates/refinador.html:23
 msgid "Início"
 msgstr "Home"
 
-#: templates/faiscas.html:23 templates/index.html:25 templates/index.html:65
-#: templates/ods.html:23 templates/refinador.html:23
+#: templates/faiscas.html:24 templates/faiscas.html:50 templates/index.html:25
+#: templates/index.html:65 templates/ods.html:23 templates/refinador.html:24
 msgid "Máquina de Faíscas"
 msgstr "Spark Machine"
 
-#: templates/faiscas.html:24 templates/index.html:26 templates/ods.html:24
-#: templates/refinador.html:24
+#: templates/faiscas.html:25 templates/index.html:26 templates/ods.html:24
+#: templates/refinador.html:25
 msgid "Método Científico"
 msgstr "Scientific Method"
 
-#: templates/faiscas.html:25 templates/index.html:27 templates/index.html:97
-#: templates/ods.html:25 templates/refinador.html:25
+#: templates/faiscas.html:26 templates/index.html:27 templates/index.html:97
+#: templates/ods.html:25 templates/refinador.html:26
 msgid "Missões e Canvas"
 msgstr "Missions & Canvas"
 
-#: templates/faiscas.html:34 templates/index.html:36 templates/ods.html:34
-#: templates/refinador.html:34
+#: templates/faiscas.html:35 templates/index.html:36 templates/ods.html:34
+#: templates/refinador.html:35
 msgid "Minha Oficina"
 msgstr "My Workshop"
 
-#: templates/faiscas.html:41
+#: templates/faiscas.html:42
 msgid "ETAPA 1: FAÍSCA DE IDEIA"
 msgstr "STEP 1: SPARK OF AN IDEA"
 
-#: templates/faiscas.html:42
+#: templates/faiscas.html:43
 msgid "A máquina de Faíscas"
 msgstr "The Spark Machine"
 
-#: templates/faiscas.html:43
+#: templates/faiscas.html:44
 msgid ""
 "Gire a alavanca! Combine elementos improváveis para inventar algo "
 "inovador."
 msgstr "Pull the lever! Combine unlikely elements to invent something innovative."
 
-#: templates/faiscas.html:48
+#: templates/faiscas.html:58
 msgid "Qual o foco da invenção hoje?"
 msgstr "What is your invention focus today?"
 
-#: templates/faiscas.html:50
+#: templates/faiscas.html:60
 msgid "Problemas Sociais (ODS da ONU)"
 msgstr "Social Problems (UN SDGs)"
 
-#: templates/faiscas.html:51
+#: templates/faiscas.html:61
 msgid "Soluções Energéticas & Sustentabilidade"
 msgstr "Energy Solutions & Sustainability"
 
-#: templates/faiscas.html:52
+#: templates/faiscas.html:62
 msgid "Acessibilidade e Inclusão"
 msgstr "Accessibility & Inclusion"
 
-#: templates/faiscas.html:53
+#: templates/faiscas.html:63
 msgid "Jogos"
 msgstr "Games"
 
-#: templates/faiscas.html:57
+#: templates/faiscas.html:66 templates/ods.html:61
+msgid "O que são as ODS?"
+msgstr "What are the SDGs?"
+
+#: templates/faiscas.html:67
 msgid ""
 "São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber "
 "mais!"
 msgstr "There are 17 Sustainable Development Goals. Click here to learn more!"
 
-#: templates/faiscas.html:63
+#: templates/faiscas.html:71
+msgid "Já tem uma ideia ou interesse em mente? (Opcional)"
+msgstr "Already have an idea or interest in mind? (Optional)"
+
+#: templates/faiscas.html:72
+msgid "Ex: animais, skate, ajudar minha avó, reciclagem na escola..."
+msgstr "E.g.: animals, skateboarding, helping my grandma, school recycling..."
+
+#: templates/faiscas.html:78
 msgid "Objeto"
 msgstr "Object"
 
-#: templates/faiscas.html:69
+#: templates/faiscas.html:85
 msgid "Ação"
 msgstr "Action"
 
-#: templates/faiscas.html:75
+#: templates/faiscas.html:92
 msgid "Desafio"
 msgstr "Challenge"
 
-#: templates/faiscas.html:83
-msgid "Puxar alavanca"
-msgstr "Pull the lever"
-
-#: templates/faiscas.html:89
-msgid "Puxe a alavanca!"
-msgstr "Pull the lever!"
-
-#: templates/faiscas.html:94
+#: templates/faiscas.html:101
 msgid "Refinar esta ideia"
 msgstr "Refine this idea"
 
-#: templates/faiscas.html:103 templates/index.html:114 templates/ods.html:112
-#: templates/refinador.html:93
+#: templates/faiscas.html:107
+msgid "Puxar alavanca"
+msgstr "Pull the lever"
+
+#: templates/faiscas.html:113
+msgid "Puxe a alavanca!"
+msgstr "Pull the lever!"
+
+#: templates/faiscas.html:123 templates/index.html:114 templates/ods.html:84
+#: templates/refinador.html:295
 msgid "Uma incubadora de ideias para jovens inventores."
 msgstr "An idea incubator for young inventors."
 
-#: templates/faiscas.html:106 templates/index.html:117 templates/ods.html:115
-#: templates/refinador.html:96
+#: templates/faiscas.html:126 templates/index.html:117 templates/ods.html:87
+#: templates/refinador.html:298
 msgid "Redes sociais"
 msgstr "Social networks"
 
-#: templates/faiscas.html:114
+#: templates/faiscas.html:134
 msgid "Erro na"
 msgstr "Connection"
 
-#: templates/faiscas.html:115
+#: templates/faiscas.html:135
 msgid "Conexão"
 msgstr "error"
 
-#: templates/faiscas.html:116
+#: templates/faiscas.html:136
 msgid "Tente"
 msgstr "Try"
 
-#: templates/faiscas.html:117
+#: templates/faiscas.html:137
 msgid "Novamente"
 msgstr "Again"
 
@@ -229,7 +170,7 @@ msgstr ""
 "Don't know where to start? We help you discover, plan, and mature your "
 "ideas like a true scientist."
 
-#: templates/index.html:49
+#: templates/index.html:49 templates/ods.html:76
 msgid "Ligar Máquina de Faíscas"
 msgstr "Start the Spark Machine"
 
@@ -338,469 +279,805 @@ msgid "Abrir Minha Bancada"
 msgstr "Open My Workbench"
 
 #: templates/ods.html:6
-msgid "O que são as ODS? - IZObret"
-msgstr "What are the SDGs? - IZObret"
+msgid "ODS da ONU - IZObret"
+msgstr "UN SDGs - IZObret"
+
+#: templates/ods.html:25 templates/ods.html:34
+msgid "Em breve"
+msgstr "Coming soon"
+
+#: templates/ods.html:40
+msgid "Erradicação da Pobreza"
+msgstr "No Poverty"
 
 #: templates/ods.html:41
-msgid "GUIA DO INVENTOR"
-msgstr "INVENTOR'S GUIDE"
+msgid "Fome Zero e Agricultura Sustentável"
+msgstr "Zero Hunger and sustainable agriculture"
 
 #: templates/ods.html:42
-msgid "O que são as ODS da ONU?"
-msgstr "What are the UN SDGs?"
+msgid "Saúde e Bem-Estar"
+msgstr "Good Health and Well-Being"
+
+#: templates/ods.html:43
+msgid "Educação de Qualidade"
+msgstr "Quality Education"
 
 #: templates/ods.html:44
-msgid ""
-"Os 17 Objetivos de Desenvolvimento Sustentável (ODS) são metas globais "
-"criadas pelas Nações Unidas para construir um planeta mais justo, "
-"saudável e sustentável até 2030."
-msgstr "The 17 Sustainable Development Goals (SDGs) are global targets "
-"created by the United Nations to build a fairer, healthier, "
-"and more sustainable planet by 2030."
+msgid "Igualdade de Gênero"
+msgstr "Gender equity"
 
-#: templates/ods.html:50
-msgid "INSPIRAÇÃO PARA INVENTORES"
-msgstr "INSPIRATION FOR INVENTORS"
-
-#: templates/ods.html:51
-msgid "Grandes Desafios Mundiais"
-msgstr "Major Global Challenges"
-
-#: templates/ods.html:52
-msgid ""
-"Toda grande invenção começa com um problema real. Veja como as ODS podem "
-"guiar suas ideias:"
-msgstr "Every great invention starts with a real problem. See how the "
-"SDGs can guide your ideas:"
-
-#: templates/ods.html:60
-msgid "ODS 6"
-msgstr "SDG 6"
-
-#: templates/ods.html:61
+#: templates/ods.html:45
 msgid "Água Potável e Saneamento"
 msgstr "Clean Water and Sanitation"
 
+#: templates/ods.html:46
+msgid "Energia Limpa e Acessível"
+msgstr "Affordable and Clean Energy"
+
+#: templates/ods.html:47
+msgid "Trabalho Decente e Crescimento Econômico"
+msgstr "Decent Work and Economic Growth"
+
+#: templates/ods.html:48
+msgid "Indústria, Inovação e Infraestrutura"
+msgstr "Industry, Innovation and Infrastructure"
+
+#: templates/ods.html:49
+msgid "Redução das Desigualdades"
+msgstr "Reduced Inequalities"
+
+#: templates/ods.html:50
+msgid "Cidades e Comunidades Sustentáveis"
+msgstr "Sustainable Cities and Communities"
+
+#: templates/ods.html:51
+msgid "Consumo e Produção Responsáveis"
+msgstr "Responsible Consumption and Production"
+
+#: templates/ods.html:52
+msgid "Ação Contra a Mudança Global do Clima"
+msgstr "Climate Action"
+
+#: templates/ods.html:53
+msgid "Vida na Água"
+msgstr "Life Below Water"
+
+#: templates/ods.html:54
+msgid "Vida Terrestre"
+msgstr "Life on Land"
+
+#: templates/ods.html:55
+msgid "Paz, Justiça e Instituições Eficazes"
+msgstr "Peace, Justice and Strong Institutions"
+
+#: templates/ods.html:56
+msgid "Parcerias e Meios de Implementação"
+msgstr "Partnerships for the Goals"
+
+#: templates/ods.html:60
+msgid "OBJETIVOS GLOBAIS"
+msgstr "GLOBAL GOALS"
+
 #: templates/ods.html:62
 msgid ""
-"Como garantir que rios e oceanos fiquem limpos e todas as pessoas tenham "
-"água potável?"
-msgstr "How can we ensure rivers and oceans stay clean and everyone has "
-"access to safe drinking water?"
-
-#: templates/ods.html:64 templates/ods.html:79 templates/ods.html:94
-msgid "Exemplo de Invenção:"
-msgstr "Invention Example:"
-
-#: templates/ods.html:66
-msgid "Robôs coletores de lixo nos rios"
-msgstr "River trash collector robots"
+"Em 2015, a ONU reuniu 17 metas para tornar o mundo melhor até 2030. Estes"
+" são os Objetivos de Desenvolvimento Sustentável, e a sua invenção pode "
+"ajudar a cumprir uma ou mais delas!"
+msgstr ""
+"In 2015, the UN brought together 17 goals to make the world better by "
+"2030. These are the Sustainable Development Goals, and your invention can"
+" help achieve one or more of them!"
 
 #: templates/ods.html:75
-msgid "ODS 7"
-msgstr "SDG 7"
-
-#: templates/ods.html:77
-msgid ""
-"Como criar novas maneiras de gerar e armazenar energia sem poluir a "
-"atmosfera?"
-msgstr "How can we create new ways to generate and store energy without "
-"polluting the atmosphere?"
-
-#: templates/ods.html:81
-msgid "Mochilas que geram energia solar"
-msgstr "Backpacks that generate solar energy"
-
-#: templates/ods.html:90
-msgid "ODS 11"
-msgstr "SDG 11"
-
-#: templates/ods.html:91
-msgid "Cidades Sustentáveis"
-msgstr "Sustainable Cities"
-
-#: templates/ods.html:92
-msgid ""
-"Como tornar bairros e cidades mais verdes, seguros e acessíveis para "
-"todas as pessoas?"
-msgstr "How can we make neighborhoods and cities greener, safer, and "
-"more accessible for everyone?"
-
-#: templates/ods.html:96
-msgid "Sensores de reciclagem comunitária"
-msgstr "Community recycling sensors"
-
-#: templates/ods.html:103
-msgid "Voltar para a Máquina de Faíscas"
-msgstr "Back to the Spark Machine"
+msgid "Escolha uma ODS que importa para você e transforme-a em uma invenção."
+msgstr "Choose an SDG that matters to you and turn it into an invention."
 
 #: templates/refinador.html:6
-msgid "Refinador Científico - IZObret"
-msgstr "Scientific Refiner - IZObret"
-
-#: templates/refinador.html:41
-msgid "ETAPA 2: REFINADOR CIENTÍFICO"
-msgstr "STEP 2: SCIENTIFIC REFINER"
-
-#: templates/refinador.html:42
-msgid "Caderno de Hipóteses"
-msgstr "Hypothesis Notebook"
-
-#: templates/refinador.html:43
-msgid ""
-"Transforme a sua faísca em um projeto de verdade com a ajuda do Método "
-"Científico."
-msgstr ""
-"Turn your spark into a real project with the help of the Scientific "
-"Method."
-
-#: templates/refinador.html:48
-msgid "SUA IDEIA SORTEADA"
-msgstr "YOUR DRAWN IDEA"
-
-#: templates/refinador.html:50
-msgid "Foco:"
-msgstr "Focus:"
-
-#: templates/refinador.html:50
-msgid "Livre"
-msgstr "Free"
-
-#: templates/refinador.html:51
-msgid "Objeto:"
-msgstr "Object:"
-
-#: templates/refinador.html:52
-msgid "Ação:"
-msgstr "Action:"
-
-#: templates/refinador.html:53
-msgid "Desafio:"
-msgstr "Challenge:"
-
-#: templates/refinador.html:60
-msgid "Qual é a sua hipótese?"
-msgstr "What is your hypothesis?"
-
-#: templates/refinador.html:62
-msgid "O que você acha que vai acontecer se construirmos essa invenção?"
-msgstr "What do you think will happen if we build this invention?"
-
-#: templates/refinador.html:63
-msgid ""
-"Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para "
-"os peixes em poucas semanas..."
-msgstr ""
-"Ex: If we use a robot to clean the river, the water will become safe for "
-"fish in a few weeks..."
-
-#: templates/refinador.html:68
-msgid "Como podemos testar isso?"
-msgstr "How can we test this?"
-
-#: templates/refinador.html:70
-msgid "Qual teste prático ou experimento simples podemos fazer?"
-msgstr "What practical test or simple experiment can we do?"
-
-#: templates/refinador.html:71
-msgid ""
-"Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do "
-"robô..."
-msgstr ""
-"Ex: Collect a water sample before and after passing through the robot's "
-"filter..."
-
-#: templates/refinador.html:75 templates/refinador.html:105
-msgid "Pedir ajuda ao Professor IA"
-msgstr "Ask the AI Professor"
-
-#: templates/refinador.html:82
-msgid "PROFESSOR IA"
-msgstr "AI PROFESSOR"
-
-#: templates/refinador.html:104
-msgid "Professor pensando..."
-msgstr "Professor thinking..."
-
-#: templates/refinador.html:106
-msgid ""
-"Ops! O professor não conseguiu responder agora. Tente de novo em "
-"instantes!"
-msgstr "Oops! The professor couldn't answer right now. Try again in a few moments!"
-
 msgid "Método Científico - IZObret"
 msgstr "Scientific Method - IZObret"
 
+#: templates/refinador.html:43
 msgid "Observar"
 msgstr "Observe"
 
-msgid "Observar é olhar o mundo com atenção de detetive. Use os olhos, os ouvidos e as mãos para notar coisas que ninguém percebeu."
-msgstr "Observing means looking at the world like a detective. Use your eyes, ears and hands to notice things nobody else noticed."
+#: templates/refinador.html:44
+msgid ""
+"Observar é olhar o mundo com atenção de detetive. Use os olhos, os "
+"ouvidos e as mãos para notar coisas que ninguém percebeu."
+msgstr ""
+"Observing means looking at the world like a detective. Use your eyes, "
+"ears and hands to notice things nobody else noticed."
 
-msgid "Léo notou que a planta da sala vivia murcha, mas a do quarto estava linda e verdinha."
-msgstr "Leo noticed that the plant in the living room was always wilted, but the one in the bedroom looked beautiful and green."
+#: templates/refinador.html:45
+msgid ""
+"Léo notou que a planta da sala vivia murcha, mas a do quarto estava linda"
+" e verdinha."
+msgstr ""
+"Leo noticed that the plant in the living room was always wilted, but the "
+"one in the bedroom looked beautiful and green."
 
+#: templates/refinador.html:46
 msgid "O que eu percebi que me deixou curioso ou incomodado?"
 msgstr "What did I notice that made me curious or bothered?"
 
-msgid "Todo invento começa quando alguém percebe um problema de verdade. Olhe ao seu redor!"
-msgstr "Every invention starts when someone notices a real problem. Look around you!"
+#: templates/refinador.html:47
+msgid ""
+"Todo invento começa quando alguém percebe um problema de verdade. Olhe ao"
+" seu redor!"
+msgstr ""
+"Every invention starts when someone notices a real problem. Look around "
+"you!"
 
+#: templates/refinador.html:49
 msgid "Que problema você percebeu no mundo real, ligado à sua ideia sorteada?"
-msgstr "What problem did you notice in the real world, connected to your drawn idea?"
+msgstr ""
+"What problem did you notice in the real world, connected to your drawn "
+"idea?"
 
+#: templates/refinador.html:50
 msgid "Ex: Percebi que o rio perto da minha escola está cheio de lixo..."
 msgstr "E.g.: I noticed the river near my school is full of trash..."
 
+#: templates/refinador.html:51
 msgid "Quem sente esse problema? Onde e quando ele acontece?"
 msgstr "Who feels this problem? Where and when does it happen?"
 
+#: templates/refinador.html:52
 msgid "Ex: Os moradores e os peixes, principalmente depois das chuvas..."
 msgstr "E.g.: The residents and the fish, mostly after the rains..."
 
+#: templates/refinador.html:57
 msgid "Perguntar"
 msgstr "Ask"
 
-msgid "Cientistas transformam o que observam em uma pergunta clara. Uma boa pergunta começa com Por que, Como ou O que acontece se."
-msgstr "Scientists turn what they observe into a clear question. A good question starts with Why, How or What happens if."
+#: templates/refinador.html:58
+msgid ""
+"Cientistas transformam o que observam em uma pergunta clara. Uma boa "
+"pergunta começa com Por que, Como ou O que acontece se."
+msgstr ""
+"Scientists turn what they observe into a clear question. A good question "
+"starts with Why, How or What happens if."
 
+#: templates/refinador.html:59
 msgid "Léo perguntou: Por que a planta da sala está murchando?"
 msgstr "Leo asked: Why is the plant in the living room wilting?"
 
+#: templates/refinador.html:60
 msgid "Qual é a dúvida que eu quero resolver?"
 msgstr "What is the doubt I want to solve?"
 
-msgid "Uma boa pergunta guia toda a invenção. Comece com Como, Por que ou O que acontece se."
-msgstr "A good question guides the whole invention. Start with How, Why or What happens if."
+#: templates/refinador.html:61
+msgid ""
+"Uma boa pergunta guia toda a invenção. Comece com Como, Por que ou O que "
+"acontece se."
+msgstr ""
+"A good question guides the whole invention. Start with How, Why or What "
+"happens if."
 
+#: templates/refinador.html:63
 msgid "Qual é a pergunta que a sua invenção quer responder?"
 msgstr "What question does your invention want to answer?"
 
+#: templates/refinador.html:64
 msgid "Ex: Como podemos tirar o lixo do rio sem machucar os peixes?"
 msgstr "E.g.: How can we take the trash out of the river without hurting the fish?"
 
+#: templates/refinador.html:65
 msgid "O que você ainda não sabe e precisa pesquisar?"
 msgstr "What do you still not know and need to research?"
 
+#: templates/refinador.html:66
 msgid "Ex: Que tipo de lixo é mais comum? Como outros inventores resolveram isso?"
-msgstr "E.g.: What kind of trash is most common? How did other inventors solve this?"
+msgstr ""
+"E.g.: What kind of trash is most common? How did other inventors solve "
+"this?"
 
+#: templates/refinador.html:71 templates/refinador.html:194
 msgid "Hipótese"
 msgstr "Hypothesis"
 
-msgid "Hipótese é um palpite esperto sobre a resposta, que dá para testar. Ela costuma ter este formato: Eu acho que se..., então..., porque..."
-msgstr "A hypothesis is a smart guess about the answer that you can test. It usually has this shape: I think that if..., then..., because..."
+#: templates/refinador.html:72
+msgid ""
+"Hipótese é um palpite esperto sobre a resposta, que dá para testar. Ela "
+"costuma ter este formato: Eu acho que se..., então..., porque..."
+msgstr ""
+"A hypothesis is a smart guess about the answer that you can test. It "
+"usually has this shape: I think that if..., then..., because..."
 
-msgid "Léo pensou: Eu acho que se eu puser a planta perto da janela, então ela vai ficar verde, porque as plantas precisam de luz."
-msgstr "Leo thought: I think that if I put the plant near the window, then it will turn green, because plants need light."
+#: templates/refinador.html:73
+msgid ""
+"Léo pensou: Eu acho que se eu puser a planta perto da janela, então ela "
+"vai ficar verde, porque as plantas precisam de luz."
+msgstr ""
+"Leo thought: I think that if I put the plant near the window, then it "
+"will turn green, because plants need light."
 
+#: templates/refinador.html:74
 msgid "O que eu acho que vai acontecer, e por quê?"
 msgstr "What do I think will happen, and why?"
 
-msgid "O seu palpite precisa poder ser testado, e pode estar errado! Isso faz parte da ciência."
-msgstr "Your guess needs to be testable, and it can be wrong! That is part of science."
+#: templates/refinador.html:75
+msgid ""
+"O seu palpite precisa poder ser testado, e pode estar errado! Isso faz "
+"parte da ciência."
+msgstr ""
+"Your guess needs to be testable, and it can be wrong! That is part of "
+"science."
 
+#: templates/refinador.html:77
 msgid "Complete: Eu acho que se ___, então ___, porque ___."
 msgstr "Complete: I think that if ___, then ___, because ___."
 
-msgid "Ex: Eu acho que se o robô tiver uma rede, então ele junta o lixo sem pegar os peixes, porque a água passa pela rede."
-msgstr "E.g.: I think that if the robot has a net, then it collects the trash without catching fish, because water passes through the net."
+#: templates/refinador.html:78
+msgid ""
+"Ex: Eu acho que se o robô tiver uma rede, então ele junta o lixo sem "
+"pegar os peixes, porque a água passa pela rede."
+msgstr ""
+"E.g.: I think that if the robot has a net, then it collects the trash "
+"without catching fish, because water passes through the net."
 
+#: templates/refinador.html:79
 msgid "Como você vai perceber que o seu palpite estava errado?"
 msgstr "How will you notice that your guess was wrong?"
 
-msgid "Ex: Se o robô pegar peixes junto com o lixo, ou se o lixo continuar na água."
-msgstr "E.g.: If the robot catches fish along with the trash, or if the trash stays in the water."
+#: templates/refinador.html:80
+msgid ""
+"Ex: Se o robô pegar peixes junto com o lixo, ou se o lixo continuar na "
+"água."
+msgstr ""
+"E.g.: If the robot catches fish along with the trash, or if the trash "
+"stays in the water."
 
+#: templates/refinador.html:85
 msgid "Testar"
 msgstr "Test"
 
-msgid "Hora do experimento! Para o teste ser justo, mude só UMA coisa de cada vez e deixe todo o resto igual."
-msgstr "Time for the experiment! To make the test fair, change only ONE thing at a time and keep everything else the same."
+#: templates/refinador.html:86
+msgid ""
+"Hora do experimento! Para o teste ser justo, mude só UMA coisa de cada "
+"vez e deixe todo o resto igual."
+msgstr ""
+"Time for the experiment! To make the test fair, change only ONE thing at "
+"a time and keep everything else the same."
 
-msgid "Léo pôs a planta perto da janela por 14 dias. Ele manteve a mesma quantidade de água e o mesmo vaso."
-msgstr "Leo put the plant near the window for 14 days. He kept the same amount of water and the same pot."
+#: templates/refinador.html:87
+msgid ""
+"Léo pôs a planta perto da janela por 14 dias. Ele manteve a mesma "
+"quantidade de água e o mesmo vaso."
+msgstr ""
+"Leo put the plant near the window for 14 days. He kept the same amount of"
+" water and the same pot."
 
+#: templates/refinador.html:88
 msgid "Qual teste simples eu consigo fazer, e o que vou mudar?"
 msgstr "What simple test can I do, and what will I change?"
 
-msgid "Um bom teste é simples, seguro e justo. Dá para fazer com materiais do dia a dia!"
-msgstr "A good test is simple, safe and fair. You can do it with everyday materials!"
+#: templates/refinador.html:89
+msgid ""
+"Um bom teste é simples, seguro e justo. Dá para fazer com materiais do "
+"dia a dia!"
+msgstr ""
+"A good test is simple, safe and fair. You can do it with everyday "
+"materials!"
 
+#: templates/refinador.html:91
 msgid "Qual experimento simples você pode fazer para testar o seu palpite?"
 msgstr "What simple experiment can you do to test your guess?"
 
-msgid "Ex: Fazer um protótipo de papelão com uma rede e testar numa bacia com bolinhas de papel."
-msgstr "E.g.: Build a cardboard prototype with a net and test it in a basin with paper balls."
+#: templates/refinador.html:92
+msgid ""
+"Ex: Fazer um protótipo de papelão com uma rede e testar numa bacia com "
+"bolinhas de papel."
+msgstr ""
+"E.g.: Build a cardboard prototype with a net and test it in a basin with "
+"paper balls."
 
+#: templates/refinador.html:93
 msgid "O que você vai mudar (só UMA coisa) e o que vai manter igual?"
 msgstr "What will you change (only ONE thing) and what will you keep the same?"
 
-msgid "Ex: Mudo o tamanho dos buracos da rede. Mantenho a bacia, a água e a quantidade de bolinhas."
-msgstr "E.g.: I change the size of the holes in the net. I keep the basin, the water and the number of balls."
+#: templates/refinador.html:94
+msgid ""
+"Ex: Mudo o tamanho dos buracos da rede. Mantenho a bacia, a água e a "
+"quantidade de bolinhas."
+msgstr ""
+"E.g.: I change the size of the holes in the net. I keep the basin, the "
+"water and the number of balls."
 
+#: templates/refinador.html:99
 msgid "Analisar"
 msgstr "Analyze"
 
-msgid "Anote tudo o que aconteceu, com números, desenhos ou fotos. Essas anotações se chamam dados. E nada de trapacear: vale o que realmente aconteceu!"
-msgstr "Write down everything that happened, with numbers, drawings or photos. These notes are called data. And no cheating: what really happened is what counts!"
+#: templates/refinador.html:100
+msgid ""
+"Anote tudo o que aconteceu, com números, desenhos ou fotos. Essas "
+"anotações se chamam dados. E nada de trapacear: vale o que realmente "
+"aconteceu!"
+msgstr ""
+"Write down everything that happened, with numbers, drawings or photos. "
+"These notes are called data. And no cheating: what really happened is "
+"what counts!"
 
-msgid "Depois de 14 dias, Léo anotou: as folhas ficaram mais verdes e firmes, e duas folhas novas nasceram."
-msgstr "After 14 days, Leo wrote down: the leaves were greener and firmer, and two new leaves grew."
+#: templates/refinador.html:101
+msgid ""
+"Depois de 14 dias, Léo anotou: as folhas ficaram mais verdes e firmes, e "
+"duas folhas novas nasceram."
+msgstr ""
+"After 14 days, Leo wrote down: the leaves were greener and firmer, and "
+"two new leaves grew."
 
+#: templates/refinador.html:102
 msgid "O que eu vou medir ou anotar para saber se deu certo?"
 msgstr "What will I measure or write down to know if it worked?"
 
+#: templates/refinador.html:103
 msgid "Sem registro não existe ciência! Decida antes o que vai medir."
-msgstr "Without records there is no science! Decide beforehand what you will measure."
+msgstr ""
+"Without records there is no science! Decide beforehand what you will "
+"measure."
 
+#: templates/refinador.html:105
 msgid "O que você vai medir ou anotar durante o teste?"
 msgstr "What will you measure or write down during the test?"
 
+#: templates/refinador.html:106
 msgid "Ex: Quantas bolinhas a rede pegou em 10 tentativas."
 msgstr "E.g.: How many balls the net caught in 10 tries."
 
+#: templates/refinador.html:107
 msgid "Que resultado mostraria que a sua ideia funciona?"
 msgstr "What result would show that your idea works?"
 
+#: templates/refinador.html:108
 msgid "Ex: Se a rede pegar pelo menos 8 das 10 bolinhas."
 msgstr "E.g.: If the net catches at least 8 of the 10 balls."
 
+#: templates/refinador.html:113
 msgid "Concluir"
 msgstr "Conclude"
 
-msgid "Compare os resultados com o seu palpite. Você acertou, errou ou descobriu algo novo? Nos três casos você aprendeu, e agora pode contar para os outros!"
-msgstr "Compare the results with your guess. Were you right, wrong, or did you discover something new? In all three cases you learned something, and now you can tell others!"
+#: templates/refinador.html:114
+msgid ""
+"Compare os resultados com o seu palpite. Você acertou, errou ou descobriu"
+" algo novo? Nos três casos você aprendeu, e agora pode contar para os "
+"outros!"
+msgstr ""
+"Compare the results with your guess. Were you right, wrong, or did you "
+"discover something new? In all three cases you learned something, and now"
+" you can tell others!"
 
-msgid "Léo concluiu: a planta precisava de luz! Ele mostrou os resultados para a turma e ajudou os colegas com as plantas deles."
-msgstr "Leo concluded: the plant needed light! He showed the results to his class and helped his classmates with their plants."
+#: templates/refinador.html:115
+msgid ""
+"Léo concluiu: a planta precisava de luz! Ele mostrou os resultados para a"
+" turma e ajudou os colegas com as plantas deles."
+msgstr ""
+"Leo concluded: the plant needed light! He showed the results to his class"
+" and helped his classmates with their plants."
 
+#: templates/refinador.html:116
 msgid "O que eu aprendi, e o que faço agora?"
 msgstr "What did I learn, and what do I do now?"
 
-msgid "Se deu certo, construa a versão maior. Se não deu, volte ao passo 3 e mude o palpite!"
-msgstr "If it worked, build the bigger version. If it did not, go back to step 3 and change your guess!"
+#: templates/refinador.html:117
+msgid ""
+"Se deu certo, construa a versão maior. Se não deu, volte ao passo 3 e "
+"mude o palpite!"
+msgstr ""
+"If it worked, build the bigger version. If it did not, go back to step 3 "
+"and change your guess!"
 
-msgid "Se o teste funcionar, qual é o próximo passo da invenção? E se não funcionar, o que você muda?"
-msgstr "If the test works, what is the next step for the invention? And if it does not work, what will you change?"
+#: templates/refinador.html:119
+msgid ""
+"Se o teste funcionar, qual é o próximo passo da invenção? E se não "
+"funcionar, o que você muda?"
+msgstr ""
+"If the test works, what is the next step for the invention? And if it "
+"does not work, what will you change?"
 
+#: templates/refinador.html:120
 msgid "Ex: Se funcionar, construo um robô maior. Se não, troco o tamanho da rede."
-msgstr "E.g.: If it works, I build a bigger robot. If not, I change the size of the net."
+msgstr ""
+"E.g.: If it works, I build a bigger robot. If not, I change the size of "
+"the net."
 
-msgid "Quem pode ajudar você ou ouvir a sua ideia? (professor, família, amigos...)"
+#: templates/refinador.html:121
+msgid ""
+"Quem pode ajudar você ou ouvir a sua ideia? (professor, família, "
+"amigos...)"
 msgstr "Who can help you or listen to your idea? (teacher, family, friends...)"
 
+#: templates/refinador.html:122
 msgid "Ex: Minha professora de ciências e o meu tio que é engenheiro."
 msgstr "E.g.: My science teacher and my uncle who is an engineer."
 
+#: templates/refinador.html:129
 msgid "ETAPA 2: MÉTODO CIENTÍFICO"
 msgstr "STEP 2: SCIENTIFIC METHOD"
 
+#: templates/refinador.html:130
 msgid "O Método Científico"
 msgstr "The Scientific Method"
 
-msgid "Todo grande inventor segue um caminho de descoberta. Aprenda o mapa do cientista e use-o para fazer a sua invenção virar realidade!"
-msgstr "Every great inventor follows a path of discovery. Learn the scientist's map and use it to turn your invention into reality!"
+#: templates/refinador.html:131
+msgid ""
+"Todo grande inventor segue um caminho de descoberta. Aprenda o mapa do "
+"cientista e use-o para fazer a sua invenção virar realidade!"
+msgstr ""
+"Every great inventor follows a path of discovery. Learn the scientist's "
+"map and use it to turn your invention into reality!"
 
+#: templates/refinador.html:137
 msgid "PARTE 1"
 msgstr "PART 1"
 
+#: templates/refinador.html:138
 msgid "O Mapa do Cientista"
 msgstr "The Scientist's Map"
 
-msgid "Cientistas não adivinham: eles descobrem seguindo um caminho com 6 estações. Clique em cada uma e acompanhe o mistério da planta do Léo!"
-msgstr "Scientists do not just guess: they discover by following a path with 6 stations. Click each one and follow the mystery of Leo's plant!"
+#: templates/refinador.html:139
+msgid ""
+"Cientistas não adivinham: eles descobrem seguindo um caminho com 6 "
+"estações. Clique em cada uma e acompanhe o mistério da planta do Léo!"
+msgstr ""
+"Scientists do not just guess: they discover by following a path with 6 "
+"stations. Click each one and follow the mystery of Leo's plant!"
 
+#: templates/refinador.html:144
 msgid "Estações do método científico"
 msgstr "Scientific method stations"
 
+#: templates/refinador.html:164 templates/refinador.html:241
 #, python-format
 msgid "Passo %(n)s de 6"
 msgstr "Step %(n)s of 6"
 
+#: templates/refinador.html:168
 msgid "Exemplo: o mistério da planta do Léo"
 msgstr "Example: the mystery of Leo's plant"
 
+#: templates/refinador.html:177 templates/refinador.html:258
 msgid "Voltar"
 msgstr "Back"
 
+#: templates/refinador.html:178 templates/refinador.html:260
+#: templates/refinador.html:310
 msgid "Próxima estação"
 msgstr "Next station"
 
+#: templates/refinador.html:185
 msgid "E se o teste não funcionar?"
 msgstr "What if the test does not work?"
 
-msgid "Sem problema! Cientistas erram o tempo todo, e cada erro ensina algo. Volte ao passo 3, mude o seu palpite e teste de novo. É assim que as grandes invenções nascem!"
-msgstr "No problem! Scientists make mistakes all the time, and every mistake teaches something. Go back to step 3, change your guess and test again. That is how great inventions are born!"
+#: templates/refinador.html:186
+msgid ""
+"Sem problema! Cientistas erram o tempo todo, e cada erro ensina algo. "
+"Volte ao passo 3, mude o seu palpite e teste de novo. É assim que as "
+"grandes invenções nascem!"
+msgstr ""
+"No problem! Scientists make mistakes all the time, and every mistake "
+"teaches something. Go back to step 3, change your guess and test again. "
+"That is how great inventions are born!"
 
+#: templates/refinador.html:191
 msgid "Palavras de cientista"
 msgstr "Scientist words"
 
+#: templates/refinador.html:194
 msgid "Um palpite esperto que dá para testar."
 msgstr "A smart guess that can be tested."
 
+#: templates/refinador.html:195
 msgid "Experimento"
 msgstr "Experiment"
 
+#: templates/refinador.html:195
 msgid "Um teste justo para descobrir se o palpite está certo."
 msgstr "A fair test to find out if the guess is right."
 
+#: templates/refinador.html:196
 msgid "Variável"
 msgstr "Variable"
 
+#: templates/refinador.html:196
 msgid "Qualquer coisa que pode mudar no teste, como tamanho, tempo ou cor."
 msgstr "Anything that can change in the test, like size, time or color."
 
+#: templates/refinador.html:197
 msgid "Dados"
 msgstr "Data"
 
+#: templates/refinador.html:197
 msgid "As anotações e medidas que você junta durante o teste."
 msgstr "The notes and measurements you collect during the test."
 
+#: templates/refinador.html:204
 msgid "PARTE 2"
 msgstr "PART 2"
 
+#: templates/refinador.html:205
 msgid "Agora é a sua vez!"
 msgstr "Now it is your turn!"
 
-msgid "Responda uma estação de cada vez. Não precisa ser perfeito, dá para mudar tudo depois. As suas respostas ficam salvas neste aparelho."
-msgstr "Answer one station at a time. It does not have to be perfect, you can change everything later. Your answers are saved on this device."
+#: templates/refinador.html:206
+msgid ""
+"Responda uma estação de cada vez. Não precisa ser perfeito, dá para mudar"
+" tudo depois. As suas respostas ficam salvas neste aparelho."
+msgstr ""
+"Answer one station at a time. It does not have to be perfect, you can "
+"change everything later. Your answers are saved on this device."
 
+#: templates/refinador.html:210
+msgid "SUA IDEIA SORTEADA"
+msgstr "YOUR DRAWN IDEA"
+
+#: templates/refinador.html:212
+msgid "Foco:"
+msgstr "Focus:"
+
+#: templates/refinador.html:212
+msgid "Livre"
+msgstr "Free"
+
+#: templates/refinador.html:213
+msgid "Objeto:"
+msgstr "Object:"
+
+#: templates/refinador.html:214
+msgid "Ação:"
+msgstr "Action:"
+
+#: templates/refinador.html:215
+msgid "Desafio:"
+msgstr "Challenge:"
+
+#: templates/refinador.html:218
 msgid "Minha invenção em uma frase"
 msgstr "My invention in one sentence"
 
+#: templates/refinador.html:219
 msgid "Ex: Um robô que limpa o rio sem machucar os peixes."
 msgstr "E.g.: A robot that cleans the river without hurting the fish."
 
+#: templates/refinador.html:221
 msgid "Sortear outra ideia"
 msgstr "Draw another idea"
 
+#: templates/refinador.html:224
 msgid "Passos do seu plano"
 msgstr "Steps of your plan"
 
+#: templates/refinador.html:259 templates/refinador.html:308
+msgid "Pedir ajuda ao Professor IA"
+msgstr "Ask the AI Science Teacher"
+
+#: templates/refinador.html:267
+msgid "PROFESSOR IA"
+msgstr "AI SCIENCE TEACHER"
+
+#: templates/refinador.html:277
 msgid "PRONTO!"
 msgstr "ALL SET!"
 
+#: templates/refinador.html:278 templates/refinador.html:316
 msgid "Meu Plano de Invenção"
 msgstr "My Invention Plan"
 
+#: templates/refinador.html:284
 msgid "Editar respostas"
 msgstr "Edit answers"
 
+#: templates/refinador.html:285 templates/refinador.html:315
 msgid "Copiar plano"
 msgstr "Copy plan"
 
+#: templates/refinador.html:286
 msgid "Imprimir ou salvar PDF"
 msgstr "Print or save as PDF"
 
+#: templates/refinador.html:307
+msgid "Professor pensando..."
+msgstr "Science teacher thinking..."
+
+#: templates/refinador.html:309
+msgid ""
+"Ops! O professor não conseguiu responder agora. Tente de novo em "
+"instantes!"
+msgstr ""
+"Oops! The science teacher couldn't answer right now. Try again in a few "
+"moments!"
+
+#: templates/refinador.html:311
 msgid "Já entendi! Vamos inventar"
 msgstr "Got it! Let us invent"
 
+#: templates/refinador.html:312
 msgid "Ver meu plano"
 msgstr "See my plan"
 
+#: templates/refinador.html:313
 msgid "(ainda não respondi)"
 msgstr "(not answered yet)"
 
+#: templates/refinador.html:314
 msgid "Plano copiado!"
 msgstr "Plan copied!"
+
+#~ msgid ""
+#~ "Em 2015, a ONU reuniu 17 metas "
+#~ "para tornar o mundo melhor até "
+#~ "2030. São os Objetivos de "
+#~ "Desenvolvimento Sustentável, e a sua "
+#~ "invenção pode ajudar a cumprir uma "
+#~ "delas!"
+#~ msgstr ""
+#~ "In 2015, the UN set 17 goals "
+#~ "to make the world better by 2030."
+#~ " They are the Sustainable Development "
+#~ "Goals, and your invention can help "
+#~ "achieve one of them!"
+
+#~ msgid "Escolha uma ODS que importa para você e transforme-a em uma invenção."
+#~ msgstr "Pick an SDG that matters to you and turn it into an invention."
+
+#~ msgid "Água Potável"
+#~ msgstr "Clean Water and Sanitation"
+
+#~ msgid "Consumo e Produção Responsáveis"
+#~ msgstr "Responsible Consumption and Production"
+
+#~ msgid "Ação Contra a Mudança do Clima"
+#~ msgstr "Climate Action"
+
+#~ msgid "O que são as ODS? - IZObret"
+#~ msgstr "What are the SDGs? - IZObret"
+
+#~ msgid "GUIA DO INVENTOR"
+#~ msgstr "INVENTOR'S GUIDE"
+
+#~ msgid "O que são as ODS da ONU?"
+#~ msgstr "What are the UN SDGs?"
+
+#~ msgid ""
+#~ "Os 17 Objetivos de Desenvolvimento "
+#~ "Sustentável (ODS) são metas globais "
+#~ "criadas pelas Nações Unidas para "
+#~ "construir um planeta mais justo, "
+#~ "saudável e sustentável até 2030."
+#~ msgstr ""
+#~ "The 17 Sustainable Development Goals "
+#~ "(SDGs) are global targets created by "
+#~ "the United Nations to build a "
+#~ "fairer, healthier, and more sustainable "
+#~ "planet by 2030."
+
+#~ msgid "INSPIRAÇÃO PARA INVENTORES"
+#~ msgstr "INSPIRATION FOR INVENTORS"
+
+#~ msgid "Grandes Desafios Mundiais"
+#~ msgstr "Major Global Challenges"
+
+#~ msgid ""
+#~ "Toda grande invenção começa com um "
+#~ "problema real. Veja como as ODS "
+#~ "podem guiar suas ideias:"
+#~ msgstr ""
+#~ "Every great invention starts with a "
+#~ "real problem. See how the SDGs can"
+#~ " guide your ideas:"
+
+#~ msgid "ODS 6"
+#~ msgstr "SDG 6"
+
+#~ msgid ""
+#~ "Como garantir que rios e oceanos "
+#~ "fiquem limpos e todas as pessoas "
+#~ "tenham água potável?"
+#~ msgstr ""
+#~ "How can we ensure rivers and "
+#~ "oceans stay clean and everyone has "
+#~ "access to safe drinking water?"
+
+#~ msgid "Exemplo de Invenção:"
+#~ msgstr "Invention Example:"
+
+#~ msgid "Robôs coletores de lixo nos rios"
+#~ msgstr "River trash collector robots"
+
+#~ msgid "ODS 7"
+#~ msgstr "SDG 7"
+
+#~ msgid ""
+#~ "Como criar novas maneiras de gerar "
+#~ "e armazenar energia sem poluir a "
+#~ "atmosfera?"
+#~ msgstr ""
+#~ "How can we create new ways to "
+#~ "generate and store energy without "
+#~ "polluting the atmosphere?"
+
+#~ msgid "Mochilas que geram energia solar"
+#~ msgstr "Backpacks that generate solar energy"
+
+#~ msgid "ODS 11"
+#~ msgstr "SDG 11"
+
+#~ msgid "Cidades Sustentáveis"
+#~ msgstr "Sustainable Cities"
+
+#~ msgid ""
+#~ "Como tornar bairros e cidades mais "
+#~ "verdes, seguros e acessíveis para todas"
+#~ " as pessoas?"
+#~ msgstr ""
+#~ "How can we make neighborhoods and "
+#~ "cities greener, safer, and more "
+#~ "accessible for everyone?"
+
+#~ msgid "Sensores de reciclagem comunitária"
+#~ msgstr "Community recycling sensors"
+
+#~ msgid "Voltar para a Máquina de Faíscas"
+#~ msgstr "Back to the Spark Machine"
+
+#~ msgid "Refinador Científico - IZObret"
+#~ msgstr "Scientific Refiner - IZObret"
+
+#~ msgid "ETAPA 2: REFINADOR CIENTÍFICO"
+#~ msgstr "STEP 2: SCIENTIFIC REFINER"
+
+#~ msgid "Caderno de Hipóteses"
+#~ msgstr "Hypothesis Notebook"
+
+#~ msgid ""
+#~ "Transforme a sua faísca em um "
+#~ "projeto de verdade com a ajuda do"
+#~ " Método Científico."
+#~ msgstr ""
+#~ "Turn your spark into a real "
+#~ "project with the help of the "
+#~ "Scientific Method."
+
+#~ msgid "Qual é a sua hipótese?"
+#~ msgstr "What is your hypothesis?"
+
+#~ msgid "O que você acha que vai acontecer se construirmos essa invenção?"
+#~ msgstr "What do you think will happen if we build this invention?"
+
+#~ msgid ""
+#~ "Ex: Se usarmos um robô para limpar"
+#~ " o rio, a água vai ficar "
+#~ "própria para os peixes em poucas "
+#~ "semanas..."
+#~ msgstr ""
+#~ "Ex: If we use a robot to "
+#~ "clean the river, the water will "
+#~ "become safe for fish in a few "
+#~ "weeks..."
+
+#~ msgid "Como podemos testar isso?"
+#~ msgstr "How can we test this?"
+
+#~ msgid "Qual teste prático ou experimento simples podemos fazer?"
+#~ msgstr "What practical test or simple experiment can we do?"
+
+#~ msgid ""
+#~ "Ex: Coletar uma amostra de água "
+#~ "antes e depois de passar pelo "
+#~ "filtro do robô..."
+#~ msgstr ""
+#~ "Ex: Collect a water sample before "
+#~ "and after passing through the robot's"
+#~ " filter..."
+
+#~ msgid "Consumo e Produção Reponsáveis"
+#~ msgstr ""
+
+#~ msgid "Ação Contra a mudança do Clima"
+#~ msgstr ""
+
+#~ msgid "Escolha uma ODS que importa para você e tranforme-a em uma invenção."
+#~ msgstr ""
+
+#~ msgid "Redes Sociais"
+#~ msgstr ""
+

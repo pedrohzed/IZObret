@@ -115,7 +115,7 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.mc-estado-icone {
+.mc-estacao-icone {
     width: 64px;
     height: 64px;
     display: grid;
@@ -132,7 +132,7 @@
     transform: translateY(-3px);
 }
 
-.mc-estacao.feita .mc.estacao-icone {
+.mc-estacao.feita .mc-estacao-icone {
     background: color-mix(in srgb, var(--cor) 14%, #ffffff);
     border-color: var(--cor);
     box-shadow: 0 5px 0 color-mix(in srgb, var(--cor) 40%, #ffffff);
@@ -187,7 +187,7 @@
     border: 3px solid var(--cor);
     border-radius: 28px;
     box-shadow: 0 8px 0 color-mix(in srgb, var(--cor) 35%, #ffffff);
-    animation: mc-entra 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.1);;
+    animation: mc-entra 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.1);
 }
 
 @keyframes mc-entra {
@@ -207,7 +207,7 @@
 }
 
 @keyframes mc-pop {
-    from { transfrom: scale(0.3) rotate(-12deg); }
+    from { transform: scale(0.3) rotate(-12deg); }
     to   { transform: scale(1) rotate(0); }
 }
 
@@ -397,7 +397,7 @@
     border: 3px solid #dde2f7;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2, border-color 0.2s;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s, border-color 0.2s;
 }
 
 .mc-ponto.completo {
@@ -429,8 +429,8 @@
     box-shadow: 0 0 0 6px color-mix(in srgb, var(--cor) 22%, transparent);
 }
 
-.mc-arena {
-    display:flex;
+.mc-etapa {
+    display: flex;
     flex-direction: column;
     gap: 18px;
     padding: 28px;
@@ -501,7 +501,7 @@
     color: #151b2a;
 }
 
-.mc-plan-ideia {
+.mc-plano-ideia {
     overflow-wrap: anywhere;
     margin-bottom: 20px;
     font-size: 18px;
@@ -534,11 +534,6 @@
     line-height: 1.5;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
-    color: #151b2a;
-}
-
-.mc-plano-a.vazio {
-    font-style: italic;
     color: #151b2a;
 }
 

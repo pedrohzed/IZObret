@@ -54,16 +54,22 @@
             <div class="mq-corpo">
                 <div class="mq-centro">
                     <div class="mq-painel">
-                        <label for="foco">{{ _('Qual o foco da invenção hoje?') }}</label>
-                        <select id="foco" class="mq-select">
-                            <option value="ods">{{ _('Problemas Sociais (ODS da ONU)') }}</option>
-                            <option value="energia">{{ _('Soluções Energéticas & Sustentabilidade') }}</option>
-                            <option value="acessibilidade">{{ _('Acessibilidade e Inclusão') }}</option>
-                            <option value="jogos">{{ _('Jogos') }}</option>
-                        </select>
-                        <div class="caixa-tooltip">
-                            <a href="/ods" class="link-ods">{{ _('O que são as ODS?') }}</a>
-                            <span class="texto-popup">{{ _('São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber mais!') }}</span>
+                        <div class="mq-painel-linha">
+                            <label for="foco">{{ _('Qual o foco da invenção hoje?') }}</label>
+                            <select id="foco" class="mq-select">
+                                <option value="ods">{{ _('Problemas Sociais (ODS da ONU)') }}</option>
+                                <option value="energia">{{ _('Soluções Energéticas & Sustentabilidade') }}</option>
+                                <option value="acessibilidade">{{ _('Acessibilidade e Inclusão') }}</option>
+                                <option value="jogos">{{ _('Jogos') }}</option>
+                            </select>
+                            <div class="caixa-tooltip">
+                                <a href="/ods" class="link-ods">{{ _('O que são as ODS?') }}</a>
+                                <span class="texto-popup">{{ _('São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber mais!') }}</span>
+                            </div>
+                        </div>
+                        <div class="mq-painel-linha mq-linha-previa">
+                            <label for="ideia-previa">{{ _('Já tem uma ideia ou interesse em mente? (Opcional)') }}</label>
+                            <input type="text" id="ideia-previa" class="mq-input-previa" maxlength="120" placeholder="{{ _('Ex: animais, skate, ajudar minha avó, reciclagem na escola...') }}">
                         </div>
                     </div>
 

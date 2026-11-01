@@ -216,7 +216,7 @@
                 </div>
                 <div class="campo-grupo mc-ideia-campo">
                     <label for="mc-ideia"><strong>{{ _('Minha invenção em uma frase') }}</strong></label>
-                    <textarea id="mc-ideia" rows="2" placeholder="{{ _('Ex: Um robô que limpa o rio sem machucar os peixes.') }}"></textarea>
+                    <textarea id="mc-ideia" rows="2" placeholder="{{ _('Ex: Um robô que limpa o rio sem machucar os peixes.') }}">{{ ideia or '' }}</textarea>
                 </div>
                 <a href="/faiscas" class="mc-link-sortear">{{ _('Sortear outra ideia') }} &rarr;</a>
             </div>
@@ -321,7 +321,8 @@
             foco: {{ foco|tojson }},
             objeto: {{ objeto|tojson }},
             acao: {{ acao|tojson }},
-            desafio: {{ desafio|tojson }}
+            desafio: {{ desafio|tojson }},
+            ideia: {{ (ideia or '')|tojson }}
         };
         const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
     </script>

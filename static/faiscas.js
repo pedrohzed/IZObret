@@ -1,8 +1,10 @@
-const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
+const elTextos = document.getElementById('dados-textos');
+const TEXTOS = elTextos ? JSON.parse(elTextos.textContent) : {};
 
 const maquina = document.getElementById('maquina');
 const alavanca = document.getElementById('alavanca');
 const seletorFoco = document.getElementById('foco');
+const campoPrevia = document.getElementById('ideia-previa');
 const botaoRefinar = document.getElementById('btn-ir-refinar');
 const rolos = [...document.querySelectorAll('.mq-rolo')];
 const canvas = document.getElementById('mq-canvas');
@@ -133,13 +135,13 @@ function girarRolo(rolo) {
 function pararRolo(rolo, texto) {
     const resultado = rolo.querySelector('.mq-resultado');
     resultado.textContent = texto;
-    resultado.classList.toggle('longo', texto. length > 22);
+    resultado.classList.toggle('longo', texto.length > 22);
 
     rolo.classList.remove('girando', 'parou');
     void rolo.offsetWidth;
     rolo.classList.add('parou');
 
-    const {x, y } = centroDe(rolo.querySelector('.mq-janela'));
+    const { x, y } = centroDe(rolo.querySelector('.mq-janela'));
     explodir(x, y, 22);
 }
 
@@ -151,6 +153,7 @@ alavanca.addEventListener('click', async () => {
     maquina.classList.remove('celebrando');
 
     const temaEscolhido = seletorFoco.options[seletorFoco.selectedIndex].text;
+    const ideiaPrevia = campoPrevia ? campoPrevia.value.trim() : '';
 
     alavanca.classList.add('puxada');
     const bola = centroDe(alavanca.querySelector('.mq-bola'));
@@ -167,7 +170,7 @@ alavanca.addEventListener('click', async () => {
             fetch('/sortear', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ foco: temaEscolhido })
+                body: JSON.stringify({ foco: temaEscolhido, previa: ideiaPrevia })
             }),
             pausa(reduzirMovimento ? 0 : 1400)
         ]);
@@ -216,6 +219,9 @@ alavanca.addEventListener('click', async () => {
                 acao: ideia.acao,
                 desafio: ideia.desafio
             });
+            if (ideiaPrevia) {
+                params.set('ideia', ideiaPrevia);
+            }
             window.location.href = `/refinador?${params.toString()}`;
         };
     }

@@ -37,8 +37,8 @@ function irParaEstacao(indice) {
 estacoes.forEach((botao, i) => {
     botao.addEventListener('click', () => irParaEstacao(i));
 
-    botao.addEventListener('keydown', (evento) =>{
-        if (evento.key === 'ArrowRight' || evento.keu === 'ArrowLeft') {
+    botao.addEventListener('keydown', (evento) => {
+        if (evento.key === 'ArrowRight' || evento.key === 'ArrowLeft') {
             evento.preventDefault();
             const proxima = estacaoAtual + (evento.key === 'ArrowRight' ? 1 : -1);
             irParaEstacao(proxima);
@@ -80,7 +80,9 @@ function gravar() {
 let estado = lerSalvo();
 
 if (!estado || (veioDaMaquina && estado.assinatura !== assinatura)) {
-    estado = { assinatura: veioDaMaquina ? assinatura : '', sorteio:null, ideia: '', respostas: {}, passo: 0 };
+    estado = { assinatura: veioDaMaquina ? assinatura : '', sorteio: null, ideia: dados.ideia || '', respostas: {}, passo: 0 };
+} else if (dados.ideia && !estado.ideia) {
+    estado.ideia = dados.ideia;
 }
 estado.respostas = estado.respostas || {};
 
@@ -174,7 +176,7 @@ botaoSeguinte.addEventListener('click', () => {
     }
 });
 
-function resumoDosPassoAnteriores() {
+function resumoDosPassosAnteriores() {
     const partes = [];
     for (let i = 0; i < passoAtual; i++) {
         const respostas = [...etapasPlano[i].querySelectorAll('.mc-campo')]
@@ -189,7 +191,12 @@ function resumoDosPassoAnteriores() {
 
 botaoPedir.addEventListener('click', async () => {
     botaoPedir.disabled = true;
-    botaoPedir.textContent = TEXTOS.pensando;
+    botaoPedir.textContent = TEXTOS.pensando || 'Professor pensando...';
+
+    // Dá feedback imediato ao usuário na interface
+    caixaProfessor.classList.remove('oculto');
+    elogio.textContent = '🧑‍🔬 ' + (TEXTOS.pensando || 'Professor pensando...');
+    listaPerguntas.innerHTML = '<li style="list-style: none; opacity: 0.85;">Analisando suas respostas para criar as melhores perguntas...</li>';
 
     const etapa = etapasPlano[passoAtual];
     const corpo = {
@@ -213,7 +220,7 @@ botaoPedir.addEventListener('click', async () => {
 
         if (!resposta.ok || resultado.erro) throw new Error('falha');
 
-        elogio.textContent = resultado.elogio;
+        elogio.textContent = resultado.elogio || '';
         listaPerguntas.innerHTML = '';
         (resultado.perguntas || []).forEach((pergunta) => {
             const item = document.createElement('li');
@@ -295,7 +302,7 @@ function editarRespostas() {
 
 function textoDoPlano() {
     const linhas = [TEXTOS.tituloPlano, ''];
-    if (camposIdeia.value.trim()) {
+    if (campoIdeia.value.trim()) {
         linhas.push(campoIdeia.value.trim(), '');
     }
     coletarPlano().forEach((etapa, i) => {

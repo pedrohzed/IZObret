@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-28 16:07-0300\n"
+"POT-Creation-Date: 2026-11-01 17:29-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,122 +21,130 @@ msgstr ""
 msgid "Máquina de Faíscas IZObret"
 msgstr ""
 
-#: templates/faiscas.html:22 templates/index.html:24 templates/ods.html:22
-#: templates/refinador.html:22
+#: templates/faiscas.html:23 templates/index.html:24 templates/ods.html:22
+#: templates/refinador.html:23
 msgid "Início"
 msgstr ""
 
-#: templates/faiscas.html:23 templates/index.html:25 templates/index.html:65
-#: templates/ods.html:23 templates/refinador.html:23
+#: templates/faiscas.html:24 templates/faiscas.html:50 templates/index.html:25
+#: templates/index.html:65 templates/ods.html:23 templates/refinador.html:24
 msgid "Máquina de Faíscas"
 msgstr ""
 
-#: templates/faiscas.html:24 templates/index.html:26 templates/ods.html:24
-#: templates/refinador.html:24
+#: templates/faiscas.html:25 templates/index.html:26 templates/ods.html:24
+#: templates/refinador.html:25
 msgid "Método Científico"
 msgstr ""
 
-#: templates/faiscas.html:25 templates/index.html:27 templates/index.html:97
-#: templates/ods.html:25 templates/refinador.html:25
+#: templates/faiscas.html:26 templates/index.html:27 templates/index.html:97
+#: templates/ods.html:25 templates/refinador.html:26
 msgid "Missões e Canvas"
 msgstr ""
 
-#: templates/faiscas.html:34 templates/index.html:36 templates/ods.html:34
-#: templates/refinador.html:34
+#: templates/faiscas.html:35 templates/index.html:36 templates/ods.html:34
+#: templates/refinador.html:35
 msgid "Minha Oficina"
 msgstr ""
 
-#: templates/faiscas.html:41
+#: templates/faiscas.html:42
 msgid "ETAPA 1: FAÍSCA DE IDEIA"
 msgstr ""
 
-#: templates/faiscas.html:42
+#: templates/faiscas.html:43
 msgid "A máquina de Faíscas"
 msgstr ""
 
-#: templates/faiscas.html:43
+#: templates/faiscas.html:44
 msgid ""
 "Gire a alavanca! Combine elementos improváveis para inventar algo "
 "inovador."
 msgstr ""
 
-#: templates/faiscas.html:48
+#: templates/faiscas.html:58
 msgid "Qual o foco da invenção hoje?"
 msgstr ""
 
-#: templates/faiscas.html:50
+#: templates/faiscas.html:60
 msgid "Problemas Sociais (ODS da ONU)"
 msgstr ""
 
-#: templates/faiscas.html:51
+#: templates/faiscas.html:61
 msgid "Soluções Energéticas & Sustentabilidade"
 msgstr ""
 
-#: templates/faiscas.html:52
+#: templates/faiscas.html:62
 msgid "Acessibilidade e Inclusão"
 msgstr ""
 
-#: templates/faiscas.html:53
+#: templates/faiscas.html:63
 msgid "Jogos"
 msgstr ""
 
-#: templates/faiscas.html:56
+#: templates/faiscas.html:66 templates/ods.html:61
 msgid "O que são as ODS?"
 msgstr ""
 
-#: templates/faiscas.html:57
+#: templates/faiscas.html:67
 msgid ""
 "São 17 objetivos de desenvolvimento sustentável. Clique aqui para saber "
 "mais!"
 msgstr ""
 
-#: templates/faiscas.html:63
+#: templates/faiscas.html:71
+msgid "Já tem uma ideia ou interesse em mente? (Opcional)"
+msgstr ""
+
+#: templates/faiscas.html:72
+msgid "Ex: animais, skate, ajudar minha avó, reciclagem na escola..."
+msgstr ""
+
+#: templates/faiscas.html:78
 msgid "Objeto"
 msgstr ""
 
-#: templates/faiscas.html:69
+#: templates/faiscas.html:85
 msgid "Ação"
 msgstr ""
 
-#: templates/faiscas.html:75
+#: templates/faiscas.html:92
 msgid "Desafio"
 msgstr ""
 
-#: templates/faiscas.html:83
-msgid "Puxar alavanca"
-msgstr ""
-
-#: templates/faiscas.html:89
-msgid "Puxe a alavanca!"
-msgstr ""
-
-#: templates/faiscas.html:94
+#: templates/faiscas.html:101
 msgid "Refinar esta ideia"
 msgstr ""
 
-#: templates/faiscas.html:103 templates/index.html:114 templates/ods.html:112
-#: templates/refinador.html:93
+#: templates/faiscas.html:107
+msgid "Puxar alavanca"
+msgstr ""
+
+#: templates/faiscas.html:113
+msgid "Puxe a alavanca!"
+msgstr ""
+
+#: templates/faiscas.html:123 templates/index.html:114 templates/ods.html:84
+#: templates/refinador.html:295
 msgid "Uma incubadora de ideias para jovens inventores."
 msgstr ""
 
-#: templates/faiscas.html:106 templates/index.html:117 templates/ods.html:115
-#: templates/refinador.html:96
+#: templates/faiscas.html:126 templates/index.html:117 templates/ods.html:87
+#: templates/refinador.html:298
 msgid "Redes sociais"
 msgstr ""
 
-#: templates/faiscas.html:114
+#: templates/faiscas.html:134
 msgid "Erro na"
 msgstr ""
 
-#: templates/faiscas.html:115
+#: templates/faiscas.html:135
 msgid "Conexão"
 msgstr ""
 
-#: templates/faiscas.html:116
+#: templates/faiscas.html:136
 msgid "Tente"
 msgstr ""
 
-#: templates/faiscas.html:117
+#: templates/faiscas.html:137
 msgid "Novamente"
 msgstr ""
 
@@ -159,7 +167,7 @@ msgid ""
 "amadurecer suas ideias como um verdadeiro cientista."
 msgstr ""
 
-#: templates/index.html:49
+#: templates/index.html:49 templates/ods.html:76
 msgid "Ligar Máquina de Faíscas"
 msgstr ""
 
@@ -260,185 +268,560 @@ msgid "Abrir Minha Bancada"
 msgstr ""
 
 #: templates/ods.html:6
-msgid "O que são as ODS? - IZObret"
+msgid "ODS da ONU - IZObret"
+msgstr ""
+
+#: templates/ods.html:25 templates/ods.html:34
+msgid "Em breve"
+msgstr ""
+
+#: templates/ods.html:40
+msgid "Erradicação da Pobreza"
 msgstr ""
 
 #: templates/ods.html:41
-msgid "GUIA DO INVENTOR"
+msgid "Fome Zero e Agricultura Sustentável"
 msgstr ""
 
 #: templates/ods.html:42
-msgid "O que são as ODS da ONU?"
+msgid "Saúde e Bem-Estar"
+msgstr ""
+
+#: templates/ods.html:43
+msgid "Educação de Qualidade"
 msgstr ""
 
 #: templates/ods.html:44
-msgid ""
-"Os 17 Objetivos de Desenvolvimento Sustentável (ODS) são metas globais "
-"criadas pelas Nações Unidas para construir um planeta mais justo, "
-"saudável e sustentável até 2030."
+msgid "Igualdade de Gênero"
+msgstr ""
+
+#: templates/ods.html:45
+msgid "Água Potável e Saneamento"
+msgstr ""
+
+#: templates/ods.html:46
+msgid "Energia Limpa e Acessível"
+msgstr ""
+
+#: templates/ods.html:47
+msgid "Trabalho Decente e Crescimento Econômico"
+msgstr ""
+
+#: templates/ods.html:48
+msgid "Indústria, Inovação e Infraestrutura"
+msgstr ""
+
+#: templates/ods.html:49
+msgid "Redução das Desigualdades"
 msgstr ""
 
 #: templates/ods.html:50
-msgid "INSPIRAÇÃO PARA INVENTORES"
+msgid "Cidades e Comunidades Sustentáveis"
 msgstr ""
 
 #: templates/ods.html:51
-msgid "Grandes Desafios Mundiais"
+msgid "Consumo e Produção Responsáveis"
 msgstr ""
 
 #: templates/ods.html:52
-msgid ""
-"Toda grande invenção começa com um problema real. Veja como as ODS podem "
-"guiar suas ideias:"
+msgid "Ação Contra a Mudança Global do Clima"
+msgstr ""
+
+#: templates/ods.html:53
+msgid "Vida na Água"
+msgstr ""
+
+#: templates/ods.html:54
+msgid "Vida Terrestre"
+msgstr ""
+
+#: templates/ods.html:55
+msgid "Paz, Justiça e Instituições Eficazes"
+msgstr ""
+
+#: templates/ods.html:56
+msgid "Parcerias e Meios de Implementação"
 msgstr ""
 
 #: templates/ods.html:60
-msgid "ODS 6"
-msgstr ""
-
-#: templates/ods.html:61
-msgid "Água Potável e Saneamento"
+msgid "OBJETIVOS GLOBAIS"
 msgstr ""
 
 #: templates/ods.html:62
 msgid ""
-"Como garantir que rios e oceanos fiquem limpos e todas as pessoas tenham "
-"água potável?"
-msgstr ""
-
-#: templates/ods.html:64 templates/ods.html:79 templates/ods.html:94
-msgid "Exemplo de Invenção:"
-msgstr ""
-
-#: templates/ods.html:66
-msgid "Robôs coletores de lixo nos rios"
+"Em 2015, a ONU reuniu 17 metas para tornar o mundo melhor até 2030. Estes"
+" são os Objetivos de Desenvolvimento Sustentável, e a sua invenção pode "
+"ajudar a cumprir uma ou mais delas!"
 msgstr ""
 
 #: templates/ods.html:75
-msgid "ODS 7"
-msgstr ""
-
-#: templates/ods.html:76
-msgid "Energia Limpa e Acessível"
-msgstr ""
-
-#: templates/ods.html:77
-msgid ""
-"Como criar novas maneiras de gerar e armazenar energia sem poluir a "
-"atmosfera?"
-msgstr ""
-
-#: templates/ods.html:81
-msgid "Mochilas que geram energia solar"
-msgstr ""
-
-#: templates/ods.html:90
-msgid "ODS 11"
-msgstr ""
-
-#: templates/ods.html:91
-msgid "Cidades Sustentáveis"
-msgstr ""
-
-#: templates/ods.html:92
-msgid ""
-"Como tornar bairros e cidades mais verdes, seguros e acessíveis para "
-"todas as pessoas?"
-msgstr ""
-
-#: templates/ods.html:96
-msgid "Sensores de reciclagem comunitária"
-msgstr ""
-
-#: templates/ods.html:103
-msgid "Voltar para a Máquina de Faíscas"
+msgid "Escolha uma ODS que importa para você e transforme-a em uma invenção."
 msgstr ""
 
 #: templates/refinador.html:6
-msgid "Refinador Científico - IZObret"
-msgstr ""
-
-#: templates/refinador.html:41
-msgid "ETAPA 2: REFINADOR CIENTÍFICO"
-msgstr ""
-
-#: templates/refinador.html:42
-msgid "Caderno de Hipóteses"
+msgid "Método Científico - IZObret"
 msgstr ""
 
 #: templates/refinador.html:43
+msgid "Observar"
+msgstr ""
+
+#: templates/refinador.html:44
 msgid ""
-"Transforme a sua faísca em um projeto de verdade com a ajuda do Método "
-"Científico."
+"Observar é olhar o mundo com atenção de detetive. Use os olhos, os "
+"ouvidos e as mãos para notar coisas que ninguém percebeu."
 msgstr ""
 
-#: templates/refinador.html:48
-msgid "SUA IDEIA SORTEADA"
+#: templates/refinador.html:45
+msgid ""
+"Léo notou que a planta da sala vivia murcha, mas a do quarto estava linda"
+" e verdinha."
+msgstr ""
+
+#: templates/refinador.html:46
+msgid "O que eu percebi que me deixou curioso ou incomodado?"
+msgstr ""
+
+#: templates/refinador.html:47
+msgid ""
+"Todo invento começa quando alguém percebe um problema de verdade. Olhe ao"
+" seu redor!"
+msgstr ""
+
+#: templates/refinador.html:49
+msgid "Que problema você percebeu no mundo real, ligado à sua ideia sorteada?"
 msgstr ""
 
 #: templates/refinador.html:50
-msgid "Foco:"
-msgstr ""
-
-#: templates/refinador.html:50
-msgid "Livre"
+msgid "Ex: Percebi que o rio perto da minha escola está cheio de lixo..."
 msgstr ""
 
 #: templates/refinador.html:51
-msgid "Objeto:"
+msgid "Quem sente esse problema? Onde e quando ele acontece?"
 msgstr ""
 
 #: templates/refinador.html:52
-msgid "Ação:"
+msgid "Ex: Os moradores e os peixes, principalmente depois das chuvas..."
 msgstr ""
 
-#: templates/refinador.html:53
-msgid "Desafio:"
+#: templates/refinador.html:57
+msgid "Perguntar"
+msgstr ""
+
+#: templates/refinador.html:58
+msgid ""
+"Cientistas transformam o que observam em uma pergunta clara. Uma boa "
+"pergunta começa com Por que, Como ou O que acontece se."
+msgstr ""
+
+#: templates/refinador.html:59
+msgid "Léo perguntou: Por que a planta da sala está murchando?"
 msgstr ""
 
 #: templates/refinador.html:60
-msgid "Qual é a sua hipótese?"
+msgid "Qual é a dúvida que eu quero resolver?"
 msgstr ""
 
-#: templates/refinador.html:62
-msgid "O que você acha que vai acontecer se construirmos essa invenção?"
+#: templates/refinador.html:61
+msgid ""
+"Uma boa pergunta guia toda a invenção. Comece com Como, Por que ou O que "
+"acontece se."
 msgstr ""
 
 #: templates/refinador.html:63
+msgid "Qual é a pergunta que a sua invenção quer responder?"
+msgstr ""
+
+#: templates/refinador.html:64
+msgid "Ex: Como podemos tirar o lixo do rio sem machucar os peixes?"
+msgstr ""
+
+#: templates/refinador.html:65
+msgid "O que você ainda não sabe e precisa pesquisar?"
+msgstr ""
+
+#: templates/refinador.html:66
+msgid "Ex: Que tipo de lixo é mais comum? Como outros inventores resolveram isso?"
+msgstr ""
+
+#: templates/refinador.html:71 templates/refinador.html:194
+msgid "Hipótese"
+msgstr ""
+
+#: templates/refinador.html:72
 msgid ""
-"Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para "
-"os peixes em poucas semanas..."
+"Hipótese é um palpite esperto sobre a resposta, que dá para testar. Ela "
+"costuma ter este formato: Eu acho que se..., então..., porque..."
 msgstr ""
 
-#: templates/refinador.html:68
-msgid "Como podemos testar isso?"
-msgstr ""
-
-#: templates/refinador.html:70
-msgid "Qual teste prático ou experimento simples podemos fazer?"
-msgstr ""
-
-#: templates/refinador.html:71
+#: templates/refinador.html:73
 msgid ""
-"Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do "
-"robô..."
+"Léo pensou: Eu acho que se eu puser a planta perto da janela, então ela "
+"vai ficar verde, porque as plantas precisam de luz."
 msgstr ""
 
-#: templates/refinador.html:75 templates/refinador.html:105
-msgid "Pedir ajuda ao Professor IA"
+#: templates/refinador.html:74
+msgid "O que eu acho que vai acontecer, e por quê?"
 msgstr ""
 
-#: templates/refinador.html:82
-msgid "PROFESSOR IA"
+#: templates/refinador.html:75
+msgid ""
+"O seu palpite precisa poder ser testado, e pode estar errado! Isso faz "
+"parte da ciência."
 msgstr ""
 
-#: templates/refinador.html:104
-msgid "Professor pensando..."
+#: templates/refinador.html:77
+msgid "Complete: Eu acho que se ___, então ___, porque ___."
+msgstr ""
+
+#: templates/refinador.html:78
+msgid ""
+"Ex: Eu acho que se o robô tiver uma rede, então ele junta o lixo sem "
+"pegar os peixes, porque a água passa pela rede."
+msgstr ""
+
+#: templates/refinador.html:79
+msgid "Como você vai perceber que o seu palpite estava errado?"
+msgstr ""
+
+#: templates/refinador.html:80
+msgid ""
+"Ex: Se o robô pegar peixes junto com o lixo, ou se o lixo continuar na "
+"água."
+msgstr ""
+
+#: templates/refinador.html:85
+msgid "Testar"
+msgstr ""
+
+#: templates/refinador.html:86
+msgid ""
+"Hora do experimento! Para o teste ser justo, mude só UMA coisa de cada "
+"vez e deixe todo o resto igual."
+msgstr ""
+
+#: templates/refinador.html:87
+msgid ""
+"Léo pôs a planta perto da janela por 14 dias. Ele manteve a mesma "
+"quantidade de água e o mesmo vaso."
+msgstr ""
+
+#: templates/refinador.html:88
+msgid "Qual teste simples eu consigo fazer, e o que vou mudar?"
+msgstr ""
+
+#: templates/refinador.html:89
+msgid ""
+"Um bom teste é simples, seguro e justo. Dá para fazer com materiais do "
+"dia a dia!"
+msgstr ""
+
+#: templates/refinador.html:91
+msgid "Qual experimento simples você pode fazer para testar o seu palpite?"
+msgstr ""
+
+#: templates/refinador.html:92
+msgid ""
+"Ex: Fazer um protótipo de papelão com uma rede e testar numa bacia com "
+"bolinhas de papel."
+msgstr ""
+
+#: templates/refinador.html:93
+msgid "O que você vai mudar (só UMA coisa) e o que vai manter igual?"
+msgstr ""
+
+#: templates/refinador.html:94
+msgid ""
+"Ex: Mudo o tamanho dos buracos da rede. Mantenho a bacia, a água e a "
+"quantidade de bolinhas."
+msgstr ""
+
+#: templates/refinador.html:99
+msgid "Analisar"
+msgstr ""
+
+#: templates/refinador.html:100
+msgid ""
+"Anote tudo o que aconteceu, com números, desenhos ou fotos. Essas "
+"anotações se chamam dados. E nada de trapacear: vale o que realmente "
+"aconteceu!"
+msgstr ""
+
+#: templates/refinador.html:101
+msgid ""
+"Depois de 14 dias, Léo anotou: as folhas ficaram mais verdes e firmes, e "
+"duas folhas novas nasceram."
+msgstr ""
+
+#: templates/refinador.html:102
+msgid "O que eu vou medir ou anotar para saber se deu certo?"
+msgstr ""
+
+#: templates/refinador.html:103
+msgid "Sem registro não existe ciência! Decida antes o que vai medir."
+msgstr ""
+
+#: templates/refinador.html:105
+msgid "O que você vai medir ou anotar durante o teste?"
 msgstr ""
 
 #: templates/refinador.html:106
+msgid "Ex: Quantas bolinhas a rede pegou em 10 tentativas."
+msgstr ""
+
+#: templates/refinador.html:107
+msgid "Que resultado mostraria que a sua ideia funciona?"
+msgstr ""
+
+#: templates/refinador.html:108
+msgid "Ex: Se a rede pegar pelo menos 8 das 10 bolinhas."
+msgstr ""
+
+#: templates/refinador.html:113
+msgid "Concluir"
+msgstr ""
+
+#: templates/refinador.html:114
+msgid ""
+"Compare os resultados com o seu palpite. Você acertou, errou ou descobriu"
+" algo novo? Nos três casos você aprendeu, e agora pode contar para os "
+"outros!"
+msgstr ""
+
+#: templates/refinador.html:115
+msgid ""
+"Léo concluiu: a planta precisava de luz! Ele mostrou os resultados para a"
+" turma e ajudou os colegas com as plantas deles."
+msgstr ""
+
+#: templates/refinador.html:116
+msgid "O que eu aprendi, e o que faço agora?"
+msgstr ""
+
+#: templates/refinador.html:117
+msgid ""
+"Se deu certo, construa a versão maior. Se não deu, volte ao passo 3 e "
+"mude o palpite!"
+msgstr ""
+
+#: templates/refinador.html:119
+msgid ""
+"Se o teste funcionar, qual é o próximo passo da invenção? E se não "
+"funcionar, o que você muda?"
+msgstr ""
+
+#: templates/refinador.html:120
+msgid "Ex: Se funcionar, construo um robô maior. Se não, troco o tamanho da rede."
+msgstr ""
+
+#: templates/refinador.html:121
+msgid ""
+"Quem pode ajudar você ou ouvir a sua ideia? (professor, família, "
+"amigos...)"
+msgstr ""
+
+#: templates/refinador.html:122
+msgid "Ex: Minha professora de ciências e o meu tio que é engenheiro."
+msgstr ""
+
+#: templates/refinador.html:129
+msgid "ETAPA 2: MÉTODO CIENTÍFICO"
+msgstr ""
+
+#: templates/refinador.html:130
+msgid "O Método Científico"
+msgstr ""
+
+#: templates/refinador.html:131
+msgid ""
+"Todo grande inventor segue um caminho de descoberta. Aprenda o mapa do "
+"cientista e use-o para fazer a sua invenção virar realidade!"
+msgstr ""
+
+#: templates/refinador.html:137
+msgid "PARTE 1"
+msgstr ""
+
+#: templates/refinador.html:138
+msgid "O Mapa do Cientista"
+msgstr ""
+
+#: templates/refinador.html:139
+msgid ""
+"Cientistas não adivinham: eles descobrem seguindo um caminho com 6 "
+"estações. Clique em cada uma e acompanhe o mistério da planta do Léo!"
+msgstr ""
+
+#: templates/refinador.html:144
+msgid "Estações do método científico"
+msgstr ""
+
+#: templates/refinador.html:164 templates/refinador.html:241
+#, python-format
+msgid "Passo %(n)s de 6"
+msgstr ""
+
+#: templates/refinador.html:168
+msgid "Exemplo: o mistério da planta do Léo"
+msgstr ""
+
+#: templates/refinador.html:177 templates/refinador.html:258
+msgid "Voltar"
+msgstr ""
+
+#: templates/refinador.html:178 templates/refinador.html:260
+#: templates/refinador.html:310
+msgid "Próxima estação"
+msgstr ""
+
+#: templates/refinador.html:185
+msgid "E se o teste não funcionar?"
+msgstr ""
+
+#: templates/refinador.html:186
+msgid ""
+"Sem problema! Cientistas erram o tempo todo, e cada erro ensina algo. "
+"Volte ao passo 3, mude o seu palpite e teste de novo. É assim que as "
+"grandes invenções nascem!"
+msgstr ""
+
+#: templates/refinador.html:191
+msgid "Palavras de cientista"
+msgstr ""
+
+#: templates/refinador.html:194
+msgid "Um palpite esperto que dá para testar."
+msgstr ""
+
+#: templates/refinador.html:195
+msgid "Experimento"
+msgstr ""
+
+#: templates/refinador.html:195
+msgid "Um teste justo para descobrir se o palpite está certo."
+msgstr ""
+
+#: templates/refinador.html:196
+msgid "Variável"
+msgstr ""
+
+#: templates/refinador.html:196
+msgid "Qualquer coisa que pode mudar no teste, como tamanho, tempo ou cor."
+msgstr ""
+
+#: templates/refinador.html:197
+msgid "Dados"
+msgstr ""
+
+#: templates/refinador.html:197
+msgid "As anotações e medidas que você junta durante o teste."
+msgstr ""
+
+#: templates/refinador.html:204
+msgid "PARTE 2"
+msgstr ""
+
+#: templates/refinador.html:205
+msgid "Agora é a sua vez!"
+msgstr ""
+
+#: templates/refinador.html:206
+msgid ""
+"Responda uma estação de cada vez. Não precisa ser perfeito, dá para mudar"
+" tudo depois. As suas respostas ficam salvas neste aparelho."
+msgstr ""
+
+#: templates/refinador.html:210
+msgid "SUA IDEIA SORTEADA"
+msgstr ""
+
+#: templates/refinador.html:212
+msgid "Foco:"
+msgstr ""
+
+#: templates/refinador.html:212
+msgid "Livre"
+msgstr ""
+
+#: templates/refinador.html:213
+msgid "Objeto:"
+msgstr ""
+
+#: templates/refinador.html:214
+msgid "Ação:"
+msgstr ""
+
+#: templates/refinador.html:215
+msgid "Desafio:"
+msgstr ""
+
+#: templates/refinador.html:218
+msgid "Minha invenção em uma frase"
+msgstr ""
+
+#: templates/refinador.html:219
+msgid "Ex: Um robô que limpa o rio sem machucar os peixes."
+msgstr ""
+
+#: templates/refinador.html:221
+msgid "Sortear outra ideia"
+msgstr ""
+
+#: templates/refinador.html:224
+msgid "Passos do seu plano"
+msgstr ""
+
+#: templates/refinador.html:259 templates/refinador.html:308
+msgid "Pedir ajuda ao Professor IA"
+msgstr ""
+
+#: templates/refinador.html:267
+msgid "PROFESSOR IA"
+msgstr ""
+
+#: templates/refinador.html:277
+msgid "PRONTO!"
+msgstr ""
+
+#: templates/refinador.html:278 templates/refinador.html:316
+msgid "Meu Plano de Invenção"
+msgstr ""
+
+#: templates/refinador.html:284
+msgid "Editar respostas"
+msgstr ""
+
+#: templates/refinador.html:285 templates/refinador.html:315
+msgid "Copiar plano"
+msgstr ""
+
+#: templates/refinador.html:286
+msgid "Imprimir ou salvar PDF"
+msgstr ""
+
+#: templates/refinador.html:307
+msgid "Professor pensando..."
+msgstr ""
+
+#: templates/refinador.html:309
 msgid ""
 "Ops! O professor não conseguiu responder agora. Tente de novo em "
 "instantes!"
+msgstr ""
+
+#: templates/refinador.html:311
+msgid "Já entendi! Vamos inventar"
+msgstr ""
+
+#: templates/refinador.html:312
+msgid "Ver meu plano"
+msgstr ""
+
+#: templates/refinador.html:313
+msgid "(ainda não respondi)"
+msgstr ""
+
+#: templates/refinador.html:314
+msgid "Plano copiado!"
 msgstr ""
 
