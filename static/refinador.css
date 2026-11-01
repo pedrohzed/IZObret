@@ -1,0 +1,686 @@
+[hidden] {
+    display: none !important;
+}
+
+.mc-bloco {
+    max-width: 900px;
+    margin: 0 auto 64px;
+}
+
+.mc-bloco .cabecalho-secao p {
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.mc-btn {
+    font-family: inherit;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 14px 26px;
+    border: 2px solid transparent;
+    border-bottom-width: 5px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.mc-btn:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+}
+
+.mc-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.mc-btn:focus-visible,
+.mc-estacao:focus-visible,
+.mc-ponto:focus-visible {
+    outline: 3px solid #0047ff;
+    outline-offset: 3px;
+}
+
+.mc-btn-azul {
+    color: #ffffff;
+    background-color: #0047ff;
+    border-color: #0047ff;
+    border-bottom-color: #0033c0;
+}
+
+.mc-btn-claro {
+    color: #0047ff;
+    background-color: #ffffff;
+    border-color: #dde2f7;
+    border-bottom-color: #c4c5da;
+}
+
+.mc-btn-amarelo {
+    color: #231a00;
+    background-color: #fecf27;
+    border-color: #fecf27;
+    border-bottom-color: #d99c00;
+}
+
+.mc-trilha {
+    position: relative;
+    margin-bottom: 28px;
+    padding-top: 38px;
+    --prog: 0%;
+}
+
+.mc-linha {
+    position: absolute;
+    top: 74px;
+    left: calc(100% / 12);
+    right: calc(100% / 12);
+    height: 8px;
+    background: #dde2f7;
+    border-radius: 999px;
+}
+
+.mc-linha-fill {
+    display: block;
+    width: var(--prog);
+    height: 100%;
+    background: repeating-linear-gradient(
+        135deg,
+        #0047ff 0 10px,
+        #3b6dff 10px 20px
+    );
+    border-radius: 999px;
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mc-estacoes {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 6px;
+}
+
+.mc-estacao {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mc-estado-icone {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    background: #ffffff;
+    border: 4px solid #dde2f7;
+    border-radius: 50%;
+    box-shadow: 0 5px 0 #dde2f7;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s, border-color 0.2s;
+}
+
+.mc-estacao:hover .mc-estacao-icone {
+    transform: translateY(-3px);
+}
+
+.mc-estacao.feita .mc.estacao-icone {
+    background: color-mix(in srgb, var(--cor) 14%, #ffffff);
+    border-color: var(--cor);
+    box-shadow: 0 5px 0 color-mix(in srgb, var(--cor) 40%, #ffffff);
+}
+
+.mc-estacao.ativa .mc-estacao-icone {
+    transform: scale(1.18) translateY(-4px);
+    background: var(--cor);
+    border-color: var(--cor);
+    box-shadow:
+        0 7px 0 color-mix(in srgb, var(--cor) 60%, #000000),
+        0 0 0 7px color-mix(in srgb, var(--cor) 22%, transparent);
+}
+
+.mc-estacao-nome {
+    font-weight: 800;
+    font-size: 13px;
+    color: #6b7089;
+    text-align: center;
+}
+
+.mc-estacao.ativa .mc-estacao-nome {
+    color: #151b2a;
+}
+
+.mc-mascote {
+    position: absolute;
+    top: -46px;
+    left: 50%;
+    display: none;
+    margin-left: -16px;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.mc-estacao.ativa .mc-mascote {
+    display: block;
+    animation: mc-pula 1s ease-in-out infinite;
+}
+
+@keyframes mc-pula {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-7px); }
+}
+
+.mc-detalhe {
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    padding: 28px;
+    background: #ffffff;
+    border: 3px solid var(--cor);
+    border-radius: 28px;
+    box-shadow: 0 8px 0 color-mix(in srgb, var(--cor) 35%, #ffffff);
+    animation: mc-entra 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.1);;
+}
+
+@keyframes mc-entra {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.mc-detalhe-icone {
+    flex: 0 0 96px;
+    height: 96px;
+    display: grid;
+    place-items: center;
+    font-size: 52px;
+    background: color-mix(in srgb, var(--cor) 14%, #ffffff);
+    border-radius: 28px;
+    animation: mc-pop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes mc-pop {
+    from { transfrom: scale(0.3) rotate(-12deg); }
+    to   { transform: scale(1) rotate(0); }
+}
+
+.mc-detalhe-texto {
+    min-width: 0;
+}
+
+.mc-passo {
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--cor);
+}
+
+.mc-detalhe h3 {
+    margin: 4px 0 10px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 30px;
+    color: #151b2a;
+}
+
+.mc-oque {
+    margin-bottom: 16px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #434657;
+}
+
+.mc-exemplo {
+    margin-bottom: 14px;
+    padding: 14px 16px;
+    background: color-mix(in srgb, var(--cor) 9%, #ffffff);
+    border-left: 6px solid var(--cor);
+    border-radius: 14px;
+}
+
+.mc-exemplo strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    color: #151b2a;
+}
+
+.mc-exemplo p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #434657;
+}
+
+.mc-chave {
+    padding: 12px 14px;
+    font-weight: 800;
+    line-height: 1.4;
+    color: #231a00;
+    background: #fff8d6;
+    border: 2px dashed #fecf27;
+    border-radius: 14px;
+}
+
+.mc-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.mc-volta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 22px 26px;
+    background: #fff8d6;
+    border: 3px solid #fecf27;
+    border-radius: 24px;
+}
+
+.mc-volta-icone {
+    flex: 0 0 auto;
+    font-size: 46px;
+    animation: mc-gira 6s linear infinite;
+}
+
+@keyframes mc-gira {
+    to { transform: rotate(360deg); }
+}
+
+.mc-volta h3 {
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #151b2a;
+}
+
+.mc-volta p {
+    line-height: 1.5;
+    color: #434657;
+}
+
+.mc-glossario-topo {
+    margin: 40px 0 16px;
+    text-align: center;
+}
+
+.mc-glossario-topo h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    color: #151b2a;
+}
+
+.mc-glossario {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: 16px;
+}
+
+.mc-termo {
+    padding: 18px;
+    background: #ffffff;
+    border: 2px solid #e2e8fc;
+    border-radius: 20px;
+    box-shadow: 0 5px 0 #e2e8fc;
+}
+
+.mc-termo span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 28px;
+}
+
+.mc-termo strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 17px;
+    color: #0047ff;
+}
+
+.mc-termo p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #434657;
+}
+
+.ideia-tags .tag-item,
+.professor-elogio,
+.professor-perguntas li {
+    overflow-wrap: anywhere;
+}
+
+.mc-ideia-campo {
+    margin-top: 18px;
+}
+
+.mc-ideia-campo textarea {
+    background: #faf8ff;
+}
+
+.mc-link-sortear {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #af3600;
+    text-decoration: none;
+}
+
+.mc-link-sortear:hover {
+    text-decoration: underline;
+}
+
+.mc-progresso {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 28px 0 20px;
+}
+
+.mc-ponto {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    background: #ffffff;
+    border: 3px solid #dde2f7;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2, border-color 0.2s;
+}
+
+.mc-ponto.completo {
+    background: color-mix(in srgb, var(--cor) 14%, #ffffff);
+    border-color: var(--cor);
+}
+
+.mc-ponto.completo::after {
+    content:'✓';
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 900;
+    color: #ffffff;
+    background: #1f8a4c;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.mc-ponto.ativo {
+    transform: scale(1.18);
+    background: var(--cor);
+    border-color: var(--cor);
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--cor) 22%, transparent);
+}
+
+.mc-arena {
+    display:flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px;
+    background: #ffffff;
+    border: 3px solid var(--cor);
+    border-radius: 28px;
+    box-shadow: 0 8px 0 color-mix(in srgb, var(--cor) 35%, #ffffff);
+    animation: mc-entra 0.4s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+}
+
+.mc-etapa-topo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.mc-etapa-icone {
+    flex: 0 0 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    font-size: 34px;
+    background: color-mix(in srgb, var(--cor) 14%, #ffffff);
+    border-radius: 20px;
+}
+
+.mc-etapa-topo h3 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 26px;
+    color: #151b2a;
+}
+
+.mc-lembrete {
+    padding: 12px 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #231a00;
+    background: #fff8d6;
+    border-left: 6px solid #fecf27;
+    border-radius: 12px;
+}
+
+.mc-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+#professor {
+    margin-top: 28px;
+}
+
+.mc-plano {
+    padding: 32px;
+    background: #ffffff;
+    border: 3px solid #0047ff;
+    border-radius: 28px;
+    box-shadow: 0 8px 0 #b9c3ff;
+    animation: mc-entra 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.1);
+}
+
+.mc-plano h2 {
+    margin: 14px 0 8px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 34px;
+    color: #151b2a;
+}
+
+.mc-plan-ideia {
+    overflow-wrap: anywhere;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0047ff;
+}
+
+.mc-plano-etapa {
+    padding: 16px 0 16px 18px;
+    border-left: 6px solid var(--cor);
+    margin-bottom: 14px;
+    break-inside: avoid;
+}
+
+.mc-plano-etapa h3 {
+    margin-bottom: 8px;
+    font-size: 19px;
+    color: #151b2a;
+}
+
+.mc-plano-q {
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    color: #6b7089;
+}
+
+.mc-plano-a {
+    margin-top: 2px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #151b2a;
+}
+
+.mc-plano-a.vazio {
+    font-style: italic;
+    color: #151b2a;
+}
+
+.mc-plano-a.vazio {
+    font-style: italic;
+    color: #9a9db3;
+}
+
+@media (max-width: 720px) {
+    .mc-bloco {
+        margin-bottom: 48px;
+    }
+
+    .mc-trilha {
+        padding-top: 0;
+    }
+
+    .mc-mascote {
+        top: -38px;
+    }
+
+    .mc-linha {
+        display: none;
+    }
+
+    .mc-estacoes {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 56px;
+        padding-top: 44px;
+    }
+
+    .mc-estacao-icone {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+
+    .mc-detalhe {
+        flex-direction: column;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .mc-detalhe-icone {
+        flex-basis: auto;
+        width: 72px;
+        height: 72px;
+        font-size: 38px;
+        border-radius: 22px;
+    }
+
+    .mc-detalhe h3 {
+        font-size: 26px;
+    }
+
+    .mc-oque {
+        font-size: 16px;
+    }
+
+    .mc-nav .mc-btn {
+        flex: 1;
+        padding: 14px 12px;
+    }
+
+    .mc-volta {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .mc-progresso {
+        gap: 8px;
+    }
+
+    .mc-ponto {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .mc-etapa {
+        padding: 20px;
+    }
+
+    .mc-etapa-topo h3 {
+        font-size: 22px;
+    }
+
+    .mc-acoes .mc-btn {
+        flex: 1 1 100%;
+    }
+
+    .mc-acoes #mc-anterior {
+        order: 3;
+    }
+
+    .mc-plano {
+        padding: 22px;
+    }
+
+    .mc-plano h2 {
+        font-size: 28px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .mc-mascote,
+    .mc-volta-icone,
+    .mc-detalhe,
+    .mc-detalhe-icone,
+    .mc-etapa,
+    .mc-plano {
+        animation: none !important;
+    }
+
+    .mc-linha-fill,
+    .mc-estacao-icone,
+    .mc-ponto {
+        transition: none !important;
+    }
+}
+
+@media print {
+    body.mostrando-plano {
+        background: #ffffff;
+    }
+
+    body.mostrando-plano .navbar,
+    body.mostrando-plano .faiscas-hero,
+    body.mostrando-plano .rodape,
+    body.mostrando-plano .mc-acoes-plano {
+        display: none !important;
+    }
+
+    body.mostrando-plano .container {
+        padding: 0;
+    }
+
+    body.mostrando-plano .mc-plano {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        animation: none;
+    }
+}

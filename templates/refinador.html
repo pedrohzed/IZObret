@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ _('Refinador Científico - IZObret') }}</title>
+    <title>{{ _('Método Científico - IZObret') }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='refinador.css')}}">
 </head>
 <body>
     <header class="navbar">
@@ -36,47 +37,231 @@
         </div>
     </header>
 
+    {% set etapas = [
+        {
+            'icone': '👀', 'cor': '#0047ff',
+            'nome': _('Observar'),
+            'oque': _('Observar é olhar o mundo com atenção de detetive. Use os olhos, os ouvidos e as mãos para notar coisas que ninguém percebeu.'),
+            'exemplo': _('Léo notou que a planta da sala vivia murcha, mas a do quarto estava linda e verdinha.'),
+            'chave': _('O que eu percebi que me deixou curioso ou incomodado?'),
+            'lembrete': _('Todo invento começa quando alguém percebe um problema de verdade. Olhe ao seu redor!'),
+            'perguntas': [
+                {'rotulo': _('Que problema você percebeu no mundo real, ligado à sua ideia sorteada?'),
+                 'dica': _('Ex: Percebi que o rio perto da minha escola está cheio de lixo...')},
+                {'rotulo': _('Quem sente esse problema? Onde e quando ele acontece?'),
+                 'dica': _('Ex: Os moradores e os peixes, principalmente depois das chuvas...')}
+            ]
+        },
+        {
+            'icone': '❓', 'cor': '#af3600',
+            'nome': _('Perguntar'),
+            'oque': _('Cientistas transformam o que observam em uma pergunta clara. Uma boa pergunta começa com Por que, Como ou O que acontece se.'),
+            'exemplo': _('Léo perguntou: Por que a planta da sala está murchando?'),
+            'chave': _('Qual é a dúvida que eu quero resolver?'),
+            'lembrete': _('Uma boa pergunta guia toda a invenção. Comece com Como, Por que ou O que acontece se.'),
+            'perguntas': [
+                {'rotulo': _('Qual é a pergunta que a sua invenção quer responder?'),
+                 'dica': _('Ex: Como podemos tirar o lixo do rio sem machucar os peixes?')},
+                {'rotulo': _('O que você ainda não sabe e precisa pesquisar?'),
+                 'dica': _('Ex: Que tipo de lixo é mais comum? Como outros inventores resolveram isso?')}
+            ]
+        },
+        {
+            'icone': '💡', 'cor': '#b57800',
+            'nome': _('Hipótese'),
+            'oque': _('Hipótese é um palpite esperto sobre a resposta, que dá para testar. Ela costuma ter este formato: Eu acho que se..., então..., porque...'),
+            'exemplo': _('Léo pensou: Eu acho que se eu puser a planta perto da janela, então ela vai ficar verde, porque as plantas precisam de luz.'),
+            'chave': _('O que eu acho que vai acontecer, e por quê?'),
+            'lembrete': _('O seu palpite precisa poder ser testado, e pode estar errado! Isso faz parte da ciência.'),
+            'perguntas': [
+                {'rotulo': _('Complete: Eu acho que se ___, então ___, porque ___.'),
+                 'dica': _('Ex: Eu acho que se o robô tiver uma rede, então ele junta o lixo sem pegar os peixes, porque a água passa pela rede.')},
+                {'rotulo': _('Como você vai perceber que o seu palpite estava errado?'),
+                 'dica': _('Ex: Se o robô pegar peixes junto com o lixo, ou se o lixo continuar na água.')}
+            ]
+        },
+        {
+            'icone': '🧪', 'cor': '#1f8a4c',
+            'nome': _('Testar'),
+            'oque': _('Hora do experimento! Para o teste ser justo, mude só UMA coisa de cada vez e deixe todo o resto igual.'),
+            'exemplo': _('Léo pôs a planta perto da janela por 14 dias. Ele manteve a mesma quantidade de água e o mesmo vaso.'),
+            'chave': _('Qual teste simples eu consigo fazer, e o que vou mudar?'),
+            'lembrete': _('Um bom teste é simples, seguro e justo. Dá para fazer com materiais do dia a dia!'),
+            'perguntas': [
+                {'rotulo': _('Qual experimento simples você pode fazer para testar o seu palpite?'),
+                 'dica': _('Ex: Fazer um protótipo de papelão com uma rede e testar numa bacia com bolinhas de papel.')},
+                {'rotulo': _('O que você vai mudar (só UMA coisa) e o que vai manter igual?'),
+                 'dica': _('Ex: Mudo o tamanho dos buracos da rede. Mantenho a bacia, a água e a quantidade de bolinhas.')}
+            ]
+        },
+        {
+            'icone': '📊', 'cor': '#6a3fd8',
+            'nome': _('Analisar'),
+            'oque': _('Anote tudo o que aconteceu, com números, desenhos ou fotos. Essas anotações se chamam dados. E nada de trapacear: vale o que realmente aconteceu!'),
+            'exemplo': _('Depois de 14 dias, Léo anotou: as folhas ficaram mais verdes e firmes, e duas folhas novas nasceram.'),
+            'chave': _('O que eu vou medir ou anotar para saber se deu certo?'),
+            'lembrete': _('Sem registro não existe ciência! Decida antes o que vai medir.'),
+            'perguntas': [
+                {'rotulo': _('O que você vai medir ou anotar durante o teste?'),
+                 'dica': _('Ex: Quantas bolinhas a rede pegou em 10 tentativas.')},
+                {'rotulo': _('Que resultado mostraria que a sua ideia funciona?'),
+                 'dica': _('Ex: Se a rede pegar pelo menos 8 das 10 bolinhas.')}
+            ]
+        },
+        {
+            'icone': '📣', 'cor': '#d6246e',
+            'nome': _('Concluir'),
+            'oque': _('Compare os resultados com o seu palpite. Você acertou, errou ou descobriu algo novo? Nos três casos você aprendeu, e agora pode contar para os outros!'),
+            'exemplo': _('Léo concluiu: a planta precisava de luz! Ele mostrou os resultados para a turma e ajudou os colegas com as plantas deles.'),
+            'chave': _('O que eu aprendi, e o que faço agora?'),
+            'lembrete': _('Se deu certo, construa a versão maior. Se não deu, volte ao passo 3 e mude o palpite!'),
+            'perguntas': [
+                {'rotulo': _('Se o teste funcionar, qual é o próximo passo da invenção? E se não funcionar, o que você muda?'),
+                 'dica': _('Ex: Se funcionar, construo um robô maior. Se não, troco o tamanho da rede.')},
+                {'rotulo': _('Quem pode ajudar você ou ouvir a sua ideia? (professor, família, amigos...)'),
+                 'dica': _('Ex: Minha professora de ciências e o meu tio que é engenheiro.')}
+            ]
+        }
+    ] %}
+
     <main class="container">
         <section class="faiscas-hero">
-            <span class="badge-amarela">{{ _('ETAPA 2: REFINADOR CIENTÍFICO') }}</span>
-            <h1 class="faiscas-titulo">{{ _('Caderno de Hipóteses') }}</h1>
-            <p class="faiscas-subtitulo">{{ _('Transforme a sua faísca em um projeto de verdade com a ajuda do Método Científico.') }}</p>
+            <span class="badge-amarela">{{ _('ETAPA 2: MÉTODO CIENTÍFICO') }}</span>
+            <h1 class="faiscas-titulo">{{ _('O Método Científico') }}</h1>
+            <p class="faiscas-subtitulo">{{ _('Todo grande inventor segue um caminho de descoberta. Aprenda o mapa do cientista e use-o para fazer a sua invenção virar realidade!') }}</p>
         </section>
 
-        <section class="refinador-container">
+        <!-- ================= PARTE 1: O MAPA ================= -->
+        <section id="mc-aprender" class="mc-bloco">
+            <div class="cabecalho-secao">
+                <span class="badge-azul">{{ _('PARTE 1') }}</span>
+                <h2>{{ _('O Mapa do Cientista') }}</h2>
+                <p>{{ _('Cientistas não adivinham: eles descobrem seguindo um caminho com 6 estações. Clique em cada uma e acompanhe o mistério da planta do Léo!') }}</p>
+            </div>
+
+            <div class="mc-trilha" id="mc-trilha">
+                <div class="mc-linha" aria-hidden="true"><span class="mc-linha-fill"></span></div>
+                <div class="mc-estacoes" role="tablist" aria-label="{{ _('Estações do método científico') }}">
+                    {% for e in etapas %}
+                    <button type="button" class="mc-estacao{% if loop.first %} ativa{% endif %}" role="tab"
+                            id="aba-{{ loop.index }}" aria-controls="det-{{ loop.index }}"
+                            aria-selected="{{ 'true' if loop.first else 'false' }}" data-i="{{ loop.index0 }}"
+                            style="--cor: {{ e.cor }};">
+                        <span class="mc-mascote" aria-hidden="true">🧑‍🔬</span>
+                        <span class="mc-estacao-icone" aria-hidden="true">{{ e.icone }}</span>
+                        <span class="mc-estacao-nome">{{ loop.index }}. {{ e.nome }}</span>
+                    </button>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="mc-detalhes">
+                {% for e in etapas %}
+                <article class="mc-detalhe" role="tabpanel" id="det-{{ loop.index }}"
+                         aria-labelledby="aba-{{ loop.index }}" style="--cor: {{ e.cor }};"{% if not loop.first %} hidden{% endif %}>
+                    <div class="mc-detalhe-icone" aria-hidden="true">{{ e.icone }}</div>
+                    <div class="mc-detalhe-texto">
+                        <span class="mc-passo">{{ _('Passo %(n)s de 6', n=loop.index) }}</span>
+                        <h3>{{ e.nome }}</h3>
+                        <p class="mc-oque">{{ e.oque }}</p>
+                        <div class="mc-exemplo">
+                            <strong>{{ _('Exemplo: o mistério da planta do Léo') }}</strong>
+                            <p>{{ e.exemplo }}</p>
+                        </div>
+                        <p class="mc-chave"><span aria-hidden="true">🔎</span> {{ e.chave }}</p>
+                    </div>
+                </article>
+                {% endfor %}
+
+                <div class="mc-nav">
+                    <button type="button" id="mc-voltar" class="mc-btn mc-btn-claro">&larr; {{ _('Voltar') }}</button>
+                    <button type="button" id="mc-proximo" class="mc-btn mc-btn-azul">{{ _('Próxima estação') }} &rarr;</button>
+                </div>
+            </div>
+
+            <div class="mc-volta">
+                <span class="mc-volta-icone" aria-hidden="true">🔄</span>
+                <div>
+                    <h3>{{ _('E se o teste não funcionar?') }}</h3>
+                    <p>{{ _('Sem problema! Cientistas erram o tempo todo, e cada erro ensina algo. Volte ao passo 3, mude o seu palpite e teste de novo. É assim que as grandes invenções nascem!') }}</p>
+                </div>
+            </div>
+
+            <div class="mc-glossario-topo">
+                <h3>{{ _('Palavras de cientista') }}</h3>
+            </div>
+            <div class="mc-glossario">
+                <div class="mc-termo"><span aria-hidden="true">💡</span><strong>{{ _('Hipótese') }}</strong><p>{{ _('Um palpite esperto que dá para testar.') }}</p></div>
+                <div class="mc-termo"><span aria-hidden="true">🧪</span><strong>{{ _('Experimento') }}</strong><p>{{ _('Um teste justo para descobrir se o palpite está certo.') }}</p></div>
+                <div class="mc-termo"><span aria-hidden="true">🎛️</span><strong>{{ _('Variável') }}</strong><p>{{ _('Qualquer coisa que pode mudar no teste, como tamanho, tempo ou cor.') }}</p></div>
+                <div class="mc-termo"><span aria-hidden="true">📒</span><strong>{{ _('Dados') }}</strong><p>{{ _('As anotações e medidas que você junta durante o teste.') }}</p></div>
+            </div>
+        </section>
+
+        <!-- ================= PARTE 2: A SUA INVENÇÃO ================= -->
+        <section id="mc-planejar" class="mc-bloco">
+            <div class="cabecalho-secao">
+                <span class="badge-azul">{{ _('PARTE 2') }}</span>
+                <h2>{{ _('Agora é a sua vez!') }}</h2>
+                <p>{{ _('Responda uma estação de cada vez. Não precisa ser perfeito, dá para mudar tudo depois. As suas respostas ficam salvas neste aparelho.') }}</p>
+            </div>
+
             <div class="ideia-sorteada-box">
                 <span class="badge-azul">{{ _('SUA IDEIA SORTEADA') }}</span>
                 <div class="ideia-tags">
-                    <span class="tag-item"><strong>{{ _('Foco:') }}</strong> {{ foco or _('Livre') }}</span>
-                    <span class="tag-item"><strong>{{ _('Objeto:') }}</strong> {{ objeto or '—' }}</span>
-                    <span class="tag-item"><strong>{{ _('Ação:') }}</strong> {{ acao or '—' }}</span>
-                    <span class="tag-item"><strong>{{ _('Desafio:') }}</strong> {{ desafio or '—' }}</span>
+                    <span class="tag-item"><strong>{{ _('Foco:') }}</strong> <span id="tag-foco">{{ foco or _('Livre') }}</span></span>
+                    <span class="tag-item"><strong>{{ _('Objeto:') }}</strong> <span id="tag-objeto">{{ objeto or '—' }}</span></span>
+                    <span class="tag-item"><strong>{{ _('Ação:') }}</strong> <span id="tag-acao">{{ acao or '—' }}</span></span>
+                    <span class="tag-item"><strong>{{ _('Desafio:') }}</strong> <span id="tag-desafio">{{ desafio or '—' }}</span></span>
                 </div>
+                <div class="campo-grupo mc-ideia-campo">
+                    <label for="mc-ideia"><strong>{{ _('Minha invenção em uma frase') }}</strong></label>
+                    <textarea id="mc-ideia" rows="2" placeholder="{{ _('Ex: Um robô que limpa o rio sem machucar os peixes.') }}"></textarea>
+                </div>
+                <a href="/faiscas" class="mc-link-sortear">{{ _('Sortear outra ideia') }} &rarr;</a>
             </div>
 
-            <div class="formulario-cientifico">
-                <div class="campo-grupo">
-                    <label for="hipotese" class="texto-azul">
-                        <strong>{{ _('Qual é a sua hipótese?') }}</strong>
-                    </label>
-                    <p class="campo-dica">{{ _('O que você acha que vai acontecer se construirmos essa invenção?') }}</p>
-                    <textarea id="hipotese" rows="3" placeholder="{{ _('Ex: Se usarmos um robô para limpar o rio, a água vai ficar própria para os peixes em poucas semanas...') }}"></textarea>
-                </div>
-
-                <div class="campo-grupo">
-                    <label for="teste" class="texto-laranja">
-                        <strong>{{ _('Como podemos testar isso?') }}</strong>
-                    </label>
-                    <p class="campo-dica">{{ _('Qual teste prático ou experimento simples podemos fazer?') }}</p>
-                    <textarea id="teste" rows="3" placeholder="{{ _('Ex: Coletar uma amostra de água antes e depois de passar pelo filtro do robô...') }}"></textarea>
-                </div>
-
-                <button id="btn-pedir" class="btn-primario btn-pedir" type="button">
-                    {{ _('Pedir ajuda ao Professor IA') }}
+            <div class="mc-progresso" id="mc-progresso" role="group" aria-label="{{ _('Passos do seu plano') }}">
+                {% for e in etapas %}
+                <button type="button" class="mc-ponto" data-p="{{ loop.index0 }}" style="--cor: {{ e.cor }};"
+                        aria-label="{{ loop.index }}. {{ e.nome }}">
+                    <span aria-hidden="true">{{ e.icone }}</span>
                 </button>
+                {% endfor %}
             </div>
 
-            <div id="professor" class="professor-resposta oculto">
+            <form class="mc-passos" id="mc-form" onsubmit="return false;">
+                {% for e in etapas %}
+                {% set ei = loop.index0 %}
+                <div class="mc-etapa" role="group" aria-labelledby="titulo-etapa-{{ loop.index }}"
+                     data-nome="{{ e.nome }}" data-icone="{{ e.icone }}" style="--cor: {{ e.cor }};"{% if not loop.first %} hidden{% endif %}>
+                    <div class="mc-etapa-topo">
+                        <span class="mc-etapa-icone" aria-hidden="true">{{ e.icone }}</span>
+                        <div>
+                            <span class="mc-passo">{{ _('Passo %(n)s de 6', n=loop.index) }}</span>
+                            <h3 id="titulo-etapa-{{ loop.index }}">{{ e.nome }}</h3>
+                        </div>
+                    </div>
+                    <p class="mc-lembrete">{{ e.lembrete }}</p>
+
+                    {% for q in e.perguntas %}
+                    <div class="campo-grupo">
+                        <label for="q{{ ei }}_{{ loop.index0 }}"><strong>{{ q.rotulo }}</strong></label>
+                        <textarea id="q{{ ei }}_{{ loop.index0 }}" class="mc-campo" rows="3" maxlength="600"
+                                  placeholder="{{ q.dica }}"></textarea>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+
+                <div class="mc-acoes">
+                    <button type="button" id="mc-anterior" class="mc-btn mc-btn-claro">&larr; {{ _('Voltar') }}</button>
+                    <button type="button" id="btn-pedir" class="mc-btn mc-btn-amarelo">{{ _('Pedir ajuda ao Professor IA') }}</button>
+                    <button type="button" id="mc-seguinte" class="mc-btn mc-btn-azul">{{ _('Próxima estação') }} &rarr;</button>
+                </div>
+            </form>
+
+            <div id="professor" class="professor-resposta oculto" aria-live="polite">
                 <div class="professor-topo">
                     <span class="professor-icone">🧑‍🔬</span>
                     <span class="badge-azul">{{ _('PROFESSOR IA') }}</span>
@@ -85,7 +270,24 @@
                 <ul id="p-perguntas" class="professor-perguntas"></ul>
             </div>
         </section>
+
+        <!-- ================= O PLANO FINAL ================= -->
+        <section id="mc-plano" class="mc-bloco" hidden>
+            <article class="mc-plano">
+                <span class="badge-amarela">🚀 {{ _('PRONTO!') }}</span>
+                <h2>{{ _('Meu Plano de Invenção') }}</h2>
+                <p class="mc-plano-ideia" id="mc-plano-ideia"></p>
+                <div class="mc-plano-lista" id="mc-plano-lista"></div>
+            </article>
+
+            <div class="mc-acoes mc-acoes-plano">
+                <button type="button" id="mc-editar" class="mc-btn mc-btn-claro">&larr; {{ _('Editar respostas') }}</button>
+                <button type="button" id="mc-copiar" class="mc-btn mc-btn-amarelo">{{ _('Copiar plano') }}</button>
+                <button type="button" id="mc-imprimir" class="mc-btn mc-btn-azul">{{ _('Imprimir ou salvar PDF') }}</button>
+            </div>
+        </section>
     </main>
+
     <footer class="rodape">
         <div class="rodape-container">
             <div class="rodape-marca">
@@ -99,22 +301,30 @@
             </nav>
         </div>
     </footer>
+
     <script id="dados-textos" type="application/json">
         {
             "pensando": {{ _('Professor pensando...')|tojson }},
             "botao": {{ _('Pedir ajuda ao Professor IA')|tojson }},
-            "erro": {{ _('Ops! O professor não conseguiu responder agora. Tente de novo em instantes!')|tojson }}
+            "erro": {{ _('Ops! O professor não conseguiu responder agora. Tente de novo em instantes!')|tojson }},
+            "proxima": {{ _('Próxima estação')|tojson }},
+            "irPlano": {{ _('Já entendi! Vamos inventar')|tojson }},
+            "verPlano": {{ _('Ver meu plano')|tojson }},
+            "vazio": {{ _('(ainda não respondi)')|tojson }},
+            "copiado": {{ _('Plano copiado!')|tojson }},
+            "copiar": {{ _('Copiar plano')|tojson }},
+            "tituloPlano": {{ _('Meu Plano de Invenção')|tojson }}
         }
     </script>
-    <script id="dados-ideia" type="application/json">
-        {
-            "foco": {{ foco|tojson }},
-            "objeto": {{ objeto|tojson }},
-            "acao": {{ acao|tojson }},
-            "desafio": {{ desafio|tojson }}
-        }
+    <script>
+        const dados = {
+            foco: {{ foco|tojson }},
+            objeto: {{ objeto|tojson }},
+            acao: {{ acao|tojson }},
+            desafio: {{ desafio|tojson }}
+        };
+        const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
     </script>
     <script src="{{ url_for('static', filename='refinador.js') }}"></script>
 </body>
 </html>
-

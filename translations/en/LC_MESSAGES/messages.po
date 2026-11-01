@@ -1,15 +1,15 @@
-# English translations for PROJECT.
+# English translations for IZObret.
 # Copyright (C) 2026 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+# This file is distributed under the same license as the IZOBRET IZObret.
+# FIRST AUTHOR <pedro.phma.1801@gmail.com>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Report-Msgid-Bugs-To: pedro.phma.1801@gmail.com\n"
 "POT-Creation-Date: 2026-10-28 16:07-0300\n"
 "PO-Revision-Date: 2026-10-25 14:26-0300\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Pedro Henrique Melo Azevedo <pedro.phma.1801@gmail.com>\n"
 "Language: en\n"
 "Language-Team: en <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -35,8 +35,8 @@ msgstr ""
 "In 2015, the UN set 17 goals to make the world better by 2030. They are the "
 "Sustainable Development Goals, and your invention can help achieve one of them!"
 
-msgid "Escolha uma ODS que importa para você  e transforma-a em uma invenção."
-msgstr "Pick an SDG that matter to you and turn it into an invention."
+msgid "Escolha uma ODS que importa para você e transforme-a em uma invenção."
+msgstr "Pick an SDG that matters to you and turn it into an invention."
 
 msgid "Erradicação da Pobreza"
 msgstr "No Poverty"
@@ -54,7 +54,7 @@ msgid "Igualdade de Gênero"
 msgstr "Gender equity"
 
 msgid "Água Potável"
-msgstr "Clean Water and Saniitation"
+msgstr "Clean Water and Sanitation"
 
 msgid "Energia Limpa e Acessível"
 msgstr "Affordable and Clean Energy"
@@ -63,7 +63,7 @@ msgid "Trabalho Decente e Crescimento Econômico"
 msgstr "Decent Work and Economic Growth"
 
 msgid "Indústria, Inovação e Infraestrutura"
-msgstr "Industry, Innovation and Infraestructure"
+msgstr "Industry, Innovation and Infrastructure"
 
 msgid "Redução das Desigualdades"
 msgstr "Reduced Inequalities"
@@ -86,7 +86,7 @@ msgstr "Life on Land"
 msgid "Paz, Justiça e Instituições Eficazes"
 msgstr "Peace, Justice and Strong Institutions"
 
-msgid "Parcerias e Meios de Implamentação"
+msgid "Parcerias e Meios de Implementação"
 msgstr "Partnerships for the Goals"
 
 #: templates/faiscas.html:6
@@ -151,10 +151,6 @@ msgstr "Accessibility & Inclusion"
 #: templates/faiscas.html:53
 msgid "Jogos"
 msgstr "Games"
-
-#: templates/faiscas.html:56
-msgid "O que são as ODS?"
-msgstr "What are the SDGs?"
 
 #: templates/faiscas.html:57
 msgid ""
@@ -404,10 +400,6 @@ msgstr "River trash collector robots"
 msgid "ODS 7"
 msgstr "SDG 7"
 
-#: templates/ods.html:76
-msgid "Energia Limpa e Acessível"
-msgstr "Affordable and Clean Energy"
-
 #: templates/ods.html:77
 msgid ""
 "Como criar novas maneiras de gerar e armazenar energia sem poluir a "
@@ -535,3 +527,280 @@ msgid ""
 "Ops! O professor não conseguiu responder agora. Tente de novo em "
 "instantes!"
 msgstr "Oops! The professor couldn't answer right now. Try again in a few moments!"
+
+msgid "Método Científico - IZObret"
+msgstr "Scientific Method - IZObret"
+
+msgid "Observar"
+msgstr "Observe"
+
+msgid "Observar é olhar o mundo com atenção de detetive. Use os olhos, os ouvidos e as mãos para notar coisas que ninguém percebeu."
+msgstr "Observing means looking at the world like a detective. Use your eyes, ears and hands to notice things nobody else noticed."
+
+msgid "Léo notou que a planta da sala vivia murcha, mas a do quarto estava linda e verdinha."
+msgstr "Leo noticed that the plant in the living room was always wilted, but the one in the bedroom looked beautiful and green."
+
+msgid "O que eu percebi que me deixou curioso ou incomodado?"
+msgstr "What did I notice that made me curious or bothered?"
+
+msgid "Todo invento começa quando alguém percebe um problema de verdade. Olhe ao seu redor!"
+msgstr "Every invention starts when someone notices a real problem. Look around you!"
+
+msgid "Que problema você percebeu no mundo real, ligado à sua ideia sorteada?"
+msgstr "What problem did you notice in the real world, connected to your drawn idea?"
+
+msgid "Ex: Percebi que o rio perto da minha escola está cheio de lixo..."
+msgstr "E.g.: I noticed the river near my school is full of trash..."
+
+msgid "Quem sente esse problema? Onde e quando ele acontece?"
+msgstr "Who feels this problem? Where and when does it happen?"
+
+msgid "Ex: Os moradores e os peixes, principalmente depois das chuvas..."
+msgstr "E.g.: The residents and the fish, mostly after the rains..."
+
+msgid "Perguntar"
+msgstr "Ask"
+
+msgid "Cientistas transformam o que observam em uma pergunta clara. Uma boa pergunta começa com Por que, Como ou O que acontece se."
+msgstr "Scientists turn what they observe into a clear question. A good question starts with Why, How or What happens if."
+
+msgid "Léo perguntou: Por que a planta da sala está murchando?"
+msgstr "Leo asked: Why is the plant in the living room wilting?"
+
+msgid "Qual é a dúvida que eu quero resolver?"
+msgstr "What is the doubt I want to solve?"
+
+msgid "Uma boa pergunta guia toda a invenção. Comece com Como, Por que ou O que acontece se."
+msgstr "A good question guides the whole invention. Start with How, Why or What happens if."
+
+msgid "Qual é a pergunta que a sua invenção quer responder?"
+msgstr "What question does your invention want to answer?"
+
+msgid "Ex: Como podemos tirar o lixo do rio sem machucar os peixes?"
+msgstr "E.g.: How can we take the trash out of the river without hurting the fish?"
+
+msgid "O que você ainda não sabe e precisa pesquisar?"
+msgstr "What do you still not know and need to research?"
+
+msgid "Ex: Que tipo de lixo é mais comum? Como outros inventores resolveram isso?"
+msgstr "E.g.: What kind of trash is most common? How did other inventors solve this?"
+
+msgid "Hipótese"
+msgstr "Hypothesis"
+
+msgid "Hipótese é um palpite esperto sobre a resposta, que dá para testar. Ela costuma ter este formato: Eu acho que se..., então..., porque..."
+msgstr "A hypothesis is a smart guess about the answer that you can test. It usually has this shape: I think that if..., then..., because..."
+
+msgid "Léo pensou: Eu acho que se eu puser a planta perto da janela, então ela vai ficar verde, porque as plantas precisam de luz."
+msgstr "Leo thought: I think that if I put the plant near the window, then it will turn green, because plants need light."
+
+msgid "O que eu acho que vai acontecer, e por quê?"
+msgstr "What do I think will happen, and why?"
+
+msgid "O seu palpite precisa poder ser testado, e pode estar errado! Isso faz parte da ciência."
+msgstr "Your guess needs to be testable, and it can be wrong! That is part of science."
+
+msgid "Complete: Eu acho que se ___, então ___, porque ___."
+msgstr "Complete: I think that if ___, then ___, because ___."
+
+msgid "Ex: Eu acho que se o robô tiver uma rede, então ele junta o lixo sem pegar os peixes, porque a água passa pela rede."
+msgstr "E.g.: I think that if the robot has a net, then it collects the trash without catching fish, because water passes through the net."
+
+msgid "Como você vai perceber que o seu palpite estava errado?"
+msgstr "How will you notice that your guess was wrong?"
+
+msgid "Ex: Se o robô pegar peixes junto com o lixo, ou se o lixo continuar na água."
+msgstr "E.g.: If the robot catches fish along with the trash, or if the trash stays in the water."
+
+msgid "Testar"
+msgstr "Test"
+
+msgid "Hora do experimento! Para o teste ser justo, mude só UMA coisa de cada vez e deixe todo o resto igual."
+msgstr "Time for the experiment! To make the test fair, change only ONE thing at a time and keep everything else the same."
+
+msgid "Léo pôs a planta perto da janela por 14 dias. Ele manteve a mesma quantidade de água e o mesmo vaso."
+msgstr "Leo put the plant near the window for 14 days. He kept the same amount of water and the same pot."
+
+msgid "Qual teste simples eu consigo fazer, e o que vou mudar?"
+msgstr "What simple test can I do, and what will I change?"
+
+msgid "Um bom teste é simples, seguro e justo. Dá para fazer com materiais do dia a dia!"
+msgstr "A good test is simple, safe and fair. You can do it with everyday materials!"
+
+msgid "Qual experimento simples você pode fazer para testar o seu palpite?"
+msgstr "What simple experiment can you do to test your guess?"
+
+msgid "Ex: Fazer um protótipo de papelão com uma rede e testar numa bacia com bolinhas de papel."
+msgstr "E.g.: Build a cardboard prototype with a net and test it in a basin with paper balls."
+
+msgid "O que você vai mudar (só UMA coisa) e o que vai manter igual?"
+msgstr "What will you change (only ONE thing) and what will you keep the same?"
+
+msgid "Ex: Mudo o tamanho dos buracos da rede. Mantenho a bacia, a água e a quantidade de bolinhas."
+msgstr "E.g.: I change the size of the holes in the net. I keep the basin, the water and the number of balls."
+
+msgid "Analisar"
+msgstr "Analyze"
+
+msgid "Anote tudo o que aconteceu, com números, desenhos ou fotos. Essas anotações se chamam dados. E nada de trapacear: vale o que realmente aconteceu!"
+msgstr "Write down everything that happened, with numbers, drawings or photos. These notes are called data. And no cheating: what really happened is what counts!"
+
+msgid "Depois de 14 dias, Léo anotou: as folhas ficaram mais verdes e firmes, e duas folhas novas nasceram."
+msgstr "After 14 days, Leo wrote down: the leaves were greener and firmer, and two new leaves grew."
+
+msgid "O que eu vou medir ou anotar para saber se deu certo?"
+msgstr "What will I measure or write down to know if it worked?"
+
+msgid "Sem registro não existe ciência! Decida antes o que vai medir."
+msgstr "Without records there is no science! Decide beforehand what you will measure."
+
+msgid "O que você vai medir ou anotar durante o teste?"
+msgstr "What will you measure or write down during the test?"
+
+msgid "Ex: Quantas bolinhas a rede pegou em 10 tentativas."
+msgstr "E.g.: How many balls the net caught in 10 tries."
+
+msgid "Que resultado mostraria que a sua ideia funciona?"
+msgstr "What result would show that your idea works?"
+
+msgid "Ex: Se a rede pegar pelo menos 8 das 10 bolinhas."
+msgstr "E.g.: If the net catches at least 8 of the 10 balls."
+
+msgid "Concluir"
+msgstr "Conclude"
+
+msgid "Compare os resultados com o seu palpite. Você acertou, errou ou descobriu algo novo? Nos três casos você aprendeu, e agora pode contar para os outros!"
+msgstr "Compare the results with your guess. Were you right, wrong, or did you discover something new? In all three cases you learned something, and now you can tell others!"
+
+msgid "Léo concluiu: a planta precisava de luz! Ele mostrou os resultados para a turma e ajudou os colegas com as plantas deles."
+msgstr "Leo concluded: the plant needed light! He showed the results to his class and helped his classmates with their plants."
+
+msgid "O que eu aprendi, e o que faço agora?"
+msgstr "What did I learn, and what do I do now?"
+
+msgid "Se deu certo, construa a versão maior. Se não deu, volte ao passo 3 e mude o palpite!"
+msgstr "If it worked, build the bigger version. If it did not, go back to step 3 and change your guess!"
+
+msgid "Se o teste funcionar, qual é o próximo passo da invenção? E se não funcionar, o que você muda?"
+msgstr "If the test works, what is the next step for the invention? And if it does not work, what will you change?"
+
+msgid "Ex: Se funcionar, construo um robô maior. Se não, troco o tamanho da rede."
+msgstr "E.g.: If it works, I build a bigger robot. If not, I change the size of the net."
+
+msgid "Quem pode ajudar você ou ouvir a sua ideia? (professor, família, amigos...)"
+msgstr "Who can help you or listen to your idea? (teacher, family, friends...)"
+
+msgid "Ex: Minha professora de ciências e o meu tio que é engenheiro."
+msgstr "E.g.: My science teacher and my uncle who is an engineer."
+
+msgid "ETAPA 2: MÉTODO CIENTÍFICO"
+msgstr "STEP 2: SCIENTIFIC METHOD"
+
+msgid "O Método Científico"
+msgstr "The Scientific Method"
+
+msgid "Todo grande inventor segue um caminho de descoberta. Aprenda o mapa do cientista e use-o para fazer a sua invenção virar realidade!"
+msgstr "Every great inventor follows a path of discovery. Learn the scientist's map and use it to turn your invention into reality!"
+
+msgid "PARTE 1"
+msgstr "PART 1"
+
+msgid "O Mapa do Cientista"
+msgstr "The Scientist's Map"
+
+msgid "Cientistas não adivinham: eles descobrem seguindo um caminho com 6 estações. Clique em cada uma e acompanhe o mistério da planta do Léo!"
+msgstr "Scientists do not just guess: they discover by following a path with 6 stations. Click each one and follow the mystery of Leo's plant!"
+
+msgid "Estações do método científico"
+msgstr "Scientific method stations"
+
+#, python-format
+msgid "Passo %(n)s de 6"
+msgstr "Step %(n)s of 6"
+
+msgid "Exemplo: o mistério da planta do Léo"
+msgstr "Example: the mystery of Leo's plant"
+
+msgid "Voltar"
+msgstr "Back"
+
+msgid "Próxima estação"
+msgstr "Next station"
+
+msgid "E se o teste não funcionar?"
+msgstr "What if the test does not work?"
+
+msgid "Sem problema! Cientistas erram o tempo todo, e cada erro ensina algo. Volte ao passo 3, mude o seu palpite e teste de novo. É assim que as grandes invenções nascem!"
+msgstr "No problem! Scientists make mistakes all the time, and every mistake teaches something. Go back to step 3, change your guess and test again. That is how great inventions are born!"
+
+msgid "Palavras de cientista"
+msgstr "Scientist words"
+
+msgid "Um palpite esperto que dá para testar."
+msgstr "A smart guess that can be tested."
+
+msgid "Experimento"
+msgstr "Experiment"
+
+msgid "Um teste justo para descobrir se o palpite está certo."
+msgstr "A fair test to find out if the guess is right."
+
+msgid "Variável"
+msgstr "Variable"
+
+msgid "Qualquer coisa que pode mudar no teste, como tamanho, tempo ou cor."
+msgstr "Anything that can change in the test, like size, time or color."
+
+msgid "Dados"
+msgstr "Data"
+
+msgid "As anotações e medidas que você junta durante o teste."
+msgstr "The notes and measurements you collect during the test."
+
+msgid "PARTE 2"
+msgstr "PART 2"
+
+msgid "Agora é a sua vez!"
+msgstr "Now it is your turn!"
+
+msgid "Responda uma estação de cada vez. Não precisa ser perfeito, dá para mudar tudo depois. As suas respostas ficam salvas neste aparelho."
+msgstr "Answer one station at a time. It does not have to be perfect, you can change everything later. Your answers are saved on this device."
+
+msgid "Minha invenção em uma frase"
+msgstr "My invention in one sentence"
+
+msgid "Ex: Um robô que limpa o rio sem machucar os peixes."
+msgstr "E.g.: A robot that cleans the river without hurting the fish."
+
+msgid "Sortear outra ideia"
+msgstr "Draw another idea"
+
+msgid "Passos do seu plano"
+msgstr "Steps of your plan"
+
+msgid "PRONTO!"
+msgstr "ALL SET!"
+
+msgid "Meu Plano de Invenção"
+msgstr "My Invention Plan"
+
+msgid "Editar respostas"
+msgstr "Edit answers"
+
+msgid "Copiar plano"
+msgstr "Copy plan"
+
+msgid "Imprimir ou salvar PDF"
+msgstr "Print or save as PDF"
+
+msgid "Já entendi! Vamos inventar"
+msgstr "Got it! Let us invent"
+
+msgid "Ver meu plano"
+msgstr "See my plan"
+
+msgid "(ainda não respondi)"
+msgstr "(not answered yet)"
+
+msgid "Plano copiado!"
+msgstr "Plan copied!"
