@@ -1,3 +1,9 @@
+const elTextos = document.getElementById('dados-textos');
+const TEXTOS = elTextos ? JSON.parse(elTextos.textContent) : (window.TEXTOS || {});
+
+const elIdeia = document.getElementById('dados-ideia');
+const dados = elIdeia ? JSON.parse(elIdeia.textContent) : (window.dados || {});
+
 const reduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const comportamentoRolagem = reduzirMovimento ? 'auto' : 'smooth';
 

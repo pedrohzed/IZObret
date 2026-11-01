@@ -23,7 +23,7 @@
                     <a href="/" class="menu-link">{{ _('Início') }}</a>
                     <a href="/faiscas" class="menu-link">{{ _('Máquina de Faíscas') }}</a>
                     <a href="/refinador" class="menu-link ativo">{{ _('Método Científico') }}</a>
-                    <a href="#" class="menu-link">{{ _('Missões e Canvas') }}</a>
+                    <a href="#" class="menu-link" title="{{ _('Em breve') }}" aria-disabled="true">{{ _('Missões e Canvas') }}</a>
                 </nav>
             </div>
 
@@ -32,7 +32,7 @@
                     <a href="/idioma/pt" class="idioma-link {% if idioma == 'pt' %}ativo{% endif %}">PT</a>
                     <a href="/idioma/en" class="idioma-link {% if idioma == 'en' %}ativo{% endif %}">EN</a>
                 </div>
-                <a href="#" class="btn-oficina">{{ _('Minha Oficina') }}</a>
+                <a href="#" class="btn-oficina" title="{{ _('Em breve') }}" aria-disabled="true">{{ _('Minha Oficina') }}</a>
             </div>
         </div>
     </header>
@@ -316,15 +316,14 @@
             "tituloPlano": {{ _('Meu Plano de Invenção')|tojson }}
         }
     </script>
-    <script>
-        const dados = {
-            foco: {{ foco|tojson }},
-            objeto: {{ objeto|tojson }},
-            acao: {{ acao|tojson }},
-            desafio: {{ desafio|tojson }},
-            ideia: {{ (ideia or '')|tojson }}
-        };
-        const TEXTOS = JSON.parse(document.getElementById('dados-textos').textContent);
+    <script id="dados-ideia" type="application/json">
+        {
+            "foco": {{ foco|tojson }},
+            "objeto": {{ objeto|tojson }},
+            "acao": {{ acao|tojson }},
+            "desafio": {{ desafio|tojson }},
+            "ideia": {{ (ideia or '')|tojson }}
+        }
     </script>
     <script src="{{ url_for('static', filename='refinador.js') }}"></script>
 </body>
